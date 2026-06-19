@@ -147,9 +147,46 @@ async function main() {
   console.log(`L2=${L2}, epochs=${EPOCHS}\n`);
   const model: any = { model_name: '@cf/baai/bge-m3', dim: D, trained_at: new Date().toISOString(), languages: {} };
 
+  // Cap any dominant class to MAX_IMBALANCE_RATIO × median-class count.
+  // This prevents a large ADD corpus from drowning out GREETING / CHECKOUT
+  // even after inverse-frequency weighting: the weight adjusts the loss but
+  // the gradient surface is still shaped by raw example count. Capping is the
+  // structural fix — future data additions can never re-introduce the bias.
+  const MAX_IMBALANCE_RATIO = 3;
+
   for (const lang of ACTIVE_LANGS) {
-    const langEx = examples.filter(e => e.lang === lang);
+    let langEx = examples.filter(e => e.lang === lang);
     const intentNames = Array.from(new Set(langEx.map(e => e.intent))).sort();
+
+    // Compute per-class counts and cap dominant classes.
+    const classCounts = new Map<string, number>();
+    for (const e of langEx) classCounts.set(e.intent, (classCounts.get(e.intent) ?? 0) + 1);
+    const sortedCounts = Array.from(classCounts.values()).sort((a, b) => a - b);
+    const medianCount = sortedCounts[Math.floor(sortedCounts.length / 2)];
+    const cap = Math.round(medianCount * MAX_IMBALANCE_RATIO);
+    const cappedClasses: string[] = [];
+    const grouped = new Map<string, Example[]>();
+    for (const e of langEx) { const g = grouped.get(e.intent) ?? []; g.push(e); grouped.set(e.intent, g); }
+    const balanced: Example[] = [];
+    for (const [intent, exs] of grouped) {
+      if (exs.length > cap) {
+        cappedClasses.push(`${intent.replace('LEXOS_','')}:${exs.length}→${cap}`);
+        // deterministic shuffle (seeded by intent name length to be reproducible)
+        const seed = intent.length;
+        const shuffled = [...exs];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+          const j = (seed * (i + 1)) % (i + 1);
+          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        balanced.push(...shuffled.slice(0, cap));
+      } else {
+        balanced.push(...exs);
+      }
+    }
+    if (cappedClasses.length) {
+      console.log(`  ⚠ ${lang}: capped ${cappedClasses.join(', ')} (ratio cap=${MAX_IMBALANCE_RATIO}×median=${medianCount})`);
+    }
+    langEx = balanced;
     const idx = new Map(intentNames.map((n, i) => [n, i]));
     const K = intentNames.length;
 
