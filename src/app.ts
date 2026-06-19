@@ -25,7 +25,7 @@ app.use('/users',   usersRouter);
 // Demo (side-by-side comparison + corpus browser)
 app.use('/demo', demoRouter);
 
-// Admin dashboard (WiseOrder) — tenant/menu/key management. Admin-key protected.
-app.use('/admin', adminAuth, adminRouter);
+// Admin dashboard — HTML shell served publicly, API routes protected by adminAuth.
+app.use('/admin', adminRouter);
 
 export default app;

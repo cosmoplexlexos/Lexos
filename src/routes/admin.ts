@@ -1,4 +1,4 @@
-import { Router, Request, Response } from 'express';
+import { Router, Request, Response, NextFunction } from 'express';
 import * as path from 'path';
 import { config } from '../config';
 import {
@@ -12,13 +12,17 @@ import { generateEmbeddingsBatch, EMBED_MODEL_NAME } from '../adapters/cloudflar
 import { normalizeRoman } from '../classifier/normalize';
 import { tokenize } from '../classifier/text-tokens';
 import { startRetrain, getRetrainStatus } from '../admin/retrain-job';
+import { adminAuth } from '../middleware/auth';
 
 export const adminRouter = Router();
 
-// Serve the dashboard shell (auth enforced by the API calls it makes).
+// HTML shell — public (login screen handles auth client-side)
 adminRouter.get('/', (_req: Request, res: Response) => {
   res.sendFile(path.join(process.cwd(), 'demo', 'admin.html'));
 });
+
+// All API routes below require the admin key
+adminRouter.use((_req: Request, res: Response, next: NextFunction) => adminAuth(_req, res, next));
 
 // ── Tenants ────────────────────────────────────────────────
 adminRouter.post('/tenants', async (req: Request, res: Response) => {
