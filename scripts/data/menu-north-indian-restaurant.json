@@ -1,0 +1,22 @@
+{
+  "tenant_id": "north-indian-restaurant",
+  "items": [
+    { "name": "Samosa" },
+    { "name": "Masala Chai" },
+    { "name": "Tea" },
+    { "name": "Veg Biryani" },
+    { "name": "Chicken Biryani" },
+    { "name": "Butter Naan" },
+    { "name": "Naan" },
+    { "name": "Paneer Tikka" },
+    { "name": "Dal Makhani" },
+    { "name": "Chole Bhature" },
+    { "name": "Gulab Jamun" },
+    { "name": "Jalebi" },
+    { "name": "Lassi" },
+    { "name": "Aloo Paratha" },
+    { "name": "Plain Paratha" },
+    { "name": "Roti" },
+    { "name": "Kachori" }
+  ]
+}

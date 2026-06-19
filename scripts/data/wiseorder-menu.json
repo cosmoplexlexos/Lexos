@@ -1,0 +1,749 @@
+{
+    "tenant_id":  "wiseorder",
+    "display_name":  "WiseOrder",
+    "items":  [
+                  {
+                      "name":  "Mini Badam Milk",
+                      "category":  "BEVERAGES",
+                      "price":  null,
+                      "names":  [
+                                    "मिनी बादाम दूध",
+                                    "ಮಿನಿ ಬಾದಾಮಿ ಹಾಲು",
+                                    "மினி பாதாம் பால்",
+                                    "మినీ బాదాం పాలు",
+                                    "मिनी बदाम दूध"
+                                ],
+                      "aliases":  [
+                                      "badam milk",
+                                      "badam haalu",
+                                      "almond milk",
+                                      "badam doodh",
+                                      "ಬಾದಾಮ್ ಮಿಲ್ಕ್."
+                                  ]
+                  },
+                  {
+                      "name":  "Mini Coffee",
+                      "category":  "BEVERAGES",
+                      "price":  null,
+                      "names":  [
+                                    "मिनी कॉफ़ी",
+                                    "ಮಿನಿ ಕಾಫಿ",
+                                    "மினி காபி",
+                                    "మినీ కాఫీ",
+                                    "मिनी कॉफी"
+                                ],
+                      "aliases":  [
+                                      "mini kaapi",
+                                      "small coffee",
+                                      "cutting coffee",
+                                      "kaafi"
+                                  ]
+                  },
+                  {
+                      "name":  "Mini Tea",
+                      "category":  "BEVERAGES",
+                      "price":  null,
+                      "names":  [
+                                    "मिनी चाय",
+                                    "ಮಿನಿ ಚಹ",
+                                    "மினி தேநீர்",
+                                    "మినీ టీ",
+                                    "मिनी चहा"
+                                ],
+                      "aliases":  [
+                                      "mini chai",
+                                      "small tea",
+                                      "cutting chai",
+                                      "cutting",
+                                      "kadak chai"
+                                  ]
+                  },
+                  {
+                      "name":  "Plain Milk",
+                      "category":  "BEVERAGES",
+                      "price":  null,
+                      "names":  [
+                                    "सादा दूध",
+                                    "ಹಾಲು",
+                                    "பால்",
+                                    "పాలు",
+                                    "साधे दूध"
+                                ],
+                      "aliases":  [
+                                      "haalu",
+                                      "milk",
+                                      "plain haalu",
+                                      "doodh"
+                                  ]
+                  },
+                  {
+                      "name":  "Water Bottle 1L",
+                      "category":  "BEVERAGES",
+                      "price":  null,
+                      "names":  [
+                                    "पानी की बोतल 1 लीटर",
+                                    "ನೀರಿನ ಬಾಟಲು 1ಲೀ",
+                                    "தண்ணீர் பாட்டில் 1L",
+                                    "నీటి బాటిల్ 1L",
+                                    "पाण्याची बाटली 1 लीटर"
+                                ],
+                      "aliases":  [
+                                      "water 1l",
+                                      "1 litre water",
+                                      "bisleri",
+                                      "neeru bottle",
+                                      "paani bottle"
+                                  ]
+                  },
+                  {
+                      "name":  "Water Bottle 500ml",
+                      "category":  "BEVERAGES",
+                      "price":  null,
+                      "names":  [
+                                    "पानी की बोतल 500 मिली",
+                                    "ನೀರಿನ ಬಾಟಲು 500ಮಿಲಿ",
+                                    "தண்ணீர் பாட்டில் 500ml",
+                                    "నీటి బాటిల్ 500ml",
+                                    "पाण्याची बाटली 500 मिली"
+                                ],
+                      "aliases":  [
+                                      "water 500ml",
+                                      "small water bottle",
+                                      "half litre water",
+                                      "chikka neeru bottle"
+                                  ]
+                  },
+                  {
+                      "name":  "Bisibele Bhath",
+                      "category":  "BHATH",
+                      "price":  null,
+                      "names":  [
+                                    "बिसिबेले भात",
+                                    "ಬಿಸಿ ಬೇಳೆ ಭಾತ್",
+                                    "பிசிபேளே பாத்",
+                                    "బిసిబేళే బాత్",
+                                    "बिसिबेळे भात"
+                                ],
+                      "aliases":  [
+                                      "bisibele bath",
+                                      "bisi bele bath",
+                                      "bisi bele bhath",
+                                      "BBB"
+                                  ]
+                  },
+                  {
+                      "name":  "Brahmins\u0027 Special Puliogare",
+                      "category":  "BHATH",
+                      "price":  null,
+                      "names":  [
+                                    "ब्राह्मिन्स स्पेशल पुलियोगरे",
+                                    "ಪುಳಿಯೋಗರೆ ಬ್ರಾಹ್ಮಿನ್ ಸ್ಟೈಲ್",
+                                    "பிராமின்ஸ் ஸ்பெஷல் புளியோகரை",
+                                    "బ్రాహ్మిన్స్ స్పెషల్ పులిహోర",
+                                    "ब्राह्मिन्स स्पेशल पुळियोगरे"
+                                ],
+                      "aliases":  [
+                                      "puliogare",
+                                      "puliyogare",
+                                      "tamarind rice",
+                                      "pulihora",
+                                      "puliogare rice"
+                                  ]
+                  },
+                  {
+                      "name":  "Kesari Bhath",
+                      "category":  "BHATH",
+                      "price":  null,
+                      "names":  [
+                                    "केसरी भात",
+                                    "ಕೇಸರಿ ಭಾತ್",
+                                    "கேசரி பாத்",
+                                    "కేసరి బాత్",
+                                    "केसरी भात"
+                                ],
+                      "aliases":  [
+                                      "kesari bath",
+                                      "sheera",
+                                      "sooji halwa",
+                                      "sweet bhath",
+                                      "rava kesari",
+                                      "ಒಂದೊಂದು ಕೇಸರಿಬಾತ್"
+                                  ]
+                  },
+                  {
+                      "name":  "Khara Bhath",
+                      "category":  "BHATH",
+                      "price":  null,
+                      "names":  [
+                                    "खारा भात",
+                                    "ಖಾರಾ ಭಾತ್",
+                                    "கார பாத்",
+                                    "ఖారా బాత్",
+                                    "खारा भात"
+                                ],
+                      "aliases":  [
+                                      "kara bath",
+                                      "khara bath",
+                                      "upma bhath",
+                                      "spicy bhath"
+                                  ]
+                  },
+                  {
+                      "name":  "Shavige Bhath",
+                      "category":  "BHATH",
+                      "price":  null,
+                      "names":  [
+                                    "शावगे भात",
+                                    "ಶಾವಿಗೆ ಭಾತ್",
+                                    "சவிகே பாத்",
+                                    "శావిగె బాత్",
+                                    "शेवया भात"
+                                ],
+                      "aliases":  [
+                                      "shavige bath",
+                                      "sevai bhath",
+                                      "vermicelli bhath",
+                                      "seviyan"
+                                  ]
+                  },
+                  {
+                      "name":  "Special Rice Bhath",
+                      "category":  "BHATH",
+                      "price":  null,
+                      "names":  [
+                                    "स्पेशल राइस भात",
+                                    "ಸ್ಪೆಶಲ್ ರೈಸ್ ಭಾತ್",
+                                    "ஸ்பெஷல் ரைஸ் பாத்",
+                                    "స్పెషల్ రైస్ బాత్",
+                                    "स्पेशल राइस भात"
+                                ],
+                      "aliases":  [
+                                      "special rice bath",
+                                      "rice bhath",
+                                      "special anna bhath"
+                                  ]
+                  },
+                  {
+                      "name":  "Brahmins\u0027 Thatte Idli",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "ब्राह्मिन्स थट्टे इडली",
+                                    "ಬ್ರಾಹ್ಮಿನ್ಸ್ ತಟ್ಟೆ ಇಡ್ಲಿ",
+                                    "பிராமின்ஸ் தட்டே இட்லி",
+                                    "బ్రాహ్మిన్స్ థట్టే ఇడ్లీ",
+                                    "ब्राह्मिन्स थाट्टे इडली"
+                                ],
+                      "aliases":  [
+                                      "thatte idli",
+                                      "brahmin idli",
+                                      "plate idli",
+                                      "thatte idly",
+                                      "brahmin thatte"
+                                  ]
+                  },
+                  {
+                      "name":  "Butter Chutney Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "बटर चटनी मसाला डोसा",
+                                    "ಬೆಣ್ಣೆ ಚಟ್ನಿ ಮಸಾಲ ದೋಸೆ",
+                                    "வெண்ணெய் சட்னி மசాலா தோசை",
+                                    "బటర్ చట్నీ మసాలా దోస",
+                                    "बटर चटणी मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "butter chutney dose",
+                                      "benne chutney dosa",
+                                      "butter chatni dosa",
+                                      "benne chatni dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Butter Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "बटर मसाला डोसा",
+                                    "ಬೆಣ್ಣೆ ಮಸಾಲ ದೋಸೆ",
+                                    "வெண்ணெய் மசாலா தோசை",
+                                    "బటర్ మసాలా దోస",
+                                    "बटर मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "butter masala dose",
+                                      "benne masala dosa",
+                                      "benne masale dose",
+                                      "butter masale dosa"
+                                  ]
+                  },
+                  {
+                      "name":  "Butter Open Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "बटर ओपन मसाला डोसा",
+                                    "ಬೆಣ್ಣೆ ಓಪನ್ ಮಸಾಲ ದೋಸೆ",
+                                    "வெண்ணெய் ஓபன் மசாலா தோசை",
+                                    "బటర్ ఓపన్ మసాలా దోస",
+                                    "बटर ओपन मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "butter open dose",
+                                      "benne open masala dosa",
+                                      "butter khula dosa",
+                                      "benne open dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Butter Plain Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "बटर सादा डोसा",
+                                    "ಬೆಣ್ಣೆ ಬಾಣ ದೋಸೆ",
+                                    "வெண்ணெய் சாதா தோசை",
+                                    "బటర్ ప్లెయిన్ దోస",
+                                    "बटर साधा डोसा"
+                                ],
+                      "aliases":  [
+                                      "butter dose",
+                                      "benne dosa",
+                                      "benne dose",
+                                      "butter plain dose",
+                                      "benne plain dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Butter Podi Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "बटर पोडी मसाला डोसा",
+                                    "ಬೆಣ್ಣೆ ಮೊದಿ ಮಸಾಲ ದೋಸೆ",
+                                    "வெண்ணெய் பொடி மசாலா தோசை",
+                                    "బటర్ పొడి మసాలా దోస",
+                                    "बटर पोडी मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "butter podi dose",
+                                      "benne podi dosa",
+                                      "butter pudi masala dosa",
+                                      "benne pudi dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Butter Thatte Idli",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "बटर थट्टे इडली",
+                                    "ಬೆಣ್ಣೆ ತಟ್ಟೆ ಇಡ್ಲಿ",
+                                    "வெண்ணெய் தட்டே இட்லி",
+                                    "బటర్ థట్టే ఇడ్లీ",
+                                    "बटर थाट्टे इडली"
+                                ],
+                      "aliases":  [
+                                      "butter idli",
+                                      "benne thatte idli",
+                                      "butter plate idli",
+                                      "benne idli"
+                                  ]
+                  },
+                  {
+                      "name":  "Ghee Chutney Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "घी चटनी मसाला डोसा",
+                                    "ತುಪ್ಪ ಚಟ್ನಿ ಮಸಾಲ ದೋಸೆ",
+                                    "நெய் சட்னி மசாலா தோசை",
+                                    "నెయ్యి చట్నీ మసాలా దోస",
+                                    "तूप चटणी मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "ghee chutney dose",
+                                      "tuppa chutney dosa",
+                                      "ghee chatni dosa",
+                                      "tuppa chatni dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Ghee Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "घी मसाला डोसा",
+                                    "ತುಪ್ಪ ಮಸಾಲ ದೋಸೆ",
+                                    "நெய் மசாலா தோசை",
+                                    "నెయ్యి మసాలా దోస",
+                                    "तूप मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "ghee masala dose",
+                                      "tuppa masala dosa",
+                                      "tuppa masale dose",
+                                      "ghee masale dosa",
+                                      "tuppa masle dose",
+                                      "tuppa masle",
+                                      "tuppa",
+                                      "masle dose",
+                                      "masle",
+                                      "dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Ghee Plain Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "घी सादा डोसा",
+                                    "ತುಪ್ಪ ಬಾಣ ದೋಸೆ",
+                                    "நெய் சாதா தோசை",
+                                    "నెయ్యి ప్లెయిన్ దోస",
+                                    "तूप साधा डोसा"
+                                ],
+                      "aliases":  [
+                                      "ghee dose",
+                                      "tuppa dosa",
+                                      "tuppa dose",
+                                      "ghee dosa",
+                                      "tuppa plain dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Ghee Podi Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "घी पोडी मसाला डोसा",
+                                    "ತುಪ್ಪ ಮೊದಿ ಮಸಾಲ ದೋಸೆ",
+                                    "நெய் பொடி மசாலா தோசை",
+                                    "నెయ్యి పొడి మసాలా దోస",
+                                    "तूप पोडी मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "ghee podi dose",
+                                      "tuppa podi dosa",
+                                      "ghee pudi masala dosa",
+                                      "tuppa pudi dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "मसाला डोसा",
+                                    "ಮಸಾಲ ದೋಸೆ",
+                                    "மசாலா தோசை",
+                                    "మసాలా దోస",
+                                    "मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "masala dose",
+                                      "masle dose",
+                                      "masala dosai",
+                                      "masle dosa",
+                                      "masala"
+                                  ]
+                  },
+                  {
+                      "name":  "Onion Utthapam",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "प्याज उत्तपम",
+                                    "ಈರುಳ್ಳಿ ಉತ್ತಪ್ಪ",
+                                    "வெங்காய உத்தப்பம்",
+                                    "ఉల్లిపాయ ఉత్తప్పం",
+                                    "कांदा उत्तपम"
+                                ],
+                      "aliases":  [
+                                      "uttapam",
+                                      "uthappam",
+                                      "onion uttapam",
+                                      "pyaz uttapam",
+                                      "oothapam",
+                                      "eerulli dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Open Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "ओपन मसाला डोसा",
+                                    "ಓಪನ್ ಮಸಾಲ ದೋಸೆ",
+                                    "ஓபன் மசாலா தோசை",
+                                    "ఓపన్ మసాలా దోస",
+                                    "ओपन मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "open dose",
+                                      "open masale dose",
+                                      "khula masala dosa",
+                                      "open masala"
+                                  ]
+                  },
+                  {
+                      "name":  "Plain Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "सादा डोसा",
+                                    "ಪ್ಲೇನ್ ದೋಸೆ",
+                                    "சாதா தோசை",
+                                    "ప్లెయిన్ దోస",
+                                    "साधा डोसा"
+                                ],
+                      "aliases":  [
+                                      "plain dose",
+                                      "sada dosa",
+                                      "plain dosai",
+                                      "normal dosa",
+                                      "sada dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Podi Masala Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "पोडी मसाला डोसा",
+                                    "ಮೊದಿ ಮಸಾಲ ದೋಸೆ",
+                                    "பொடி மசாலா தோசை",
+                                    "పొడి మసాలా దోస",
+                                    "पोडी मसाला डोसा"
+                                ],
+                      "aliases":  [
+                                      "podi dose",
+                                      "pudi masala dosa",
+                                      "chutney powder dosa",
+                                      "podi masale dose",
+                                      "pudi dose"
+                                  ]
+                  },
+                  {
+                      "name":  "Set Dosa",
+                      "category":  "BREAKFAST",
+                      "price":  null,
+                      "names":  [
+                                    "सेट डोसा",
+                                    "ಸೆಟ್ ದೋಸೆ",
+                                    "செட் தோசை",
+                                    "సెట్ దోస",
+                                    "सेट डोसा"
+                                ],
+                      "aliases":  [
+                                      "set dose",
+                                      "set dosai",
+                                      "3 dosa",
+                                      "teen dosa",
+                                      "sponge dosa",
+                                      "set"
+                                  ]
+                  },
+                  {
+                      "name":  "Akki Rotti",
+                      "category":  "MEALS",
+                      "price":  null,
+                      "names":  [
+                                    "अक्की रोटी",
+                                    "ಅಕ್ಕಿ ರೊಟ್ಟಿ",
+                                    "அக்கி ரொட்டி",
+                                    "అక్కి రొట్టి",
+                                    "तांदळाची भाकरी"
+                                ],
+                      "aliases":  [
+                                      "akki roti",
+                                      "rice roti",
+                                      "rice rotti",
+                                      "akki rotte"
+                                  ]
+                  },
+                  {
+                      "name":  "Curd Rice",
+                      "category":  "MEALS",
+                      "price":  null,
+                      "names":  [
+                                    "दही चावल",
+                                    "ಮೊಸರನ್ನ",
+                                    "தயிர் சாதம்",
+                                    "పెరుగు అన్నం",
+                                    "दही भात"
+                                ],
+                      "aliases":  [
+                                      "mosaranna",
+                                      "curd rice home style",
+                                      "dahi chawal",
+                                      "thayir sadam",
+                                      "mosru anna"
+                                  ]
+                  },
+                  {
+                      "name":  "Ragi Rotti",
+                      "category":  "MEALS",
+                      "price":  null,
+                      "names":  [
+                                    "रागी रोटी",
+                                    "ರಾಗಿ ರೊಟ್ಟಿ",
+                                    "ராகி ரொட்டி",
+                                    "రాగి రొట్టి",
+                                    "नाचणीची भाकरी"
+                                ],
+                      "aliases":  [
+                                      "ragi roti",
+                                      "finger millet roti",
+                                      "ragi rotte",
+                                      "nachni roti"
+                                  ]
+                  },
+                  {
+                      "name":  "Rice Sambar",
+                      "category":  "MEALS",
+                      "price":  null,
+                      "names":  [
+                                    "चावल सांभर",
+                                    "ಅನ್ನ ಸಾಂಬಾರು",
+                                    "அரிசி சாம்பார்",
+                                    "అన్నం సాంబారు",
+                                    "भात सांबार"
+                                ],
+                      "aliases":  [
+                                      "anna sambar",
+                                      "rice sambhar",
+                                      "anna saru",
+                                      "chawal sambar"
+                                  ]
+                  },
+                  {
+                      "name":  "Carry Bag Big",
+                      "category":  "PARCEL",
+                      "price":  null,
+                      "names":  [
+                                    "बड़ा कैरी बैग",
+                                    "ಕ್ಯಾರಿಬ್ಯಾಗ್ ದೊಡ್ಡದು",
+                                    "பெரிய கேரி பேக்",
+                                    "పెద్ద క్యారీ బ్యాగ్",
+                                    "मोठी कॅरी बॅग"
+                                ],
+                      "aliases":  [
+                                      "big carry bag",
+                                      "dodda carry bag",
+                                      "large bag",
+                                      "plastic bag big"
+                                  ]
+                  },
+                  {
+                      "name":  "Carry Bag Medium",
+                      "category":  "PARCEL",
+                      "price":  null,
+                      "names":  [
+                                    "मध्यम कैरी बैग",
+                                    "ಕ್ಯಾರಿಬ್ಯಾಗ್ ಮಧ್ಯಮ",
+                                    "மீடியம் கேரி பேக்",
+                                    "మీడియం క్యారీ బ్యాగ్",
+                                    "मध्यम कॅरी बॅग"
+                                ],
+                      "aliases":  [
+                                      "medium carry bag",
+                                      "medium bag",
+                                      "madhyama bag",
+                                      "plastic bag medium"
+                                  ]
+                  },
+                  {
+                      "name":  "Container Big",
+                      "category":  "PARCEL",
+                      "price":  null,
+                      "names":  [
+                                    "बड़ा कंटेनर",
+                                    "ಕಂಟೈನರ್ ದೊಡ್ಡದು",
+                                    "பெரிய கண்டெய்னர்",
+                                    "పెద్ద కంటైనర్",
+                                    "मोठा डबा"
+                                ],
+                      "aliases":  [
+                                      "big container",
+                                      "dodda container",
+                                      "large container"
+                                  ]
+                  },
+                  {
+                      "name":  "Container Small",
+                      "category":  "PARCEL",
+                      "price":  null,
+                      "names":  [
+                                    "छोटा कंटेनर",
+                                    "ಕಂಟೈನರ್ ಚಿಕ್ಕದು",
+                                    "சிறிய கண்டெய்னர்",
+                                    "చిన్న కంటైనర్",
+                                    "छोटा डबा"
+                                ],
+                      "aliases":  [
+                                      "small container",
+                                      "chikka container",
+                                      "chhota container"
+                                  ]
+                  },
+                  {
+                      "name":  "Parcel Box",
+                      "category":  "PARCEL",
+                      "price":  null,
+                      "names":  [
+                                    "पार्सल बॉक्स",
+                                    "ಪಾರ್ಸೆಲ್ ಬಾಕ್ಸ್",
+                                    "பார்சல் பாக்ஸ்",
+                                    "పార్శిల్ బాక్స్",
+                                    "पार्सल बॉक्स"
+                                ],
+                      "aliases":  [
+                                      "parcel box",
+                                      "box",
+                                      "packing box"
+                                  ]
+                  },
+                  {
+                      "name":  "Masala Vada",
+                      "category":  "SNACKS",
+                      "price":  null,
+                      "names":  [
+                                    "मसाला वड़ा",
+                                    "ಮಸಾಲೆ ವಡೆ",
+                                    "மசாலா வடை",
+                                    "మసాలా వడ",
+                                    "मसाला वडा"
+                                ],
+                      "aliases":  [
+                                      "masala vade",
+                                      "masale wade",
+                                      "masala wada",
+                                      "chana vada",
+                                      "dal vada"
+                                  ]
+                  },
+                  {
+                      "name":  "Uddina Vada",
+                      "category":  "SNACKS",
+                      "price":  null,
+                      "names":  [
+                                    "उड़द वड़ा",
+                                    "ಉದ್ದಿನ ವಡೆ",
+                                    "உద்தின வடை",
+                                    "ఉద్దిన వడ",
+                                    "उडदाचा वडा"
+                                ],
+                      "aliases":  [
+                                      "uddina vade",
+                                      "urad vada",
+                                      "medu vada",
+                                      "medhu wada",
+                                      "vada",
+                                      "wade",
+                                      "urad wada"
+                                  ]
+                  }
+              ]
+}

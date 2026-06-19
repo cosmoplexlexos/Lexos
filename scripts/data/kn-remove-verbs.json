@@ -1,0 +1,17 @@
+{
+  "LEXOS_CART_REMOVE_ITEM": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "vada thegiri", "idli thegiri", "dose thegiri", "coffee thegiri",
+        "vada tegeyiri", "idli tegeyiri", "dose tegeyiri",
+        "vada tegedu bisaaku", "idli tegedu bisaaku", "dose tegedu bisaaku",
+        "vada thegdhu bisaku", "idli thegdhu bisaku", "dose thegdhu bisaku",
+        "vada tegedu haaku", "idli tegedu haaku", "dose tegedu haaku",
+        "ondu vada thegiri", "ondu idli thegiri", "ondu vada tegeyiri",
+        "ondu vada tegedu bisaaku", "ondu vada thegdhu bisaku",
+        "ee vada thegiri", "ee dose tegedu bisaaku"
+      ],
+      "CODE_MIXED": ["vada delete maadi", "idli delete maadi", "dose delete maadi"]
+    }
+  }
+}

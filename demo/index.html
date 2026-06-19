@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lexos Demo — Vocabulary Middleware</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0f1117;
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: #1a1d2e;
+    border-bottom: 1px solid #2d3148;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #7c83fd;
+    letter-spacing: -0.3px;
+  }
+
+  header .tagline {
+    font-size: 13px;
+    color: #6b7280;
+  }
+
+  .controls {
+    background: #161825;
+    border-bottom: 1px solid #2d3148;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .control-group label {
+    font-size: 12px;
+    color: #9ca3af;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  select {
+    background: #1e2235;
+    border: 1px solid #374151;
+    color: #e2e8f0;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  select:focus { border-color: #7c83fd; }
+
+  .library-badge {
+    margin-left: auto;
+    font-size: 12px;
+    color: #9ca3af;
+    background: #1e2235;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #374151;
+  }
+
+  .library-badge span { color: #7c83fd; font-weight: 600; }
+
+  .input-row {
+    padding: 16px 24px;
+    background: #161825;
+    border-bottom: 1px solid #2d3148;
+    display: flex;
+    gap: 10px;
+  }
+
+  .phrase-input {
+    flex: 1;
+    background: #1e2235;
+    border: 1px solid #374151;
+    color: #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .phrase-input:focus { border-color: #7c83fd; }
+  .phrase-input::placeholder { color: #4b5563; }
+
+  .send-btn {
+    background: #7c83fd;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+
+  .send-btn:hover  { background: #6366f1; }
+  .send-btn:active { background: #4f46e5; }
+  .send-btn:disabled { background: #374151; cursor: not-allowed; }
+
+  .panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .panel {
+    padding: 20px 24px;
+    border-right: 1px solid #2d3148;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .panel:last-child { border-right: none; }
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .panel-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .panel-left  .panel-title { color: #f87171; }
+  .panel-right .panel-title { color: #34d399; }
+
+  .intent-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+
+  .intent-badge.miss {
+    background: #1f1515;
+    border: 1px solid #7f1d1d;
+    color: #fca5a5;
+  }
+
+  .intent-badge.hit {
+    background: #0d1f17;
+    border: 1px solid #065f46;
+    color: #6ee7b7;
+  }
+
+  .meta-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .meta-chip {
+    font-size: 11px;
+    background: #1e2235;
+    border: 1px solid #374151;
+    color: #9ca3af;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+
+  .meta-chip.highlight { border-color: #7c83fd; color: #a5b4fc; }
+
+  .response-box {
+    background: #1a1d2e;
+    border: 1px solid #2d3148;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    min-height: 120px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .response-box.loading {
+    color: #4b5563;
+    font-style: italic;
+  }
+
+  .response-box.empty {
+    color: #374151;
+    font-style: italic;
+  }
+
+  .spinner {
+    display: inline-block;
+    width: 12px; height: 12px;
+    border: 2px solid #374151;
+    border-top-color: #7c83fd;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    margin-right: 6px;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* bottom logs */
+  .logs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 2px solid #2d3148;
+    max-height: 240px;
+  }
+
+  .log-panel {
+    padding: 14px 20px;
+    overflow-y: auto;
+    border-right: 1px solid #2d3148;
+  }
+
+  .log-panel:last-child { border-right: none; }
+
+  .log-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #6b7280;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .log-title .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #f87171;
+    animation: pulse 2s infinite;
+  }
+
+  .log-title .dot.semantic { background: #7c83fd; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+  }
+
+  .log-item {
+    font-size: 12px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    color: #9ca3af;
+    padding: 4px 0;
+    border-bottom: 1px solid #1e2235;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .log-item:last-child { border-bottom: none; }
+  .log-item .phrase { color: #e2e8f0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .log-item .freq   { color: #f87171; flex-shrink: 0; }
+  .log-item .intent { color: #7c83fd; flex-shrink: 0; max-width: 160px; overflow: hidden; text-overflow: ellipsis; }
+  .log-item .ms     { color: #6b7280; flex-shrink: 0; }
+
+  .log-empty { color: #374151; font-size: 12px; font-style: italic; }
+
+  /* preset phrases */
+  .presets-row {
+    padding: 10px 24px;
+    background: #12141f;
+    border-bottom: 1px solid #2d3148;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .presets-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6b7280;
+    padding-top: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .preset-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .lang-supported-badge {
+    font-size: 11px;
+    color: #7c83fd;
+    letter-spacing: 0.3px;
+    opacity: 0.85;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 480px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .preset-chip {
+    font-size: 12px;
+    background: #1a1d2e;
+    border: 1px solid #374151;
+    color: #cbd5e1;
+    padding: 4px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: border-color 0.12s, background 0.12s;
+    white-space: nowrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  .preset-chip:hover {
+    border-color: #7c83fd;
+    background: #1e2235;
+    color: #e2e8f0;
+  }
+
+  .preset-chip .preset-intent {
+    font-size: 10px;
+    color: #6b7280;
+    margin-left: 4px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Lexos</h1>
+  <span class="tagline">Vocabulary Middleware Demo</span>
+</header>
+
+<div class="controls">
+  <div class="control-group">
+    <label>Tenant</label>
+    <select id="workflowSelect">
+      <option value="wiseorder">WiseOrder (menu grounded)</option>
+      <option value="generic">Generic (no menu)</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label for="langSelect">Language</label>
+    <select id="langSelect" class="workflow-select">
+      <option value="hi-IN">Hindi (hi-IN)</option>
+      <option value="kn-IN">Kannada (kn-IN)</option>
+      <option value="mr-IN">Marathi (mr-IN)</option>
+      <option value="ta-IN">Tamil (ta-IN)</option>
+      <option value="te-IN">Telugu (te-IN)</option>
+    </select>
+  </div>
+
+  <div class="library-badge">
+    Library: <span id="librarySize">—</span> terms
+  </div>
+</div>
+
+<div class="input-row">
+  <input
+    id="phraseInput"
+    class="phrase-input"
+    type="text"
+    placeholder="Type a restaurant phrase in the selected language..."
+    autocomplete="off"
+  >
+  <button id="sendBtn" class="send-btn">Send</button>
+</div>
+
+<div class="presets-row">
+  <span class="presets-label">Try these →</span>
+  <div class="preset-chips" id="presetChips"></div>
+</div>
+
+<div class="panels">
+  <!-- LEFT: WITHOUT LEXOS -->
+  <div class="panel panel-left">
+    <div class="panel-header">
+      <span class="panel-title">Without Lexos</span>
+    </div>
+
+    <div id="intentLeft" class="intent-badge miss">❌ Intent: unknown</div>
+
+    <div id="responseLeft" class="response-box empty">Response will appear here…</div>
+  </div>
+
+  <!-- RIGHT: WITH LEXOS -->
+  <div class="panel panel-right">
+    <div class="panel-header">
+      <span class="panel-title">With Lexos</span>
+    </div>
+
+    <div id="intentRight" class="intent-badge miss">— waiting</div>
+
+    <div id="metaRight" class="meta-row"></div>
+
+    <div id="responseRight" class="response-box empty">Response will appear here…</div>
+  </div>
+</div>
+
+<!-- BOTTOM LOGS -->
+<div class="logs">
+  <div class="log-panel" id="missLog">
+    <div class="log-title">
+      <span class="dot"></span>
+      Miss Log — recent unresolved phrases
+    </div>
+    <div class="log-empty">No misses yet.</div>
+  </div>
+
+  <div class="log-panel" id="semanticLog">
+    <div class="log-title">
+      <span class="dot semantic"></span>
+      Semantic Log — candidates for promotion
+    </div>
+    <div class="log-empty">No semantic hits yet.</div>
+  </div>
+</div>
+
+<script>
+  const BASE = '';   // same origin
+
+  const workflowSelect = document.getElementById('workflowSelect');
+  const langSelect     = document.getElementById('langSelect');
+  const phraseInput    = document.getElementById('phraseInput');
+  const sendBtn        = document.getElementById('sendBtn');
+  const libSize        = document.getElementById('librarySize');
+
+  const intentLeft    = document.getElementById('intentLeft');
+  const responseLeft  = document.getElementById('responseLeft');
+  const intentRight   = document.getElementById('intentRight');
+  const metaRight     = document.getElementById('metaRight');
+  const responseRight = document.getElementById('responseRight');
+
+  // ── Helpers ──────────────────────────────────────────────
+
+  function setLoading(el, text) {
+    el.className = 'response-box loading';
+    el.innerHTML = `<span class="spinner"></span>${text}`;
+  }
+
+  function setResponse(el, text) {
+    el.className = 'response-box';
+    el.textContent = text;
+  }
+
+  function setError(el, msg) {
+    el.className = 'response-box loading';
+    el.textContent = '⚠ ' + msg;
+  }
+
+  // ── Library size ──────────────────────────────────────────
+
+  async function refreshLibrarySize() {
+    const workflow = workflowSelect.value;
+    const tenant   = workflow !== 'generic' ? workflow : undefined;
+
+    try {
+      const url = `${BASE}/retrieve/llm-context?domain=restaurant${tenant ? `&tenant_id=${tenant}` : ''}&k=100`;
+      const res  = await fetch(url);
+      if (!res.ok) { libSize.textContent = '—'; return; }
+      const data = await res.json();
+      libSize.textContent = data.entry_count ?? '—';
+    } catch {
+      libSize.textContent = '—';
+    }
+  }
+
+  // ── Send ──────────────────────────────────────────────────
+
+  async function send() {
+    const phrase   = phraseInput.value.trim();
+    const workflow = workflowSelect.value;
+    const tenant   = workflow !== 'generic' ? workflow : undefined;
+    const lang     = langSelect.value || undefined;
+
+    if (!phrase) return;
+
+    sendBtn.disabled = true;
+
+    // Reset UI
+    intentLeft.className  = 'intent-badge miss';
+    intentLeft.textContent = '❌ Intent: unknown';
+    intentRight.className  = 'intent-badge miss';
+    intentRight.textContent = '— resolving…';
+    metaRight.innerHTML    = '';
+    setLoading(responseLeft,  'Calling Claude…');
+    setLoading(responseRight, 'Calling Lexos + Claude…');
+
+    // Fire both in parallel
+    const [leftResult, rightResult] = await Promise.allSettled([
+      callWithoutLexos(phrase),
+      callWithLexos(phrase, tenant, workflow, lang),
+    ]);
+
+    if (leftResult.status === 'fulfilled') {
+      const { response } = leftResult.value;
+      setResponse(responseLeft, response);
+    } else {
+      setError(responseLeft, leftResult.reason.message);
+    }
+
+    if (rightResult.status === 'fulfilled') {
+      const { enrich, response, claudeError } = rightResult.value;
+
+      if (enrich && enrich.intent) {
+        intentRight.className  = 'intent-badge hit';
+        intentRight.textContent = `✅ ${enrich.intent}`;
+
+        metaRight.innerHTML = `
+          <span class="meta-chip highlight">${enrich.match_type}</span>
+          ${enrich.matched_item ? `<span class="meta-chip highlight">item: ${enrich.matched_item}</span>` : ''}
+          <span class="meta-chip">${enrich.confidence ? (enrich.confidence * 100).toFixed(0) + '% conf' : ''}</span>
+          <span class="meta-chip">${enrich.latency_ms}ms</span>
+          ${enrich.matched_head ? `<span class="meta-chip">head: ${enrich.matched_head}</span>` : ''}
+        `;
+      } else {
+        intentRight.className  = 'intent-badge miss';
+        intentRight.textContent = '❌ Intent: unknown (miss)';
+        metaRight.innerHTML = `<span class="meta-chip">${enrich?.latency_ms ?? '—'}ms</span>`;
+      }
+
+      if (response) {
+        setResponse(responseRight, response);
+      } else if (claudeError) {
+        setError(responseRight, claudeError);
+      } else {
+        setLoading(responseRight, 'No response');
+      }
+    } else {
+      setError(responseRight, rightResult.reason.message);
+      intentRight.textContent = '⚠ error';
+    }
+
+    sendBtn.disabled = false;
+
+    // Refresh logs
+    refreshLogs();
+  }
+
+  async function callWithoutLexos(phrase) {
+    const systemPrompt = 'You are a restaurant ordering assistant. Help the customer with their request. Be concise (2-3 sentences).';
+    const res = await fetch(`${BASE}/demo/claude`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ system_prompt: systemPrompt, user_message: phrase }),
+    });
+    if (!res.ok) throw new Error(`Claude API error: ${res.status}`);
+    return res.json();
+  }
+
+  async function callWithLexos(phrase, tenant, workflow, lang) {
+    // Step 1: Enrich — lang passed explicitly when selected, else Lexos auto-detects
+    const enrichRes = await fetch(`${BASE}/enrich`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({
+        phrase,
+        domain:    'restaurant',
+        tenant_id: tenant,
+        workflow,
+        ...(lang ? { lang } : {}),
+      }),
+    });
+
+    let enrich = null;
+    if (enrichRes.ok) {
+      enrich = await enrichRes.json();
+    }
+
+    // Step 2: Build enriched system prompt
+    let systemPrompt = 'You are a restaurant ordering assistant. Be concise (2-3 sentences).';
+    if (enrich && enrich.intent) {
+      systemPrompt = `You are a restaurant ordering assistant.
+Lexos resolved intent: ${enrich.intent} (confidence: ${(enrich.confidence * 100).toFixed(0)}%, matched via ${enrich.match_type}).
+${enrich.matched_head ? `Matched phrase: "${enrich.matched_head}".` : ''}
+Use this intent context to respond accurately and concisely (2-3 sentences).`;
+    }
+
+    // Step 3: Call Claude with enriched context (non-fatal — intent still shows if Claude fails)
+    let response = null;
+    let claudeError = null;
+    try {
+      const claudeRes = await fetch(`${BASE}/demo/claude`, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ system_prompt: systemPrompt, user_message: phrase }),
+      });
+      if (!claudeRes.ok) {
+        const body = await claudeRes.json().catch(() => ({}));
+        claudeError = body.error ?? `Claude API error: ${claudeRes.status}`;
+      } else {
+        ({ response } = await claudeRes.json());
+      }
+    } catch (e) {
+      claudeError = e.message;
+    }
+    return { enrich, response, claudeError };
+  }
+
+  // ── Logs ──────────────────────────────────────────────────
+
+  async function refreshLogs() {
+    const workflow = workflowSelect.value;
+
+    const [missRes, semRes] = await Promise.allSettled([
+      fetch(`${BASE}/demo/recent-misses?workflow=${workflow}&limit=15`).then(r => r.json()),
+      fetch(`${BASE}/demo/recent-semantic-hits?workflow=${workflow}&limit=15`).then(r => r.json()),
+    ]);
+
+    const missLog     = document.getElementById('missLog');
+    const semanticLog = document.getElementById('semanticLog');
+
+    // Miss log
+    if (missRes.status === 'fulfilled' && missRes.value.misses?.length) {
+      missLog.innerHTML = `
+        <div class="log-title"><span class="dot"></span>Miss Log — recent unresolved phrases</div>
+        ${missRes.value.misses.map(m => `
+          <div class="log-item">
+            <span class="phrase" title="${escHtml(m.utterance)}">${escHtml(m.utterance)}</span>
+            <span class="freq">×${m.frequency}</span>
+          </div>
+        `).join('')}
+      `;
+    } else {
+      missLog.innerHTML = `<div class="log-title"><span class="dot"></span>Miss Log — recent unresolved phrases</div><div class="log-empty">No misses yet.</div>`;
+    }
+
+    // Semantic log
+    if (semRes.status === 'fulfilled' && semRes.value.hits?.length) {
+      semanticLog.innerHTML = `
+        <div class="log-title"><span class="dot semantic"></span>Semantic Log — candidates for promotion</div>
+        ${semRes.value.hits.map(h => `
+          <div class="log-item">
+            <span class="phrase" title="${escHtml(h.input_phrase)}">${escHtml(h.input_phrase)}</span>
+            <span class="intent" title="${escHtml(h.matched_intent ?? '')}">${escHtml(h.matched_intent ?? '—')}</span>
+            <span class="ms">${h.latency_ms ?? '—'}ms</span>
+          </div>
+        `).join('')}
+      `;
+    } else {
+      semanticLog.innerHTML = `<div class="log-title"><span class="dot semantic"></span>Semantic Log — candidates for promotion</div><div class="log-empty">No semantic hits yet.</div>`;
+    }
+  }
+
+  function escHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── Preset phrases ───────────────────────────────────────
+
+  // WiseOrder menu phrases — show item grounding across languages + aliases.
+  const PRESETS = {
+    'hi-IN': { workflow: 'wiseorder', phrases: [
+      { text: 'ek masala dosa dena',            hint: 'add → Masala Dosa' },
+      { text: 'masala dosa nahi chahiye',       hint: 'remove → Masala Dosa' },
+      { text: 'bill laga do bhaiya',            hint: 'checkout (no item)' },
+    ]},
+    'kn-IN': { workflow: 'wiseorder', phrases: [
+      { text: 'benne masale dose kodi',         hint: 'benne = butter → Butter Masala Dosa' },
+      { text: 'ondu mosaranna kodi',            hint: 'mosaranna → Curd Rice' },
+      { text: 'mini kaapi eshtu',               hint: 'price → Mini Coffee' },
+    ]},
+    'mr-IN': { workflow: 'wiseorder', phrases: [
+      { text: 'ek kara bhat dya',               hint: 'add → Khara Bhath' },
+      { text: 'set dosa parcel kara',           hint: 'parcel → Set Dosa' },
+      { text: 'bill kiti zaala',                hint: 'total (no item)' },
+    ]},
+    'ta-IN': { workflow: 'wiseorder', phrases: [
+      { text: 'oru thatte idli kudunga',        hint: 'add → Brahmins’ Thatte Idli' },
+      { text: 'uddina vada venda',              hint: 'remove → Uddina Vada' },
+      { text: 'bill podunga anna',              hint: 'checkout (no item)' },
+    ]},
+    'te-IN': { workflow: 'wiseorder', phrases: [
+      { text: 'oka tuppa dosa ivvandi',         hint: 'tuppa = ghee → Ghee Plain Dosa' },
+      { text: 'oka pesarattu ivvandi',          hint: 'off-menu item → safe miss' },
+      { text: 'rendu masala dosa cheyandi',     hint: 'qty → Masala Dosa' },
+    ]},
+  };
+
+  function renderPresets() {
+    // One phrase per active language — clicking a chip selects that language too.
+    const flat = Object.entries(PRESETS).map(([lang, cfg]) => ({
+      text:     cfg.phrases[0].text,
+      hint:     cfg.phrases[0].hint,
+      workflow: cfg.workflow,
+      lang,
+    }));
+
+    const chips = document.getElementById('presetChips');
+    chips.innerHTML = flat.map(p => `
+      <button class="preset-chip" data-phrase="${escHtml(p.text)}" data-workflow="${p.workflow}" data-lang="${p.lang}" title="${escHtml(p.hint)}">
+        ${escHtml(p.text)} <span class="preset-intent">${escHtml(p.hint)}</span>
+      </button>
+    `).join('');
+
+    chips.querySelectorAll('.preset-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const wf = btn.dataset.workflow;
+        if (wf && workflowSelect.value !== wf) {
+          workflowSelect.value = wf;
+          refreshLibrarySize();
+        }
+        if (btn.dataset.lang) langSelect.value = btn.dataset.lang;
+        phraseInput.value = btn.dataset.phrase;
+        phraseInput.focus();
+        if (!sendBtn.disabled) send();
+      });
+    });
+  }
+
+  // ── Event wiring ──────────────────────────────────────────
+
+  workflowSelect.addEventListener('change', () => { refreshLibrarySize(); refreshLogs(); });
+
+  phraseInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !sendBtn.disabled) send();
+  });
+
+  sendBtn.addEventListener('click', send);
+
+  // ── Init ──────────────────────────────────────────────────
+  refreshLibrarySize();
+  refreshLogs();
+  renderPresets();
+
+  // Auto-refresh logs every 10s
+  setInterval(refreshLogs, 10_000);
+</script>
+</body>
+</html>

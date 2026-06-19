@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lexos — Corpus Browser</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1117; color: #e2e8f0; min-height: 100vh; }
+
+    header { padding: 20px 32px; border-bottom: 1px solid #1e293b; display: flex; align-items: center; gap: 16px; }
+    header h1 { font-size: 18px; font-weight: 600; color: #f8fafc; }
+    header span { font-size: 13px; color: #64748b; }
+
+    .controls { padding: 16px 32px; display: flex; gap: 12px; align-items: center; border-bottom: 1px solid #1e293b; flex-wrap: wrap; }
+    select, input { background: #1e293b; border: 1px solid #334155; color: #e2e8f0; padding: 7px 12px; border-radius: 6px; font-size: 13px; outline: none; }
+    select:focus, input:focus { border-color: #6366f1; }
+    input { width: 280px; }
+    label { font-size: 13px; color: #94a3b8; }
+    .count { font-size: 13px; color: #64748b; margin-left: auto; }
+
+    .table-wrap { padding: 24px 32px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead tr { border-bottom: 1px solid #1e293b; }
+    th { text-align: left; padding: 8px 12px; color: #64748b; font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+    tbody tr { border-bottom: 1px solid #0f172a; }
+    tbody tr:hover { background: #1e293b; }
+    td { padding: 9px 12px; vertical-align: middle; }
+
+    .phrase { color: #f1f5f9; font-size: 14px; }
+    .intent { color: #818cf8; font-size: 12px; font-family: monospace; }
+    .lang-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; background: #1e293b; color: #94a3b8; border: 1px solid #334155; }
+    .vtype { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+    .vtype.COLLOQUIAL  { background: #1e3a5f; color: #60a5fa; }
+    .vtype.CODE_MIXED  { background: #1e3a2f; color: #4ade80; }
+    .vtype.FORMAL      { background: #3b2e1e; color: #fb923c; }
+    .vtype.PHONETIC    { background: #2d1e3b; color: #c084fc; }
+    .conf { color: #94a3b8; font-size: 12px; }
+
+    .loading { padding: 60px 32px; text-align: center; color: #475569; }
+    .empty   { padding: 60px 32px; text-align: center; color: #475569; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lexos Corpus Browser</h1>
+  <span>Live vocabulary from term_variants</span>
+</header>
+
+<div class="controls">
+  <label>Language</label>
+  <select id="langSelect">
+    <option value="">All languages</option>
+    <option value="hi-IN">Hindi (hi-IN)</option>
+    <option value="kn-IN">Kannada (kn-IN)</option>
+    <option value="mr-IN">Marathi (mr-IN)</option>
+    <option value="ta-IN">Tamil (ta-IN)</option>
+    <option value="te-IN">Telugu (te-IN)</option>
+  </select>
+
+  <label>Type</label>
+  <select id="typeSelect">
+    <option value="">All types</option>
+    <option value="COLLOQUIAL">COLLOQUIAL</option>
+    <option value="CODE_MIXED">CODE_MIXED</option>
+    <option value="FORMAL">FORMAL</option>
+    <option value="PHONETIC">PHONETIC</option>
+  </select>
+
+  <input id="search" type="text" placeholder="Search phrase or intent…" />
+  <span class="count" id="countLabel"></span>
+</div>
+
+<div class="table-wrap">
+  <div class="loading" id="loading">Loading corpus…</div>
+  <table id="table" style="display:none">
+    <thead>
+      <tr>
+        <th>Phrase</th>
+        <th>Intent</th>
+        <th>Language</th>
+        <th>Type</th>
+        <th>Conf</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  <div class="empty" id="empty" style="display:none">No phrases match your filters.</div>
+</div>
+
+<script>
+  const BASE = '';
+  let allRows = [];
+
+  async function load() {
+    const lang = document.getElementById('langSelect').value;
+    const url  = lang ? `${BASE}/demo/phrases-data?lang=${lang}` : `${BASE}/demo/phrases-data`;
+
+    document.getElementById('loading').style.display = '';
+    document.getElementById('table').style.display   = 'none';
+    document.getElementById('empty').style.display   = 'none';
+
+    try {
+      const res  = await fetch(url);
+      const data = await res.json();
+
+      allRows = [];
+      for (const [langCode, phrases] of Object.entries(data)) {
+        for (const p of phrases) {
+          allRows.push({ lang: langCode, ...p });
+        }
+      }
+
+      document.getElementById('loading').style.display = 'none';
+      render();
+    } catch (e) {
+      document.getElementById('loading').textContent = 'Error loading corpus: ' + e.message;
+    }
+  }
+
+  function render() {
+    const typeFilter   = document.getElementById('typeSelect').value;
+    const searchFilter = document.getElementById('search').value.toLowerCase();
+
+    const filtered = allRows.filter(r => {
+      if (typeFilter && r.variant_type !== typeFilter) return false;
+      if (searchFilter && !r.value.toLowerCase().includes(searchFilter) && !r.intent_name.toLowerCase().includes(searchFilter)) return false;
+      return true;
+    });
+
+    const tbody = document.getElementById('tbody');
+    tbody.innerHTML = filtered.map(r => `
+      <tr>
+        <td class="phrase">${esc(r.value)}</td>
+        <td class="intent">${esc(r.intent_name)}</td>
+        <td><span class="lang-badge">${esc(r.lang)}</span></td>
+        <td><span class="vtype ${esc(r.variant_type)}">${esc(r.variant_type)}</span></td>
+        <td class="conf">${r.confidence != null ? (r.confidence * 100).toFixed(0) + '%' : '—'}</td>
+      </tr>
+    `).join('');
+
+    document.getElementById('countLabel').textContent = `${filtered.length.toLocaleString()} phrases`;
+    document.getElementById('table').style.display = filtered.length ? '' : 'none';
+    document.getElementById('empty').style.display = filtered.length ? 'none' : '';
+  }
+
+  function esc(s) {
+    return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  document.getElementById('langSelect').addEventListener('change', load);
+  document.getElementById('typeSelect').addEventListener('change', render);
+  document.getElementById('search').addEventListener('input', render);
+
+  load();
+</script>
+</body>
+</html>

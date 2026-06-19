@@ -1,0 +1,304 @@
+{
+  "LEXOS_CART_ADD_ITEM": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "vada beku", "idli beku", "dosa beku", "filter kaapi beku",
+        "masala dosa beku", "set dosa beku", "rava idli beku", "upma beku",
+        "pongal beku", "bisibele bath beku", "medu vada beku", "kesari bath beku",
+        "akki rotti beku", "ragi mudde beku", "water bottle beku", "coffee beku",
+        "chai beku", "juice beku", "sambar beku", "chutney beku",
+        "vada kodi", "idli kodi", "dosa kodi", "filter kaapi kodi",
+        "masala dosa kodi", "upma kodi", "coffee kodi", "water kodi",
+        "eradu vada beku", "eradu idli beku", "eradu dosa beku",
+        "mooru idli beku", "mooru vada beku",
+        "eradu vada kodi", "eradu idli kodi", "eradu dosa kodi"
+      ],
+      "CODE_MIXED": [
+        "vada add maadi", "idli add maadi", "dosa add maadi",
+        "filter coffee add maadi", "water bottle add maadi",
+        "coffee one maadi", "idli two maadi", "vada please"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "samosa chahiye", "chai chahiye", "biryani chahiye",
+        "lassi chahiye", "naan chahiye", "paratha chahiye",
+        "paneer tikka chahiye", "daal makhani chahiye",
+        "chole bhature chahiye", "gulab jamun chahiye",
+        "jalebi chahiye", "kachori chahiye", "aloo paratha chahiye",
+        "water bottle chahiye", "coffee chahiye",
+        "samosa dena", "chai dena", "biryani dena", "lassi dena",
+        "do samosa chahiye", "do chai chahiye", "teen naan chahiye",
+        "do biryani chahiye", "do gulab jamun chahiye"
+      ],
+      "CODE_MIXED": [
+        "samosa add karo", "chai add karo", "biryani add karo",
+        "lassi add karo", "water bottle add karo",
+        "samosa please", "chai please", "biryani order karo"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "idli venum", "dosa venum", "vadai venum", "filter kaapi venum",
+        "pongal venum", "appam venum", "uthappam venum", "puttu venum",
+        "thayir sadam venum", "kesari venum", "masala dosa venum",
+        "water bottle venum", "coffee venum", "tea venum",
+        "idli kudunga", "dosa kudunga", "vadai kudunga", "filter kaapi kudunga",
+        "pongal kudunga", "appam kudunga", "coffee kudunga",
+        "rendu idli venum", "rendu dosa venum", "rendu vadai venum",
+        "moonnu idli venum", "moonnu vadai venum"
+      ],
+      "CODE_MIXED": [
+        "idli add pannunga", "dosa add pannunga", "vadai add pannunga",
+        "filter kaapi add pannunga", "water bottle add pannunga",
+        "idli please", "dosa please"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "idli kavali", "dosa kavali", "pesarattu kavali", "upma kavali",
+        "pongal kavali", "vada kavali", "filter coffee kavali",
+        "biryani kavali", "puri kavali", "water bottle kavali",
+        "idli ivvandi", "dosa ivvandi", "pesarattu ivvandi", "vada ivvandi",
+        "filter coffee ivvandi", "coffee ivvandi", "puri ivvandi",
+        "rendu idli kavali", "rendu dosa kavali",
+        "moodu idli kavali", "moodu vada kavali"
+      ],
+      "CODE_MIXED": [
+        "idli add cheyandi", "dosa add cheyandi", "vada add cheyandi",
+        "filter coffee add cheyandi", "water bottle add cheyandi",
+        "idli please", "dosa please"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "vada pav pahije", "misal pav pahije", "poha pahije",
+        "chai pahije", "pav bhaji pahije", "sheera pahije",
+        "sabudana khichdi pahije", "samosa pahije", "coffee pahije",
+        "water bottle pahije",
+        "vada pav dya", "misal pav dya", "poha dya", "chai dya",
+        "pav bhaji dya", "coffee dya", "water dya",
+        "don vada pav pahije", "don chai pahije", "teen samosa pahije"
+      ],
+      "CODE_MIXED": [
+        "vada pav add kara", "chai add kara", "poha add kara",
+        "samosa add kara", "water bottle add kara", "chai please"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "chai chai", "mishti doi dao", "rasgulla dao",
+        "biryani dao", "luchi dao", "sandesh dao",
+        "alur torkari dao", "begun bhaja dao", "muri dao",
+        "water bottle dao", "coffee dao",
+        "chai dao", "mishti doi chai", "rasgulla chai",
+        "duto chai dao", "duto rasgulla dao", "tinto luchi dao"
+      ],
+      "CODE_MIXED": [
+        "chai add koro", "rasgulla add koro", "biryani add koro",
+        "mishti doi add koro", "water bottle add koro", "chai please"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "dhokla joie che", "thepla joie che", "fafda joie che",
+        "jalebi joie che", "khandvi joie che", "gathiya joie che",
+        "chai joie che", "shiro joie che", "poha joie che",
+        "water bottle joie che", "coffee joie che",
+        "dhokla apo", "thepla apo", "fafda apo", "chai apo",
+        "jalebi apo", "coffee apo", "water apo",
+        "be dhokla joie che", "be chai joie che", "tran thepla joie che"
+      ],
+      "CODE_MIXED": [
+        "dhokla add karo", "chai add karo", "thepla add karo",
+        "fafda add karo", "water bottle add karo", "chai please"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "quiero café", "quiero agua", "quiero bocadillo",
+        "quiero tortilla", "quiero zumo", "quiero croissant",
+        "quiero ensalada", "quiero refresco", "quiero té",
+        "dame café", "dame agua", "dame bocadillo", "dame tortilla",
+        "ponme café", "ponme agua", "ponme un bocadillo",
+        "café por favor", "agua por favor", "dos cafés", "tres aguas"
+      ],
+      "CODE_MIXED": [
+        "add café", "add agua", "café please", "agua please"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "أريد قهوة", "أريد شاورما", "أريد فلافل", "أريد ماء",
+        "أريد كباب", "أريد حمص", "أريد كنافة", "أريد بيريانى",
+        "أعطني قهوة", "أعطني شاورما", "أعطني فلافل", "أعطني ماء",
+        "قهوة من فضلك", "شاورما من فضلك", "ماء من فضلك",
+        "اثنين قهوة", "اثنين شاورما", "ثلاثة فلافل"
+      ],
+      "CODE_MIXED": [
+        "قهوة please", "شاورما please", "add قهوة", "add ماء"
+      ]
+    }
+  },
+
+  "LEXOS_CART_REMOVE_ITEM": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "vada beda", "idli beda", "dosa beda", "filter coffee beda",
+        "masala dosa beda", "coffee beda", "upma beda", "pongal beda",
+        "water bottle beda", "chai beda"
+      ],
+      "CODE_MIXED": [
+        "vada remove maadi", "idli remove maadi", "dosa remove maadi",
+        "filter coffee remove maadi", "coffee cancel maadi"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "samosa nahi chahiye", "chai nahi chahiye", "biryani nahi chahiye",
+        "lassi nahi chahiye", "naan nahi chahiye", "coffee nahi chahiye",
+        "samosa hatao", "chai hatao", "biryani hatao", "lassi hatao"
+      ],
+      "CODE_MIXED": [
+        "samosa remove karo", "chai cancel karo", "biryani remove karo"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "idli vedam", "dosa vedam", "vadai venda", "filter kaapi venda",
+        "pongal venda", "coffee venda", "appam venda"
+      ],
+      "CODE_MIXED": [
+        "idli remove pannunga", "dosa cancel pannunga", "vadai remove pannunga"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "idli vaddhu", "dosa vaddhu", "pesarattu vaddhu", "vada vaddhu",
+        "filter coffee vaddhu", "coffee vaddhu"
+      ],
+      "CODE_MIXED": [
+        "idli remove cheyandi", "dosa cancel cheyandi", "vada remove cheyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "vada pav nako", "chai nako", "misal nako", "poha nako", "coffee nako"
+      ],
+      "CODE_MIXED": ["vada pav remove kara", "chai cancel kara", "poha remove kara"]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "chai lagbe na", "rasgulla lagbe na", "biryani lagbe na", "mishti doi lagbe na"
+      ],
+      "CODE_MIXED": ["chai remove koro", "rasgulla cancel koro", "biryani remove koro"]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "dhokla nathi joitu", "chai nathi joitu", "thepla nathi joitu", "fafda nathi joitu"
+      ],
+      "CODE_MIXED": ["dhokla remove karo", "chai cancel karo", "thepla remove karo"]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "quita el café", "quita el bocadillo", "quita el agua",
+        "no quiero el café", "no quiero la tortilla"
+      ],
+      "CODE_MIXED": ["remove el café", "cancel el bocadillo"]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "شيل القهوة", "شيل الشاورما", "شيل الفلافل", "ما أبي القهوة", "ما أبي الشاورما"
+      ],
+      "CODE_MIXED": ["remove القهوة", "cancel الشاورما"]
+    }
+  },
+
+  "LEXOS_PRICE_INQUIRY_ITEM": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "vada eshtu", "idli eshtu", "dosa eshtu", "filter kaapi eshtu",
+        "masala dosa eshtu", "set dosa eshtu", "upma eshtu", "pongal eshtu",
+        "coffee eshtu", "water bottle eshtu", "bisibele bath eshtu",
+        "rava idli eshtu", "medu vada eshtu", "kesari bath eshtu",
+        "vada rate", "idli rate", "dosa rate", "filter kaapi rate",
+        "vada price", "idli price", "dosa price"
+      ],
+      "CODE_MIXED": [
+        "vada price check maadi", "idli eshtu heli", "dosa eshtu aagutte",
+        "filter coffee price", "masala dosa rate"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "samosa kitna", "chai kitni", "biryani kitna", "lassi kitni",
+        "naan kitna", "paratha kitna", "paneer tikka kitna",
+        "gulab jamun kitna", "jalebi kitni", "kachori kitna",
+        "samosa ka daam", "chai ka daam", "biryani ka price",
+        "coffee kitni", "water bottle kitna"
+      ],
+      "CODE_MIXED": [
+        "samosa price", "chai rate", "biryani ka daam kya",
+        "lassi kitni padti", "naan price"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "idli evvalavu", "dosa evvalavu", "vadai evvalavu",
+        "filter kaapi evvalavu", "pongal evvalavu", "appam evvalavu",
+        "coffee evvalavu", "water bottle evvalavu",
+        "idli price enna", "dosa rate enna", "vadai enna"
+      ],
+      "CODE_MIXED": [
+        "idli price", "dosa rate", "vadai evvalavu sollu",
+        "filter kaapi price check pannunga"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "idli enta", "dosa enta", "pesarattu enta", "vada enta",
+        "filter coffee enta", "biryani enta", "puri enta",
+        "idli price enta", "dosa rate enta", "coffee enta"
+      ],
+      "CODE_MIXED": [
+        "idli price", "dosa rate", "pesarattu enta cheppandi", "vada enta"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "vada pav kiti", "chai kiti", "misal kiti", "poha kiti",
+        "pav bhaji kiti", "samosa kiti", "coffee kiti",
+        "vada pav la kiti paise", "chai la kiti"
+      ],
+      "CODE_MIXED": ["vada pav price", "chai rate", "misal kiti ahe"]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "chai koto taka", "rasgulla koto taka", "biryani koto",
+        "mishti doi koto", "luchi koto", "sandesh koto"
+      ],
+      "CODE_MIXED": ["chai price", "rasgulla rate", "biryani dam koto"]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "dhokla keta", "thepla keta", "fafda keta", "jalebi keta",
+        "chai keta", "khandvi keta", "gathiya keta"
+      ],
+      "CODE_MIXED": ["dhokla price", "chai rate", "thepla keta padse"]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "cuánto cuesta el café", "cuánto es el bocadillo", "cuánto vale el agua",
+        "precio del café", "precio de la tortilla", "cuánto es el zumo"
+      ],
+      "CODE_MIXED": ["café price", "bocadillo cuánto", "cuánto cuesta"]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "بكم القهوة", "بكم الشاورما", "بكم الفلافل", "سعر القهوة",
+        "سعر الشاورما", "بكم الكباب", "كم الحمص"
+      ],
+      "CODE_MIXED": ["قهوة price", "شاورما بكم", "كم سعر الفلافل"]
+    }
+  }
+}

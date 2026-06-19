@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lexos Admin</title>
+<style>
+  :root { --bg:#0b0f1a; --panel:#121828; --panel2:#0e1422; --border:#243049; --text:#e6ebf5; --muted:#8a97b3; --accent:#6c7cff; --good:#33d17a; --bad:#ff6b6b; --warn:#ffcc66; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.5 system-ui,Segoe UI,Roboto,sans-serif; }
+  input, select, textarea, button { font:inherit; color:var(--text); background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:8px 10px; }
+  textarea { width:100%; min-height:140px; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:12px; }
+  button { background:var(--accent); border:none; cursor:pointer; font-weight:600; color:#fff; }
+  button.sec { background:var(--panel2); border:1px solid var(--border); font-weight:500; color:var(--text); }
+  button.danger { background:transparent; border:1px solid var(--bad); color:var(--bad); }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+
+  /* ── Login screen ─────────────────────────── */
+  #loginScreen {
+    position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); z-index:999;
+  }
+  #loginScreen.hidden { display:none; }
+  .login-card {
+    background:var(--panel); border:1px solid var(--border); border-radius:16px;
+    padding:40px 48px; width:100%; max-width:380px; text-align:center;
+  }
+  .login-logo { font-size:28px; font-weight:700; letter-spacing:-0.5px; margin-bottom:4px; }
+  .login-sub { color:var(--muted); font-size:13px; margin-bottom:32px; }
+  .login-card input[type=password] {
+    width:100%; font-size:16px; padding:12px 14px;
+    background:var(--panel2); border:1px solid var(--border); border-radius:10px;
+    color:var(--text); margin-bottom:12px; text-align:center; letter-spacing:2px;
+  }
+  .login-card input[type=password]:focus { outline:none; border-color:var(--accent); }
+  .login-card input[type=password]::placeholder { letter-spacing:0; color:var(--muted); }
+  .login-btn {
+    width:100%; padding:12px; font-size:15px; font-weight:600;
+    background:var(--accent); border:none; border-radius:10px; color:#fff; cursor:pointer;
+  }
+  .login-btn:hover { opacity:.9; }
+  .login-btn:active { transform:scale(0.98); }
+  .login-err { color:var(--bad); font-size:13px; margin-top:10px; min-height:20px; }
+
+  /* ── Dashboard ────────────────────────────── */
+  #dashboard { display:none; }
+  #dashboard.visible { display:block; }
+  header { padding:14px 24px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+  h1 { font-size:18px; margin:0; }
+  .tag { color:var(--muted); font-size:12px; }
+  .logout-btn { margin-left:auto; background:transparent; border:1px solid var(--border); color:var(--muted); font-size:12px; padding:5px 12px; border-radius:6px; cursor:pointer; }
+  .logout-btn:hover { border-color:var(--bad); color:var(--bad); }
+  .wrap { display:grid; grid-template-columns:300px 1fr; gap:0; height:calc(100vh - 57px); }
+  .side { border-right:1px solid var(--border); padding:16px; overflow:auto; }
+  .main { padding:24px; overflow:auto; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:16px; }
+  .card h3 { margin:0 0 12px; font-size:14px; }
+  label.f { display:block; font-size:12px; color:var(--muted); margin:8px 0 3px; }
+  .f-input { width:100%; }
+  .tlist .t { padding:10px 12px; border:1px solid var(--border); border-radius:8px; margin-bottom:8px; cursor:pointer; }
+  .tlist .t:hover { border-color:var(--accent); }
+  .tlist .t.active { border-color:var(--accent); background:var(--panel); }
+  .t .name { font-weight:600; }
+  .t .sub { color:var(--muted); font-size:12px; }
+  .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .muted { color:var(--muted); }
+  .keybox { background:#0a1f14; border:1px solid var(--good); color:#b6f5cf; padding:10px; border-radius:8px; font-family:ui-monospace,monospace; font-size:12px; word-break:break-all; margin-top:8px; }
+  .pill { font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid var(--border); color:var(--muted); }
+  .pill.on { color:var(--good); border-color:var(--good); }
+  .pill.off { color:var(--bad); border-color:var(--bad); }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  td,th { text-align:left; padding:6px 8px; border-bottom:1px solid var(--border); }
+  .status { font-size:12px; margin-top:8px; }
+  .err { color:var(--bad); }
+  .ok { color:var(--good); }
+</style>
+</head>
+<body>
+
+<!-- Login screen -->
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-logo">Lexos</div>
+    <div class="login-sub">Admin dashboard</div>
+    <input type="password" id="pwInput" placeholder="Enter password" autocomplete="current-password" />
+    <button class="login-btn" onclick="login()">Sign in</button>
+    <div class="login-err" id="loginErr"></div>
+  </div>
+</div>
+
+<!-- Dashboard (hidden until logged in) -->
+<div id="dashboard">
+  <header>
+    <h1>Lexos Admin</h1>
+    <span class="tag">tenants · menus · keys · training</span>
+    <button class="logout-btn" onclick="logout()">Sign out</button>
+  </header>
+
+  <div class="wrap">
+    <div class="side">
+      <div class="card">
+        <h3>New tenant</h3>
+        <label class="f">Tenant ID</label><input id="nt_id" class="f-input" placeholder="e.g. saravana-chennai" />
+        <label class="f">Display name</label><input id="nt_name" class="f-input" placeholder="Saravana Bhavan" />
+        <label class="f">Region <span class="muted">(optional)</span></label><input id="nt_region" class="f-input" placeholder="Chennai" />
+        <div class="muted" style="font-size:12px;margin-top:8px">Language is sent per request by WiseOrder.</div>
+        <button style="margin-top:12px;width:100%" onclick="createTenant()">Create tenant</button>
+        <div id="nt_status" class="status"></div>
+      </div>
+      <div class="muted" style="font-size:12px;padding:4px 4px 8px">Tenants</div>
+      <div id="tlist" class="tlist"></div>
+    </div>
+
+    <div class="main" id="main">
+      <div class="muted">Select or create a tenant to get started.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const BASE = '';
+let ADMIN_KEY = sessionStorage.getItem('lexos_admin_key') || '';
+let SELECTED = null;
+
+function esc(s){ return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+async function api(method, path, body) {
+  const res = await fetch(BASE + '/admin' + path, {
+    method,
+    headers: { 'Content-Type':'application/json', 'X-Admin-Key': ADMIN_KEY },
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw Object.assign(new Error(data.error || ('HTTP ' + res.status)), { status: res.status });
+  return data;
+}
+
+// ── Auth ──────────────────────────────────────────────────
+
+async function login() {
+  const pw = document.getElementById('pwInput').value.trim();
+  const err = document.getElementById('loginErr');
+  if (!pw) { err.textContent = 'Enter a password.'; return; }
+  ADMIN_KEY = pw;
+  err.textContent = 'Checking…';
+  try {
+    await api('GET', '/tenants');
+    sessionStorage.setItem('lexos_admin_key', ADMIN_KEY);
+    showDashboard();
+  } catch (e) {
+    ADMIN_KEY = '';
+    err.textContent = e.status === 401 ? 'Wrong password.' : 'Could not connect — is the server running?';
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem('lexos_admin_key');
+  ADMIN_KEY = '';
+  SELECTED = null;
+  document.getElementById('pwInput').value = '';
+  document.getElementById('loginErr').textContent = '';
+  document.getElementById('loginScreen').classList.remove('hidden');
+  document.getElementById('dashboard').classList.remove('visible');
+}
+
+function showDashboard() {
+  document.getElementById('loginScreen').classList.add('hidden');
+  document.getElementById('dashboard').classList.add('visible');
+  loadTenants();
+}
+
+// Enter key on password field triggers login
+document.getElementById('pwInput').addEventListener('keydown', e => { if (e.key === 'Enter') login(); });
+
+// Auto-login if session key exists
+if (ADMIN_KEY) {
+  api('GET', '/tenants')
+    .then(() => showDashboard())
+    .catch(() => { sessionStorage.removeItem('lexos_admin_key'); ADMIN_KEY = ''; });
+}
+
+// ── Tenants ───────────────────────────────────────────────
+
+async function loadTenants() {
+  try {
+    const { tenants } = await api('GET', '/tenants');
+    document.getElementById('tlist').innerHTML = tenants.map(t => `
+      <div class="t ${SELECTED===t.tenant_id?'active':''}" onclick="selectTenant('${esc(t.tenant_id)}')">
+        <div class="name">${esc(t.display_name||t.tenant_id)}</div>
+        <div class="sub">${esc(t.tenant_id)} · ${t.menu_count||0} menu items</div>
+      </div>`).join('') || '<div class="muted" style="font-size:12px">No tenants yet.</div>';
+  } catch (e) {
+    if (e.status === 401) { logout(); return; }
+    document.getElementById('tlist').innerHTML = `<div class="err">${esc(e.message)}</div>`;
+  }
+}
+
+async function createTenant() {
+  const s = document.getElementById('nt_status');
+  try {
+    await api('POST', '/tenants', {
+      tenant_id: document.getElementById('nt_id').value.trim(),
+      display_name: document.getElementById('nt_name').value.trim(),
+      geographic_region: document.getElementById('nt_region').value.trim(),
+    });
+    s.innerHTML = '<span class="ok">Created.</span>';
+    document.getElementById('nt_id').value = '';
+    document.getElementById('nt_name').value = '';
+    loadTenants();
+  } catch (e) { s.innerHTML = `<span class="err">${esc(e.message)}</span>`; }
+}
+
+async function selectTenant(id) {
+  SELECTED = id; loadTenants();
+  const main = document.getElementById('main');
+  main.innerHTML = '<div class="muted">Loading…</div>';
+  try {
+    const { tenant, menu_count, api_keys } = await api('GET', '/tenants/' + encodeURIComponent(id));
+    main.innerHTML = `
+      <div class="card">
+        <h3>${esc(tenant.display_name||tenant.tenant_id)} <span class="muted" style="font-weight:400">(${esc(tenant.tenant_id)})</span></h3>
+        <div class="row muted">${esc(tenant.geographic_region||'—')} · <b style="color:var(--text)">${menu_count}</b> menu items · language sent per request</div>
+      </div>
+
+      <div class="card">
+        <h3>Menu</h3>
+        <div class="muted" style="font-size:12px;margin-bottom:8px">Paste JSON <code>{"items":[...]}</code> or one item name per line. Re-uploading replaces the menu entirely.</div>
+        <textarea id="menuInput" placeholder='[{"name":"Masala Dosa","aliases":["masala dose"]},{"name":"Filter Coffee"}]'></textarea>
+        <div class="row" style="margin-top:8px">
+          <button onclick="uploadMenu('${esc(id)}')">Upload &amp; embed</button>
+          <span id="menuStatus" class="status"></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>API keys</h3>
+        <div class="row" style="margin-bottom:10px">
+          <input id="keyLabel" placeholder="label (e.g. wiseorder-production)" style="flex:1" />
+          <button onclick="genKey('${esc(id)}')">Generate key</button>
+        </div>
+        <div id="newKey"></div>
+        <table style="margin-top:10px">
+          <thead><tr><th>Prefix</th><th>Label</th><th>Status</th><th></th></tr></thead>
+          <tbody>${(api_keys||[]).map(k=>`<tr>
+            <td style="font-family:monospace">${esc(k.key_prefix)}…</td>
+            <td>${esc(k.label||'—')}</td>
+            <td><span class="pill ${k.active?'on':'off'}">${k.active?'active':'revoked'}</span></td>
+            <td>${k.active?`<button class="danger" style="font-size:12px;padding:4px 10px" onclick="revoke('${esc(id)}','${esc(k.key_id)}')">Revoke</button>`:''}</td>
+          </tr>`).join('')}</tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h3>Classifier training</h3>
+        <div class="row">
+          <button class="sec" onclick="retrain()">Retrain</button>
+          <span id="trainStatus" class="status muted">idle</span>
+        </div>
+        <div class="muted" style="font-size:12px;margin-top:8px">
+          Run after any vocabulary change. Uses Cloudflare embeddings only — takes ~30–60s. Model reloads automatically on success.
+        </div>
+      </div>`;
+  } catch (e) {
+    if (e.status === 401) { logout(); return; }
+    main.innerHTML = `<div class="err">${esc(e.message)}</div>`;
+  }
+}
+
+// ── Menu ──────────────────────────────────────────────────
+
+function parseMenu(text) {
+  text = text.trim();
+  let items;
+  try { const j = JSON.parse(text); items = Array.isArray(j) ? j : j.items; } catch { items = null; }
+  if (!items) items = text.split('\n').map(l=>l.trim()).filter(Boolean).map(name=>({name}));
+  return items.map(it => typeof it==='string' ? {name:it} : it);
+}
+
+async function uploadMenu(id) {
+  const s = document.getElementById('menuStatus');
+  try {
+    const items = parseMenu(document.getElementById('menuInput').value);
+    if (!items.length) throw new Error('no items');
+    s.innerHTML = '<span class="muted">embedding…</span>';
+    const r = await api('POST', '/tenants/' + encodeURIComponent(id) + '/menu', { items });
+    s.innerHTML = `<span class="ok">${r.items} items (${r.surface_forms_ingested} forms) embedded.</span>`;
+    selectTenant(id);
+  } catch (e) { s.innerHTML = `<span class="err">${esc(e.message)}</span>`; }
+}
+
+// ── API keys ──────────────────────────────────────────────
+
+async function genKey(id) {
+  try {
+    const r = await api('POST', '/tenants/' + encodeURIComponent(id) + '/api-keys', {
+      label: document.getElementById('keyLabel').value.trim()
+    });
+    document.getElementById('newKey').innerHTML =
+      `<div class="keybox">${esc(r.key)}<br><span class="muted" style="font-size:11px">Copy this now — it won't be shown again.</span></div>`;
+    selectTenant(id);
+  } catch (e) { document.getElementById('newKey').innerHTML = `<div class="err">${esc(e.message)}</div>`; }
+}
+
+async function revoke(id, keyId) {
+  if (!confirm('Revoke this key? This cannot be undone.')) return;
+  try { await api('POST', '/api-keys/' + encodeURIComponent(keyId) + '/revoke'); selectTenant(id); }
+  catch (e) { alert(e.message); }
+}
+
+// ── Retrain ───────────────────────────────────────────────
+
+let trainTimer = null;
+async function retrain() {
+  const s = document.getElementById('trainStatus');
+  try {
+    await api('POST', '/retrain');
+    s.className = 'status muted'; s.textContent = 'starting…';
+    if (trainTimer) clearInterval(trainTimer);
+    trainTimer = setInterval(async () => {
+      try {
+        const { job } = await api('GET', '/retrain/status');
+        s.className = 'status ' + (job.state==='done' ? 'ok' : job.state==='error' ? 'err' : 'muted');
+        s.textContent = job.state + (job.message ? ' — ' + job.message : '');
+        if (job.state==='done' || job.state==='error') clearInterval(trainTimer);
+      } catch {}
+    }, 2000);
+  } catch (e) { s.className='status err'; s.textContent = e.message; }
+}
+</script>
+</body>
+</html>

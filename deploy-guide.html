@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lexos — Deploy & WiseOrder Integration</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.7; color: #1a1a1a; background: #f8f7f4; padding: 2rem 1rem; }
+  .page { max-width: 860px; margin: 0 auto; }
+
+  h1 { font-size: 24px; font-weight: 600; margin-bottom: 0.25rem; }
+  .subtitle { color: #666; font-size: 14px; margin-bottom: 2.5rem; }
+  h2 { font-size: 17px; font-weight: 600; margin: 2rem 0 1rem; display: flex; align-items: center; gap: 10px; }
+  h2 .num { width: 28px; height: 28px; border-radius: 50%; background: #1a1a1a; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  h3 { font-size: 14px; font-weight: 600; margin: 1rem 0 0.5rem; color: #444; }
+  p { margin-bottom: 0.75rem; color: #333; }
+
+  .card { background: #fff; border: 1px solid #e5e5e3; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+  .card.highlight { border-color: #c5d9f5; background: #f0f6ff; }
+  .card.warn { border-color: #f5ddb5; background: #fffaf0; }
+  .card.success { border-color: #b5ddc5; background: #f0faf5; }
+
+  code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; background: #f0efe8; padding: 2px 6px; border-radius: 4px; }
+  pre { background: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 1rem 1.25rem; overflow-x: auto; font-size: 13px; line-height: 1.6; margin: 0.75rem 0; }
+  pre .c { color: #6a9955; }
+  pre .k { color: #569cd6; }
+  pre .s { color: #ce9178; }
+  pre .v { color: #9cdcfe; }
+
+  .step-list { list-style: none; padding: 0; }
+  .step-list li { display: flex; gap: 12px; margin-bottom: 0.75rem; align-items: flex-start; }
+  .step-list li::before { content: '→'; color: #888; flex-shrink: 0; margin-top: 2px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 0.75rem 0; }
+  th { background: #f0efe8; text-align: left; padding: 8px 12px; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #666; }
+  td { padding: 8px 12px; border-top: 1px solid #eee; vertical-align: top; }
+  td:first-child { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; color: #555; white-space: nowrap; }
+
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px; }
+  .badge.req { background: #fee; color: #c00; }
+  .badge.opt { background: #f0f6ff; color: #1a5fa8; }
+  .badge.prod { background: #fff3cc; color: #7a5800; }
+
+  .section-divider { border: none; border-top: 1px solid #e5e5e3; margin: 2rem 0; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+
+  .tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 1px 7px; border-radius: 20px; margin-right: 4px; }
+  .tag.hi { background: #edf6ff; color: #1a5fa8; }
+  .tag.kn { background: #f0f9ee; color: #2d6a2d; }
+  .tag.mr { background: #fff7ed; color: #9a4a00; }
+  .tag.ta { background: #fdf0f8; color: #8b2060; }
+  .tag.te { background: #f5f0ff; color: #5b2eb5; }
+
+  .checklist { list-style: none; padding: 0; }
+  .checklist li { padding: 5px 0; display: flex; align-items: flex-start; gap: 10px; }
+  .checklist li::before { content: '☐'; font-size: 16px; flex-shrink: 0; line-height: 1.5; color: #888; }
+
+  a { color: #1a5fa8; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Lexos — Deploy &amp; WiseOrder Delivery</h1>
+  <p class="subtitle">Everything needed to go from local to live and send WiseOrder their brief.</p>
+
+  <!-- PART 1: DEPLOY -->
+  <h2><span class="num">1</span> Deploy to Railway</h2>
+
+  <div class="card highlight">
+    <p style="margin:0"><strong>Why Railway:</strong> Auto-detects Node.js, runs your build step, gives you a public HTTPS URL, free tier covers the demo phase, no config files beyond <code>railway.toml</code> (already created).</p>
+  </div>
+
+  <h3>Step 1 — Push to GitHub</h3>
+  <p>Railway deploys from a Git repo. If you don't have one yet:</p>
+  <pre><code><span class="c"># In C:\Users\rayaa\Desktop\lexos</span>
+git init
+git add .
+git commit -m "initial"
+<span class="c"># Create a private repo at github.com, then:</span>
+git remote add origin https://github.com/&lt;you&gt;/lexos.git
+git push -u origin main</code></pre>
+
+  <div class="card warn" style="margin-top:0.75rem">
+    <strong>⚠ .gitignore check:</strong> <code>.env</code> is already excluded. The <code>src/classifier/model.json</code> (trained weights) and <code>src/classifier/vocab.json</code> must be committed — they're not in .gitignore and you need them in production.
+  </div>
+
+  <h3>Step 2 — Create a Railway project</h3>
+  <ul class="step-list">
+    <li>Go to <a href="https://railway.app" target="_blank">railway.app</a> → New Project → Deploy from GitHub repo</li>
+    <li>Select your <code>lexos</code> repo</li>
+    <li>Railway detects Node.js + your <code>railway.toml</code>. Build command: <code>npm install &amp;&amp; npm run build</code>. Start: <code>node dist/index.js</code></li>
+  </ul>
+
+  <h3>Step 3 — Set environment variables</h3>
+  <p>In Railway: your project → Variables tab. Set all of these:</p>
+
+  <table>
+    <tr><th>Variable</th><th>Value</th><th>Required</th></tr>
+    <tr><td>SUPABASE_URL</td><td>From your .env (already have it)</td><td><span class="badge req">required</span></td></tr>
+    <tr><td>SUPABASE_SERVICE_ROLE_KEY</td><td>From your .env</td><td><span class="badge req">required</span></td></tr>
+    <tr><td>CLOUDFLARE_ACCOUNT_ID</td><td>From your .env</td><td><span class="badge req">required</span></td></tr>
+    <tr><td>CLOUDFLARE_API_TOKEN</td><td>From your .env</td><td><span class="badge req">required</span></td></tr>
+    <tr><td>ANTHROPIC_API_KEY</td><td>From your .env (for demo LLM panel)</td><td><span class="badge opt">optional</span></td></tr>
+    <tr><td>LEXOS_API_KEY</td><td>Generate: <code>node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"</code></td><td><span class="badge prod">production</span></td></tr>
+    <tr><td>LEXOS_ADMIN_KEY</td><td>Generate same way (different value)</td><td><span class="badge prod">production</span></td></tr>
+    <tr><td>INTENT_MATCH_THRESHOLD</td><td><code>0.55</code></td><td><span class="badge opt">optional</span></td></tr>
+    <tr><td>CLASSIFIER_PROB_THRESHOLD</td><td><code>0.15</code></td><td><span class="badge opt">optional</span></td></tr>
+    <tr><td>CLASSIFIER_OOD_SIM_FLOOR</td><td><code>0.40</code></td><td><span class="badge opt">optional</span></td></tr>
+    <tr><td>MENU_ITEM_SIM_FLOOR</td><td><code>0.62</code></td><td><span class="badge opt">optional</span></td></tr>
+    <tr><td>GENERATION_ENABLED</td><td><code>false</code></td><td><span class="badge opt">optional</span></td></tr>
+  </table>
+
+  <p>Generate both secrets locally <em>before</em> setting them — keep them somewhere safe, you'll need them for WiseOrder.</p>
+
+  <h3>Step 4 — Deploy &amp; get your URL</h3>
+  <ul class="step-list">
+    <li>Hit Deploy. Railway builds in ~60s</li>
+    <li>Go to Settings → Networking → Generate Domain. You get <code>https://lexos-production-xxxx.up.railway.app</code></li>
+    <li>Smoke test: <code>curl https://your-domain/health</code> → <code>{"status":"ok","project":"lexos"}</code></li>
+  </ul>
+
+  <h3>Step 5 — Verify admin dashboard</h3>
+  <p>Open <code>https://your-domain/admin</code> in a browser. You'll need <code>LEXOS_ADMIN_KEY</code> set as the <code>X-Admin-Key</code> header — either via a browser extension like ModHeader, or use the curl approach:</p>
+  <pre><code>curl https://your-domain/admin/tenants \
+  -H "X-Admin-Key: &lt;your-admin-key&gt;"</code></pre>
+
+  <hr class="section-divider">
+
+  <!-- PART 2: WISEORDER SETUP -->
+  <h2><span class="num">2</span> Set up the WiseOrder tenant &amp; API key</h2>
+
+  <p>Do this once in production after deploy. All via the admin API.</p>
+
+  <h3>Create the WiseOrder tenant</h3>
+  <pre><code>curl -X POST https://your-domain/admin/tenants \
+  -H "X-Admin-Key: &lt;admin-key&gt;" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "tenant_id": "wiseorder",
+    "display_name": "WiseOrder",
+    "tenant_type": "business",
+    "primary_language": "hi-IN",
+    "register_preference": "mixed"
+  }'</code></pre>
+
+  <h3>Generate their API key</h3>
+  <pre><code>curl -X POST https://your-domain/admin/tenants/wiseorder/api-keys \
+  -H "X-Admin-Key: &lt;admin-key&gt;" \
+  -H "Content-Type: application/json" \
+  -d '{"label": "wiseorder-production", "product_id": "wiseorder"}'</code></pre>
+
+  <div class="card warn">
+    <strong>The key is shown exactly once.</strong> Copy the <code>"key"</code> field from the response immediately — this is what you send to the WiseOrder team. It cannot be retrieved again (only the prefix is stored).
+  </div>
+
+  <h3>Upload a menu (optional but recommended)</h3>
+  <p>If WiseOrder has a specific menu, upload it per-restaurant via the admin API. This unlocks item-level slot resolution (<code>matched_item</code>) and prevents off-menu intent guesses.</p>
+  <pre><code>curl -X POST https://your-domain/admin/tenants/wiseorder/menu \
+  -H "X-Admin-Key: &lt;admin-key&gt;" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "items": [
+      {
+        "name": "Masala Dosa",
+        "category": "BREAKFAST",
+        "names": ["मसाला डोसा", "ಮಸಾಲ ದೋಸೆ", "மசாலா தோசை"],
+        "aliases": ["masala dose", "masle dose"]
+      }
+    ]
+  }'</code></pre>
+
+  <hr class="section-divider">
+
+  <!-- PART 3: SEND TO WISEORDER -->
+  <h2><span class="num">3</span> What to send WiseOrder</h2>
+
+  <div class="two-col">
+    <div class="card">
+      <h3 style="margin-top:0">Send them</h3>
+      <ul class="step-list">
+        <li>The production URL: <code>https://lexos-production-xxxx.up.railway.app</code></li>
+        <li>Their API key (from step 2)</li>
+        <li>The integration brief: <code>docs/WISEORDER_INTEGRATION.md</code></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">They need to do</h3>
+      <ul class="step-list">
+        <li>Store the API key as a secret in their environment</li>
+        <li>Call <code>GET /retrieve/asr-bias</code> at session start</li>
+        <li>Call <code>POST /enrich</code> on every utterance</li>
+        <li>Call <code>PATCH /enrich/:id/outcome</code> after each interaction</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Update the base URL in the brief before sending</h3>
+  <p>Open <code>docs/WISEORDER_INTEGRATION.md</code> and replace the placeholder at the top:</p>
+  <pre><code><span class="c"># Before</span>
+https://&lt;lexos-production-url&gt;
+
+<span class="c"># After</span>
+https://lexos-production-xxxx.up.railway.app</code></pre>
+
+  <hr class="section-divider">
+
+  <!-- PART 4: ACTIVE LANGUAGES -->
+  <h2><span class="num">4</span> Active languages &amp; coverage</h2>
+
+  <p>Remind WiseOrder to always pass <code>lang</code> explicitly — the classifier is per-language and wrong/missing lang degrades accuracy.</p>
+
+  <div style="display:flex; flex-wrap:wrap; gap: 8px; margin: 0.75rem 0 1.25rem;">
+    <span class="tag hi">hi-IN Hindi</span>
+    <span class="tag kn">kn-IN Kannada</span>
+    <span class="tag mr">mr-IN Marathi</span>
+    <span class="tag ta">ta-IN Tamil</span>
+    <span class="tag te">te-IN Telugu</span>
+  </div>
+
+  <p style="color:#888;font-size:13px">Disabled (vocabulary retained, can re-enable): bn-IN · gu-IN · es-ES · ar-AE. These return miss until toggled back on via <code>scripts/toggle-languages.ts</code>.</p>
+
+  <hr class="section-divider">
+
+  <!-- PART 5: POST-DEPLOY CHECKLIST -->
+  <h2><span class="num">5</span> Post-deploy checklist</h2>
+
+  <div class="card">
+    <ul class="checklist">
+      <li>Deploy to Railway, verify <code>/health</code> returns 200</li>
+      <li>Set <code>LEXOS_API_KEY</code> and <code>LEXOS_ADMIN_KEY</code> in Railway variables</li>
+      <li>Create the <code>wiseorder</code> tenant via admin API</li>
+      <li>Generate WiseOrder's API key (copy it — shown once only)</li>
+      <li>Fill in the real URL in <code>docs/WISEORDER_INTEGRATION.md</code></li>
+      <li>Send brief + URL + key to WiseOrder team</li>
+      <li>Upload WiseOrder's menu (optional — improves item slot resolution)</li>
+      <li>Smoke test: <code>POST /enrich</code> with a known Hindi phrase, confirm intent resolves</li>
+    </ul>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PART 6: ONGOING OPS -->
+  <h2><span class="num">6</span> Ongoing ops</h2>
+
+  <div class="two-col">
+    <div class="card">
+      <h3 style="margin-top:0">If accuracy drops</h3>
+      <p style="margin:0">Add new vocabulary variants as Claude Code in conversation → retrain: <code>npm run train-classifier</code> → restart the Railway deploy (redeploy from dashboard).</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">If menu changes</h3>
+      <p style="margin:0">Re-upload via <code>POST /admin/tenants/wiseorder/menu</code>. Menu cache invalidates automatically. No restart needed.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">If a language needs enabling</h3>
+      <p style="margin:0">Run <code>npm run toggle-languages on bn-IN</code> locally (generates embeddings), commit the updated terms, redeploy.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Admin retrain (remote)</h3>
+      <p style="margin:0"><code>POST /admin/retrain</code> with the admin key — triggers retraining on the server. Status at <code>GET /admin/retrain/status</code>. Hot-reloads model on success.</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

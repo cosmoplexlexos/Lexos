@@ -1,0 +1,51 @@
+{
+  "note": "Held-out adversarial phrases NOT in the corpus. Each cluster shares a function word (kodi/de do/maadi/ivvandi) across DIFFERENT intents — the exact failure mode reported. Dishes chosen to be uncommon in the corpus.",
+  "cases": [
+    { "lang": "kn-IN", "phrase": "ondu khara bath kodi",        "expected": "LEXOS_CART_ADD_ITEM" },
+    { "lang": "kn-IN", "phrase": "bill kodi anna",               "expected": "LEXOS_ORDER_CHECKOUT" },
+    { "lang": "kn-IN", "phrase": "khara bath eshtu",             "expected": "LEXOS_PRICE_INQUIRY_ITEM" },
+    { "lang": "kn-IN", "phrase": "ella seri eshtu anna",         "expected": "LEXOS_PRICE_INQUIRY_TOTAL" },
+    { "lang": "kn-IN", "phrase": "khara bath beda",              "expected": "LEXOS_CART_REMOVE_ITEM" },
+    { "lang": "kn-IN", "phrase": "khara bath eradu maadi",       "expected": "LEXOS_CART_UPDATE_QUANTITY" },
+    { "lang": "kn-IN", "phrase": "idanna parcel maadi",          "expected": "LEXOS_SPECIAL_REQUEST_PACKAGING" },
+    { "lang": "kn-IN", "phrase": "pura order cancel maadi anna", "expected": "LEXOS_ORDER_CANCEL" },
+
+    { "lang": "hi-IN", "phrase": "ek uttapam de do",             "expected": "LEXOS_CART_ADD_ITEM" },
+    { "lang": "hi-IN", "phrase": "bill de do bhaiya",            "expected": "LEXOS_ORDER_CHECKOUT" },
+    { "lang": "hi-IN", "phrase": "uttapam kitne ka hai",         "expected": "LEXOS_PRICE_INQUIRY_ITEM" },
+    { "lang": "hi-IN", "phrase": "sab milake kitna hua bhai",    "expected": "LEXOS_PRICE_INQUIRY_TOTAL" },
+    { "lang": "hi-IN", "phrase": "uttapam hata do",             "expected": "LEXOS_CART_REMOVE_ITEM" },
+    { "lang": "hi-IN", "phrase": "uttapam do kar do",            "expected": "LEXOS_CART_UPDATE_QUANTITY" },
+    { "lang": "hi-IN", "phrase": "ise parcel karwa do",          "expected": "LEXOS_SPECIAL_REQUEST_PACKAGING" },
+    { "lang": "hi-IN", "phrase": "saara order cancel kar do",    "expected": "LEXOS_ORDER_CANCEL" },
+
+    { "lang": "ta-IN", "phrase": "oru rava dosa kudunga",        "expected": "LEXOS_CART_ADD_ITEM" },
+    { "lang": "ta-IN", "phrase": "bill kudunga anna",            "expected": "LEXOS_ORDER_CHECKOUT" },
+    { "lang": "ta-IN", "phrase": "rava dosa evvalavu",           "expected": "LEXOS_PRICE_INQUIRY_ITEM" },
+    { "lang": "ta-IN", "phrase": "ellaam serthu evvalavu anna",  "expected": "LEXOS_PRICE_INQUIRY_TOTAL" },
+    { "lang": "ta-IN", "phrase": "rava dosa venda",             "expected": "LEXOS_CART_REMOVE_ITEM" },
+    { "lang": "ta-IN", "phrase": "idha parcel pannunga",         "expected": "LEXOS_SPECIAL_REQUEST_PACKAGING" },
+
+    { "lang": "te-IN", "phrase": "oka pesarattu ivvandi",        "expected": "LEXOS_CART_ADD_ITEM" },
+    { "lang": "te-IN", "phrase": "bill ivvandi anna",            "expected": "LEXOS_ORDER_CHECKOUT" },
+    { "lang": "te-IN", "phrase": "pesarattu enta",               "expected": "LEXOS_PRICE_INQUIRY_ITEM" },
+    { "lang": "te-IN", "phrase": "anni kalipi enta anna",        "expected": "LEXOS_PRICE_INQUIRY_TOTAL" },
+    { "lang": "te-IN", "phrase": "pesarattu vaddu teeseyandi",   "expected": "LEXOS_CART_REMOVE_ITEM" },
+    { "lang": "te-IN", "phrase": "idi parcel cheyandi",          "expected": "LEXOS_SPECIAL_REQUEST_PACKAGING" },
+
+    { "lang": "mr-IN", "phrase": "ek thalipeeth dya",            "expected": "LEXOS_CART_ADD_ITEM" },
+    { "lang": "mr-IN", "phrase": "bill dya dada",                "expected": "LEXOS_ORDER_CHECKOUT" },
+    { "lang": "mr-IN", "phrase": "thalipeeth kiti la",           "expected": "LEXOS_PRICE_INQUIRY_ITEM" },
+    { "lang": "mr-IN", "phrase": "sagla milun kiti zaala",       "expected": "LEXOS_PRICE_INQUIRY_TOTAL" },
+    { "lang": "mr-IN", "phrase": "thalipeeth nako",             "expected": "LEXOS_CART_REMOVE_ITEM" },
+    { "lang": "mr-IN", "phrase": "he parcel kara",              "expected": "LEXOS_SPECIAL_REQUEST_PACKAGING" }
+  ],
+  "ood": [
+    { "lang": "hi-IN", "phrase": "aaj mausam kaisa hai" },
+    { "lang": "hi-IN", "phrase": "gaana baja do koi" },
+    { "lang": "kn-IN", "phrase": "asdfgh qwerty zxcvb" },
+    { "lang": "ta-IN", "phrase": "what time does the train leave" },
+    { "lang": "te-IN", "phrase": "naaku oka cab kaavali airport ki" },
+    { "lang": "mr-IN", "phrase": "tula kसला problem aahe" }
+  ]
+}

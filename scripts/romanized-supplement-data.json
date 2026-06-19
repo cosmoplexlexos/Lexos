@@ -1,0 +1,242 @@
+[
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "oru masala dosa venum", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "oru coffee kudunga", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idli oru plate venum", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "oru burger add pannunga", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "idu venda", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idli thevayilla", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "idu cancel pannunga", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "oru item edukkadheenga", "confidence": 0.87 }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_ORDER_CHECKOUT",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "bill parunga", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "bill paatha", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "total sollunga", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "pay pannanum", "confidence": 0.89 }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "ellam cancel pannunga", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "full cancel pannunga", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "order venda cancel pannunga", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "seri illa cancel", "confidence": 0.87 }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "menu kaattunga", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "enna irukku sollunga", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "today special enna", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "full list kaattunga", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "dosa irukka", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "filter coffee kidaikuma", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idli irukka today", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "sambar vada irukka", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_PAYMENT_REQUEST_BILL",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "total evlo", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "bill evlo aagum", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "how much total sollunga", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "total amount sollunga", "confidence": 0.90 }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_HELP_REPEAT",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "same order again", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "mela oru round venum", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "innum onnu venum same", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "maru order pannunga", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "ondu masala dosa kodi", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "ondu coffee tanni", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idli ondu plate kodi", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "ondu burger add maadi", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "idu beda", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "idli beda cancel maadi", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idu cancel maadi", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "ondu item tagondi beda", "confidence": 0.87 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_ORDER_CHECKOUT",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "bill kodi", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "bill taa akka", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "total cheppi kodi", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "pay maadona", "confidence": 0.89 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "ella cancel maadi", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "full cancel maadi guru", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "order beda cancel maadi", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "sari illa cancel", "confidence": 0.87 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "menu tori", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "enu ide heli", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "today special enu", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "full list tori", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "dosa ideya", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "filter coffee siguttada", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idli ideya today", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "vada ideya", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_PAYMENT_REQUEST_BILL",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "total eshtu", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "bill eshtu aaguttu", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "how much total heli", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "total amount eshtu", "confidence": 0.90 }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_HELP_REPEAT",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "same order again", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "innondu round beku", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "same innondu beku", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "matte order maadi", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "oka masala dosa ivvandi", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "oka coffee teesukoandi", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idli oka plate ivvandi", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "oka burger add cheyandi", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "idi vaddu", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "idli vaddu cancel cheyandi", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idi cancel cheyandi", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "oka item teeyandi", "confidence": 0.87 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_ORDER_CHECKOUT",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "bill ivvandi", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "bill chupiyandi", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "total cheppandi", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "pay cheyali", "confidence": 0.89 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "anni cancel cheyandi", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "full cancel cheyandi bro", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "order vaddu cancel cheyandi", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "sari kaadu cancel", "confidence": 0.87 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "menu chupiyandi", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "emi undi cheppandi", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "today special emi undi", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "full list chupiyandi", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "dosa undaa", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "filter coffee dorkutundaa", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "idli undaa today", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "vada undaa", "confidence": 0.88 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_PAYMENT_REQUEST_BILL",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "total entha", "confidence": 0.92 },
+      { "type": "CODE_MIXED", "value": "bill entha avutundi", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "how much total cheppandi", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "total amount entha", "confidence": 0.90 }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_HELP_REPEAT",
+    "variants": [
+      { "type": "CODE_MIXED", "value": "same order again", "confidence": 0.91 },
+      { "type": "CODE_MIXED", "value": "inkonchem round kavaali", "confidence": 0.90 },
+      { "type": "CODE_MIXED", "value": "same inkonchem kavaali", "confidence": 0.89 },
+      { "type": "CODE_MIXED", "value": "malli order cheyandi", "confidence": 0.88 }
+    ]
+  }
+]

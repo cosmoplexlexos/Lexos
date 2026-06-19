@@ -1,0 +1,29 @@
+{
+  "LEXOS_CART_UPDATE_QUANTITY": {
+    "hi-IN": { "COLLOQUIAL": ["samosa ek hi rakho", "biryani ek hi rakho", "chai ek hi rakho", "paneer ek hi rakho", "samosa do hi rakho", "biryani kam kar do bhaiya", "chai kam kar do", "samosa zyada kar do"], "CODE_MIXED": [] },
+    "kn-IN": { "COLLOQUIAL": ["vada ondu saaku", "idli ondu saaku", "coffee ondu saaku", "dose eradu saaku", "vada eradu maadi anna", "idli ondu kammi maadi", "dose ondu jaasti maadi"], "CODE_MIXED": [] },
+    "mr-IN": { "COLLOQUIAL": ["vada pav ek puresa", "chai ek puresa", "poha ek puresa", "misal don kara", "vada pav don kara dada", "chai kami kara dada", "samosa ek hi thev"], "CODE_MIXED": [] },
+    "ta-IN": { "COLLOQUIAL": ["vadai onnu pothum", "idli onnu pothum", "kaapi onnu pothum", "dosa rendu pothum", "vadai rendu pannunga anna", "idli korai pannunga", "dosa koodu pannunga"], "CODE_MIXED": [] },
+    "te-IN": { "COLLOQUIAL": ["vada okati chalu", "idli okati chalu", "coffee okati chalu", "dosa rendu chalu", "vada rendu cheyandi", "idli rendu cheyandi", "dosa moodu cheyandi", "vada moodu cheyandi"], "CODE_MIXED": [] }
+  },
+  "LEXOS_CART_REMOVE_ITEM": {
+    "hi-IN": { "COLLOQUIAL": ["ye samosa nahi chahiye", "ye chai nahi chahiye", "ye biryani nahi chahiye", "chai hata do bhaiya", "samosa hata do bhaiya", "biryani hata do bhaiya"], "CODE_MIXED": [] },
+    "kn-IN": { "COLLOQUIAL": ["dose tegidu haaki", "vada tegidu haaki", "idli tegidu haaki", "coffee tegidu haaki", "ee vada beda anna", "ee idli beda anna", "ee dose beda anna"], "CODE_MIXED": [] },
+    "mr-IN": { "COLLOQUIAL": ["ha vada pav nako dada", "chai nako dada", "ha misal nako", "ha samosa nako dada", "poha nako dada"], "CODE_MIXED": [] },
+    "ta-IN": { "COLLOQUIAL": ["dosa eduthu podunga", "vadai eduthu podunga", "idli eduthu podunga", "kaapi eduthu podunga", "intha vadai venda anna", "intha idli venda anna"], "CODE_MIXED": [] },
+    "te-IN": { "COLLOQUIAL": ["idli vaddu anna", "vada vaddu anna", "dosa vaddu anna", "coffee vaddu anna", "ee dosa teesi veyandi", "ee vada teesi veyandi"], "CODE_MIXED": [] }
+  },
+  "LEXOS_PRICE_INQUIRY_ITEM": {
+    "hi-IN": { "COLLOQUIAL": ["samosa kitne ka bhaiya", "chai kitne ki bhaiya", "biryani kitne ki bhaiya"], "CODE_MIXED": [] },
+    "kn-IN": { "COLLOQUIAL": ["vada eshtu anna", "idli eshtu anna", "dose eshtu anna", "coffee eshtu anna"], "CODE_MIXED": [] },
+    "ta-IN": { "COLLOQUIAL": ["vadai evvalavu anna", "idli evvalavu anna", "dosa evvalavu anna"], "CODE_MIXED": [] },
+    "te-IN": { "COLLOQUIAL": ["vada enta anna", "idli enta anna", "dosa enta anna", "coffee enta anna"], "CODE_MIXED": [] }
+  },
+  "LEXOS_HELP_UNDO_ACTION": {
+    "hi-IN": { "COLLOQUIAL": ["undo kar do", "undo kar do bhaiya", "abhi wala wapas kar do", "pichhla wala wapas kar do"], "CODE_MIXED": ["undo kar do bhaiya"] },
+    "te-IN": { "COLLOQUIAL": ["undo cheyandi anna", "mundu chesindi wapas cheyandi anna"], "CODE_MIXED": [] }
+  },
+  "LEXOS_CART_ADD_ITEM": {
+    "hi-IN": { "COLLOQUIAL": ["do biryani laga do", "ek samosa laga do", "biryani laga do", "ek chai laga do", "samosa laga do bhaiya"], "CODE_MIXED": [] }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "tenant_id": "south-indian-restaurant",
+  "items": [
+    { "name": "Masala Dosa" },
+    { "name": "Plain Dosa" },
+    { "name": "Set Dosa" },
+    { "name": "Rava Dosa" },
+    { "name": "Onion Dosa" },
+    { "name": "Idli" },
+    { "name": "Rava Idli" },
+    { "name": "Vada" },
+    { "name": "Medu Vada" },
+    { "name": "Pongal" },
+    { "name": "Upma" },
+    { "name": "Bisibele Bath" },
+    { "name": "Kesari Bath" },
+    { "name": "Curd Rice" },
+    { "name": "Lemon Rice" },
+    { "name": "Filter Coffee" },
+    { "name": "Tea" },
+    { "name": "Sambar" },
+    { "name": "Coconut Chutney" }
+  ]
+}

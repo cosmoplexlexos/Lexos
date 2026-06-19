@@ -1,0 +1,1076 @@
+{
+  "LEXOS_CART_ADD_ITEM": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "ondu masala dosa beku", "eradu set dosa beku", "ondu rava idli beku",
+        "naige ondu kesari bath beku", "ondu upma beku", "ondu pongal beku",
+        "ondu bisibele bath beku", "ondu akki rotti beku", "eradu medu vada beku",
+        "ondu idli sambar beku", "naige ondu ragi mudde beku",
+        "eradu plain dosa kodi", "mooru idli kodi", "ondu rava dosa kodi",
+        "eradu medu vada kodi", "ondu upma kodi", "naige ondu kesari bath kodi",
+        "ondu masala dosa kodi", "mooru vada kodi", "eradu set dosa kodi"
+      ],
+      "CODE_MIXED": [
+        "anna ondu masala dosa haki", "akka ek upma add maadi",
+        "anna ondu pongal haki", "ek set dosa add maadi",
+        "anna naige ek rava idli haki", "ondu bisibele bath add maadi",
+        "akka eradu idli more maadi", "anna ondu vada more kodi"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "ek samosa chahiye", "ek chai chahiye", "do naan chahiye",
+        "ek biryani dena", "paneer tikka do", "ek lassi chahiye",
+        "do paratha chahiye", "ek daal makhani chahiye",
+        "chole bhature ek dena", "ek gulab jamun chahiye",
+        "do jalebi chahiye", "ek kachori dena", "ek aloo paratha chahiye",
+        "bhai ek samosa maar na", "yaar ek chai de do",
+        "bhai do naan maar", "ek biryani plate chahiye",
+        "ek lassi bana do", "do gulab jamun de do"
+      ],
+      "CODE_MIXED": [
+        "ek samosa add karo", "ek chai order karo",
+        "do paratha add kar do", "ek biryani add karna hai",
+        "bhai ek paneer tikka maar na", "cart mein ek lassi daalo"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "oru idli venum", "rendu dosa venum", "oru vadai venum",
+        "filter kaapi venum", "oru pongal venum", "oru appam venum",
+        "rendu idli kudunga", "oru uthappam kudunga", "rendu vadai kudunga",
+        "oru puttu kudunga", "filter kaapi kudunga anna",
+        "anna oru masala dosa maaro", "oru kesari maaro",
+        "oru thayir sadam venum", "rendu appam venum",
+        "oru kozhukattai venum", "rendu puri venum"
+      ],
+      "CODE_MIXED": [
+        "anna oru vadai add pannunga", "oru idli add pannunga",
+        "rendu dosa add pannu", "oru pongal add pannunga",
+        "oru filter kaapi add pannunga", "rendu vadai more pannunga"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "oka idli kavali", "rendu dosa kavali", "oka pesarattu kavali",
+        "oka upma kavali", "rendu idli ivvandi", "oka dosa ivvandi",
+        "oka pongal ivvandi", "rendu vada ivvandi",
+        "oka filter coffee ivvandi", "rendu pesarattu ivvandi",
+        "anna oka idli ivvu", "akka rendu dosa ivvu",
+        "oka biryani kavali", "rendu puri ivvandi"
+      ],
+      "CODE_MIXED": [
+        "oka idli add cheyandi", "rendu dosa add cheyandi",
+        "anna oka pesarattu ivvu", "oka upma add cheyandi",
+        "rendu idli more cheyandi", "oka filter coffee add cheyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "ek vada pav dya", "ek misal pav dya", "ek poha dya",
+        "ek chai dya", "ek pav bhaji dya", "ek sheera dya",
+        "ek sabudana khichdi dya", "do vada pav dya",
+        "ek kothimbir vadi dya", "ek dadpe pohe dya",
+        "ek masala chai pahije", "ek poha pahije", "vada pav pahije"
+      ],
+      "CODE_MIXED": [
+        "ek vada pav add kara", "ek chai add kara",
+        "ek poha add kar", "ek misal add karaaychay",
+        "do vada pav add kara", "ek pav bhaji order kara"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "ekta chai dao", "ekta mishti doi dao", "ekta rasgulla dao",
+        "ekta biryani dao", "duto luchi dao", "ekta alur torkari dao",
+        "ekta sandesh dao", "duto muri dao", "ekta began bhaja dao",
+        "ekta chai chai", "rasgulla ekta diye dao", "duto sandesh dao"
+      ],
+      "CODE_MIXED": [
+        "ekta chai add koro", "ekta rasgulla add koro",
+        "duto luchi add kore dao", "ekta biryani add koro",
+        "ekta mishti doi order koro", "duto sandesh add koro"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "ek dhokla apo", "ek thepla apo", "ek fafda apo",
+        "ek jalebi apo", "ek khandvi apo", "ek gathiya apo",
+        "ek chai apo", "ek shiro apo", "ek poha apo",
+        "dhokla joie che", "thepla joie che", "ek fafda joie che",
+        "ek undiya apo", "ek rotlo joie che"
+      ],
+      "CODE_MIXED": [
+        "ek dhokla add karo", "ek thepla add karo",
+        "ek chai add kar", "ek fafda order karo",
+        "ek jalebi add karvo che", "ek khandvi more karo"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "quiero un café", "dame una agua", "quiero un bocadillo",
+        "ponme una tortilla", "quiero un zumo de naranja",
+        "dame un croissant", "quiero una ensalada",
+        "ponme un café con leche", "quiero un refresco",
+        "dame dos cafés", "uno más por favor", "quiero un té"
+      ],
+      "CODE_MIXED": [
+        "add un café por favor", "ponme en el carrito un agua",
+        "quiero añadir una tortilla", "agrégame un bocadillo"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "أريد قهوة", "أعطني شاورما", "أريد فلافل",
+        "أعطني ماء", "أريد بيريانى", "أعطني كباب",
+        "أريد حمص", "قهوة من فضلك", "شاورما واحدة",
+        "اثنين فلافل", "أريد كنافة", "أعطني خبز",
+        "أريد تبولة", "اثنين شاورما من فضلك"
+      ],
+      "CODE_MIXED": [
+        "add قهوة من فضلك", "أضف شاورما", "add ماء للطلب",
+        "أريد أضيف فلافل", "اضف كباب من فضلك"
+      ]
+    }
+  },
+
+  "LEXOS_CART_REMOVE_ITEM": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "dosa beda", "idli beda", "filter coffee beda", "vada beda",
+        "upma beda naige", "masala dosa beda", "coffee cancel maadi",
+        "naige idli beda", "dosa tege maadi", "vada cancel maadi",
+        "ondu idli tege", "coffee beda maadi"
+      ],
+      "CODE_MIXED": [
+        "dosa remove maadi", "idli cancel maadi", "vada remove maadi",
+        "filter coffee remove maadi", "cart inda dosa tege maadi"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "samosa nahi chahiye", "chai nahi chahiye", "biryani hatao",
+        "lassi cancel karo", "naan nahi chahiye", "paratha hatao",
+        "ek samosa wapas karo", "chai nahi leni", "biryani nahi lena"
+      ],
+      "CODE_MIXED": [
+        "samosa remove karo", "chai cancel karo", "biryani remove kar do",
+        "lassi hatao cart se", "paratha remove karna hai"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "idli vedam", "dosa vedam", "vadai venda", "filter kaapi venda",
+        "pongal cancel pannunga", "appam vendam", "idli edunga",
+        "dosa cancel pannunga", "vadai tigaiyunga"
+      ],
+      "CODE_MIXED": [
+        "idli remove pannunga", "dosa cancel pannunga", "vadai remove pannu",
+        "filter kaapi remove pannunga", "cart-il irundhu idli tigai"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "idli vaddhu", "dosa vaddhu", "pesarattu teyyandi",
+        "upma cancel cheyandi", "vada vaddhu naaku", "filter coffee vaddhu",
+        "dosa teyyandi", "idli cancel cheyandi"
+      ],
+      "CODE_MIXED": [
+        "idli remove cheyandi", "dosa cancel cheyandi",
+        "vada remove cheyandi", "pesarattu teyyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "vada pav nako", "chai nako", "misal nako",
+        "poha kadhun taka", "pav bhaji nako", "chai hatva"
+      ],
+      "CODE_MIXED": [
+        "vada pav remove kara", "chai cancel kara",
+        "misal remove kar", "poha cart madhun kadhaa"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "chai lagbe na", "rasgulla bad diye dao", "biryani lagbe na",
+        "mishti doi cancel koro", "luchi lagbe na"
+      ],
+      "CODE_MIXED": [
+        "chai remove koro", "rasgulla cancel koro",
+        "biryani remove kore dao", "mishti doi bad koro"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "dhokla nathi joitu", "chai kadhvo che", "thepla nathi joitu",
+        "fafda cancel karo", "khandvi nathi joitu"
+      ],
+      "CODE_MIXED": [
+        "dhokla remove karo", "chai cancel karo",
+        "thepla remove karvo che", "fafda bad karo"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "quita el café", "no quiero la tortilla", "quita el bocadillo",
+        "cancela el agua", "saca el croissant", "quita eso del carrito"
+      ],
+      "CODE_MIXED": [
+        "remove el café", "cancela el bocadillo del pedido",
+        "quita la tortilla del carrito"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "شيل القهوة", "ما أبي الشاورما", "احذف الفلافل",
+        "ما أبي الماء", "شيل الكباب", "الغِ القهوة"
+      ],
+      "CODE_MIXED": [
+        "remove القهوة", "cancel الشاورما", "احذف الفلافل من الطلب"
+      ]
+    }
+  },
+
+  "LEXOS_CART_UPDATE_QUANTITY": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "eradu idli maadi", "mooru dosa maadi", "naalu vada maadi",
+        "eradu filter kaapi maadi", "mooru idli maadi",
+        "idli eradu maadi bidi", "dosa mooru maadi bidi",
+        "naalu idli maadi", "eradu upma maadi",
+        "quantity eradu maadi", "ondu hechige maadi", "mooru maadi saakaite"
+      ],
+      "CODE_MIXED": [
+        "idli 2 maadi", "dosa 3 maadi", "vada 4 maadi",
+        "filter coffee 2 maadi", "quantity 3 maadi please",
+        "eradu idli change maadi", "mooru dosa update maadi"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "do samosa chahiye", "teen chai chahiye", "do biryani karo",
+        "teen naan chahiye", "do paratha kar do", "char gulab jamun chahiye",
+        "quantity do kar do", "teen lassi chahiye", "do kachori chahiye"
+      ],
+      "CODE_MIXED": [
+        "samosa 2 karo", "chai 3 karo", "biryani 2 update karo",
+        "quantity change 3", "naan 2 kar do"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "rendu idli venum", "moonnu vadai venum", "rendu dosa pannunga",
+        "naangu filter kaapi venum", "moonnu idli maaro",
+        "rendu pongal venum", "naangu appam venum"
+      ],
+      "CODE_MIXED": [
+        "idli 2 pannunga", "dosa 3 maaro", "vadai 4 change pannunga",
+        "quantity 3 update pannunga", "rendu idli update pannunga"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "rendu idli kavali", "moodu dosa kavali", "rendu pesarattu ivvandi",
+        "naalu vada kavali", "moodu idli cheyandi",
+        "rendu filter coffee kavali", "naalu puri kavali"
+      ],
+      "CODE_MIXED": [
+        "idli 2 cheyandi", "dosa 3 update cheyandi",
+        "vada 4 cheyandi", "quantity 3 change cheyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "don vada pav karaa", "teen chai karaa", "don misal karaa",
+        "chaar poha karaa", "don pav bhaji karaa", "teen samosa karaa"
+      ],
+      "CODE_MIXED": [
+        "vada pav 2 kara", "chai 3 update kara", "misal 2 change kara"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "duto chai dao", "tinto rasgulla dao", "duto biryani dao",
+        "charta luchi dao", "duto mishti doi dao"
+      ],
+      "CODE_MIXED": [
+        "chai 2 koro", "rasgulla 3 update koro", "biryani 2 change koro"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "be dhokla karo", "tran thepla karo", "be chai karo",
+        "char fafda karo", "tran jalebi karo"
+      ],
+      "CODE_MIXED": [
+        "dhokla 2 karo", "chai 3 update karo", "thepla 2 change karvo che"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "ponme dos cafés", "quiero tres tortillas", "cambia a dos bocadillos",
+        "quiero cuatro croissants", "ponme dos aguas"
+      ],
+      "CODE_MIXED": [
+        "café 2 por favor", "actualiza a 3 tortillas", "cambia cantidad a 2"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "اثنين قهوة", "ثلاثة شاورما", "اثنين فلافل من فضلك",
+        "أربعة كباب", "اثنين ماء"
+      ],
+      "CODE_MIXED": [
+        "قهوة 2 من فضلك", "شاورما 3 بدل واحد", "غير الكمية إلى 2"
+      ]
+    }
+  },
+
+  "LEXOS_ORDER_CHECKOUT": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "bill kodi", "bill kodi anna", "bill haaku", "bill taa",
+        "pay maadtini", "payment maadtini", "bill ready maadi",
+        "ipa pay maadtini", "saaku ipa, bill kodi"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout maadi", "payment complete maadi",
+        "bill finalize maadi", "pay now maadi", "UPI pay maadtini"
+      ],
+      "PHONETIC": [
+        "bill kodi anna", "bill haaku", "pay maadu"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "bill do", "bill lao", "payment karna hai", "paisa dena hai",
+        "ab pay karna hai", "checkout karo", "total bill lao",
+        "bhai bill do", "UPI se pay karta hun"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout karo", "payment karo",
+        "final karo order", "pay kar raha hun"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "bill kudunga", "bill taa anna", "pay pannunga",
+        "payment pannunga", "checkout pannunga", "bill ready pannunga",
+        "panam ketpom", "ippo pay panren"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout pannunga", "payment complete pannunga",
+        "UPI pay pannunga", "bill finalize pannunga"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "bill ivvandi", "bill teyyandi", "payment cheyandi",
+        "checkout cheyandi", "bill ready cheyandi",
+        "ipudu pay chestanu", "bill settle cheyandi"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout cheyandi", "payment complete cheyandi",
+        "UPI pay chestanu", "order finalize cheyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "bill dya", "payment karaaychay", "checkout karaa",
+        "bill aana", "paisa dyaaychay", "bill tayar kara"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout kara", "payment kara",
+        "UPI ne pay kartoy", "order finalize kara"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "bill dao", "payment korbo", "checkout korbo",
+        "bill ano", "taka debo", "bill ready koro"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout koro", "payment complete koro",
+        "UPI pay korbo", "order finalize koro"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "bill apo", "payment karvu che", "checkout karo",
+        "bill lao", "paise apva che", "bill taiyar karo"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout karo", "payment karo",
+        "UPI thi pay karo", "order finalize karo"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "la cuenta por favor", "quiero pagar", "cobra por favor",
+        "queremos pagar", "dame la cuenta", "checkout por favor"
+      ],
+      "CODE_MIXED": [
+        "bill please", "checkout", "pago con tarjeta",
+        "pago por bizum"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "الحساب من فضلك", "أريد أدفع", "الفاتورة",
+        "دفع الآن", "أحسب الحساب", "جاهز للدفع"
+      ],
+      "CODE_MIXED": [
+        "checkout من فضلك", "bill please", "payment الآن"
+      ]
+    }
+  },
+
+  "LEXOS_ORDER_CANCEL": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "order cancel maadi", "full order cancel maadi",
+        "naige yenu beda", "order beda", "entire order cancel",
+        "yaav order beda", "saaku, beda", "order stop maadi"
+      ],
+      "CODE_MIXED": [
+        "order cancel please", "full order cancel maadi",
+        "order delete maadi", "entire order stop maadi"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "order cancel karo", "poora order cancel", "kuch nahi chahiye",
+        "sab cancel karo", "order band karo", "ab kuch nahi",
+        "order rok do", "kuch nahi lena"
+      ],
+      "CODE_MIXED": [
+        "order cancel please", "full order cancel karo",
+        "order delete karo", "sab kuch cancel kar do"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "order cancel pannunga", "full order cancel pannunga",
+        "yaarum vendam", "order vendam", "ellame cancel pannunga",
+        "order niruthunga", "kku vendum illai"
+      ],
+      "CODE_MIXED": [
+        "order cancel please", "full order cancel pannunga",
+        "order delete pannunga", "ellame cancel pannu"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "order cancel cheyandi", "poortiga cancel cheyandi",
+        "anni cancel cheyandi", "order vaddhu", "nilipeyandi order",
+        "emee vaddhu", "order band cheyandi"
+      ],
+      "CODE_MIXED": [
+        "order cancel please", "full order cancel cheyandi",
+        "order delete cheyandi", "sab cancel cheyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "order cancel karaa", "kahi nako", "poorna order cancel",
+        "sab cancel kara", "order band kara", "kahi nahi pahije"
+      ],
+      "CODE_MIXED": [
+        "order cancel please", "full order cancel kara",
+        "order delete kara"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "order cancel koro", "sab cancel koro", "kichhu lagbe na",
+        "order bondho koro", "poora order bad koro", "kichhu na"
+      ],
+      "CODE_MIXED": [
+        "order cancel please", "full order cancel koro",
+        "order delete koro"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "order cancel karo", "badhu cancel karo", "khaali karo",
+        "kanchhu nathi joitu", "order band karo", "sab cancel karvo"
+      ],
+      "CODE_MIXED": [
+        "order cancel please", "full order cancel karo",
+        "order delete karo"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "cancela el pedido", "cancela todo", "no quiero nada",
+        "cancela todo por favor", "quiero cancelar el pedido"
+      ],
+      "CODE_MIXED": [
+        "cancel order", "cancela todo please", "delete order"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "الغ الطلب", "ما أبي شي", "الغ كل شي",
+        "لا أريد شيء", "ألغِ الطلب كله", "إلغاء الطلب"
+      ],
+      "CODE_MIXED": [
+        "cancel الطلب", "الغ كل شي please", "delete order"
+      ]
+    }
+  },
+
+  "LEXOS_PRICE_INQUIRY_ITEM": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "masala dosa eshtu?", "set dosa rate eshtu?", "upma eshtu aagutte?",
+        "vada price eshtu?", "kesari bath eshtu?", "rava idli rate?",
+        "bisibele bath eshtu?", "pongal price eshtu?",
+        "ragi mudde eshtu?", "akki rotti eshtu?"
+      ],
+      "CODE_MIXED": [
+        "masala dosa price?", "vada rate?", "idli price check maadi",
+        "filter coffee eshtu?", "upma eshtu aagutte heli"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "samosa kitna?", "biryani ka daam?", "chai kitni?",
+        "lassi ka price kya hai?", "naan kitna?",
+        "paneer tikka kitna?", "chole bhature kitna?",
+        "gulab jamun kitna?", "jalebi kitni?"
+      ],
+      "CODE_MIXED": [
+        "samosa price?", "biryani ka rate?", "chai ka price kya hai?",
+        "lassi kitni padti hai?", "naan ka price bolo"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "idli evvalavu?", "dosa price enna?", "vadai evvalavu?",
+        "filter kaapi evvalavu?", "pongal enna rate?",
+        "appam evvalavu?", "uttappam price enna?",
+        "kesari evvalavu?", "puttu enna vilai?"
+      ],
+      "CODE_MIXED": [
+        "idli price?", "dosa rate?", "vadai evvalavu sollunga",
+        "filter kaapi price check pannunga"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "idli enta?", "dosa price enta?", "pesarattu enta?",
+        "upma enta aagutte?", "vada rate enta?",
+        "filter coffee enta?", "puri rate enta?",
+        "biryani price enta?", "pongal enta?"
+      ],
+      "CODE_MIXED": [
+        "idli price?", "dosa rate enta cheppandi?",
+        "pesarattu enta?", "filter coffee price check cheyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "vada pav kiti?", "chai la kiti paise?", "misal kiti rupaye?",
+        "poha kiti?", "pav bhaji kiti?", "samosa kiti?",
+        "sheera kiti rupaye?"
+      ],
+      "CODE_MIXED": [
+        "vada pav price?", "chai rate?", "misal cha daam kiti?",
+        "poha kiti padtay?"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "chai koto taka?", "rasgulla dam koto?", "biryani koto?",
+        "mishti doi koto taka?", "luchi koto?",
+        "sandesh dam koto?", "alur torkari koto?"
+      ],
+      "CODE_MIXED": [
+        "chai price?", "rasgulla rate koto?", "biryani dam koto?"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "dhokla keta?", "thepla kimat keti?", "fafda keta rupiya?",
+        "jalebi keti?", "chai keta?", "khandvi kimat?",
+        "gathiya keta?"
+      ],
+      "CODE_MIXED": [
+        "dhokla price?", "chai rate?", "thepla keta padse?",
+        "fafda kimat check karo"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "¿cuánto cuesta el café?", "¿qué precio tiene la tortilla?",
+        "¿cuánto es el bocadillo?", "¿cuánto vale el zumo?",
+        "¿a cuánto está el croissant?"
+      ],
+      "CODE_MIXED": [
+        "café price?", "¿cuánto cuesta?", "precio del bocadillo"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "بكم القهوة؟", "ما سعر الشاورما؟", "كم يكلف الفلافل؟",
+        "بكم الكباب؟", "سعر البيريانى؟", "كم الحمص؟"
+      ],
+      "CODE_MIXED": [
+        "قهوة price؟", "شاورما بكم؟", "كم سعر الفلافل"
+      ]
+    }
+  },
+
+  "LEXOS_PRICE_INQUIRY_TOTAL": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "total eshtu?", "bill total eshtu?", "nanu order maadiddu eshtu?",
+        "ellav total eshtu aagutte?", "sab milisi eshtu?",
+        "total heli siri", "bill eshtu aagutte?", "full total tili"
+      ],
+      "CODE_MIXED": [
+        "total amount eshtu?", "bill total check maadi",
+        "overall eshtu aagutte?", "final amount eshtu?"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "total kitna?", "sab milake kitna?", "poora kitna hua?",
+        "bill total kya?", "ab tak kitna?", "total amount kya?",
+        "sab mila ke kitna banta hai?"
+      ],
+      "CODE_MIXED": [
+        "total amount?", "grand total kya hai?",
+        "overall kitna hua?", "final total batao"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "total evvalavu?", "ellam serthu evvalavu?", "bill total enna?",
+        "mottam evvalavu?", "appadiye total paarunga",
+        "bill amount evvalavu?", "full total sollunga"
+      ],
+      "CODE_MIXED": [
+        "total amount?", "grand total evvalavu?",
+        "overall evvalavu?", "final bill evvalavu?"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "total enta?", "anni kalipite enta?", "bill total enta?",
+        "mottam enta?", "full total cheppandi", "vanta total enta?"
+      ],
+      "CODE_MIXED": [
+        "total amount enta?", "grand total enta?",
+        "overall enta?", "final bill enta?"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "total kiti?", "sab milun kiti rupaye?", "poorna total kiti?",
+        "bill total kiti?", "aaтаa paryant kiti?"
+      ],
+      "CODE_MIXED": [
+        "total amount kiti?", "grand total kiti?",
+        "overall kiti jhala?", "final total kiti?"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "total koto?", "sob miliye koto?", "bill total koto?",
+        "poora taka koto?", "ekhon paryonto koto?"
+      ],
+      "CODE_MIXED": [
+        "total amount koto?", "grand total koto?",
+        "overall koto taka?", "final bill koto?"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "total keta?", "badhu male keta?", "bill total keta?",
+        "poora keta thashe?", "abhi sudhi keta?"
+      ],
+      "CODE_MIXED": [
+        "total amount keta?", "grand total keta?",
+        "overall keta thashe?", "final bill keta?"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "¿cuánto es en total?", "¿cuánto suma todo?", "el total por favor",
+        "¿cuánto es todo?", "¿cuánto me sale?"
+      ],
+      "CODE_MIXED": [
+        "total amount?", "¿cuánto es el total?", "grand total?"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "كم المجموع؟", "الإجمالي كم؟", "كل شي بكم؟",
+        "المجموع الكلي؟", "كم الحساب كله؟"
+      ],
+      "CODE_MIXED": [
+        "total amount؟", "grand total كم؟", "المجموع كم؟"
+      ]
+    }
+  },
+
+  "LEXOS_GREETING": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "namaskara", "hello anna", "hello akka", "shubhodaya",
+        "hi", "enu heli", "yaaru iddira", "shubha sanjeya"
+      ],
+      "CODE_MIXED": [
+        "hi anna", "hello", "good morning anna", "good evening akka",
+        "namaskara, order maadbekide"
+      ],
+      "PHONETIC": ["namaskara", "shubhodaya", "namaskar"]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "namaste", "namaskar", "jai shree ram", "hello bhai",
+        "jai hind", "kya hal hai", "hi", "salam"
+      ],
+      "CODE_MIXED": [
+        "hi", "hello", "good morning bhai", "good evening",
+        "namaste, order karna tha"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "vanakkam", "hello anna", "kalai vanakkam", "maalai vanakkam",
+        "hi", "enna solringa"
+      ],
+      "CODE_MIXED": [
+        "hi", "hello", "good morning anna", "vanakkam, order pannanam"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "namaskaram", "hello anna", "meeru ela unnaru", "hi",
+        "subhodayam", "mee seva lo"
+      ],
+      "CODE_MIXED": [
+        "hi", "hello", "good morning anna", "namaskaram, order cheyali"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "namaskar", "hello dada", "jai Maharashtra", "hi",
+        "kas kay", "namaskaar"
+      ],
+      "CODE_MIXED": [
+        "hi", "hello", "good morning dada", "namaskar, order karaaychay"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "namaskar", "hello dada", "ki khobor", "hi",
+        "shubho shokal", "kemon acho"
+      ],
+      "CODE_MIXED": [
+        "hi", "hello", "good morning dada", "namaskar, order korbo"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "kem cho", "namaste", "hello bhai", "hi",
+        "jai shree Krishna", "shu chhej"
+      ],
+      "CODE_MIXED": [
+        "hi", "hello", "good morning bhai", "kem cho, order karvu che"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "hola", "buenos días", "buenas tardes", "buenas noches",
+        "hi", "hey", "ola"
+      ],
+      "CODE_MIXED": ["hi", "hello", "good morning"]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "السلام عليكم", "مرحبا", "أهلاً", "صباح الخير",
+        "مساء الخير", "هلا", "hi"
+      ],
+      "CODE_MIXED": ["hi", "hello", "مرحبا how are you"]
+    }
+  },
+
+  "LEXOS_FAREWELL": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "dhanyavaada", "bye anna", "bye akka", "ok bye",
+        "nanti", "saari nanage", "nimma seva tumba chennaagide",
+        "mandhagaara", "hegidru"
+      ],
+      "CODE_MIXED": [
+        "thanks anna", "thank you", "bye bye", "ok thank you anna",
+        "good bye akka"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "shukriya", "dhanyawaad", "bye bhai", "alvida",
+        "theek hai", "bahut bahut shukriya", "acha bye",
+        "jai hind"
+      ],
+      "CODE_MIXED": [
+        "thanks bhai", "thank you", "bye bye", "ok thanks",
+        "good bye"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "nandri", "bye anna", "romba nandri", "seri bye",
+        "vanakkam", "nandri akka", "nalaa irunga"
+      ],
+      "CODE_MIXED": [
+        "thanks anna", "thank you", "bye bye", "ok thanks",
+        "good bye"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "dhanyavaadamulu", "bye anna", "nanri", "seri bye",
+        "vallaanaa", "chala thanks", "baagaa cheyyi"
+      ],
+      "CODE_MIXED": [
+        "thanks anna", "thank you", "bye bye", "ok thanks",
+        "good bye"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "dhanyavaad", "bye dada", "shukriya", "theek ahe",
+        "ok bye", "aabhaar", "punhaa bhetoo"
+      ],
+      "CODE_MIXED": [
+        "thanks dada", "thank you", "bye bye", "ok thanks"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "dhonyobaad", "abar asbo", "bye dada", "ok bye",
+        "onek dhonyobaad", "bhalo theko"
+      ],
+      "CODE_MIXED": [
+        "thanks dada", "thank you", "bye bye", "ok thanks"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "aabhaar", "bye bhai", "shukriya", "ok bye",
+        "dhanyavaad", "tamne milva gamo"
+      ],
+      "CODE_MIXED": [
+        "thanks bhai", "thank you", "bye bye", "ok thanks"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "gracias", "adiós", "hasta luego", "muchas gracias",
+        "bye", "hasta pronto", "que tenga buen día"
+      ],
+      "CODE_MIXED": ["thanks", "bye bye", "ok thanks"]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "شكراً", "مع السلامة", "الله يسلمك", "وداعاً",
+        "بخير", "شكراً جزيلاً", "يعطيك العافية"
+      ],
+      "CODE_MIXED": ["thanks", "bye", "شكراً bye"]
+    }
+  },
+
+  "LEXOS_HELP_UNDO_ACTION": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "undo maadi", "cancel maadi wrong aaitu", "hinde hogo",
+        "wrong maadide take back maadi", "matte maadi",
+        "olage hogo", "nimma hatra yaav order beda aagitte"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that maadi", "go back maadi",
+        "revert maadi", "wrong aaitu, fix maadi"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "undo karo", "galat hua", "wapas lo", "pichhe jao",
+        "cancel karo yaar", "nahi nahi wapas", "bhool se ho gaya"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that", "go back", "revert karo",
+        "wrong tha fix karo"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "undo pannunga", "tappaa sollideen vaapas pannunga",
+        "cancel pannunga wrong", "piraga ponga",
+        "meendum ponga"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that pannunga", "go back pannunga",
+        "revert pannunga", "wrong aachi fix pannunga"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "undo cheyandi", "tappu cheppanu tisi veyandi",
+        "cancel cheyandi wrong", "vadhalipeyandi",
+        "maapadi cheyandi"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that cheyandi", "go back cheyandi",
+        "revert cheyandi", "wrong aindi fix cheyandi"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "undo kara", "chuklee maazi maghe ghya",
+        "cancel kara wrong", "maage ja", "punhaa kara"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that kara", "go back kara",
+        "revert kara"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "undo koro", "bhul hoyeche firiye dao",
+        "cancel koro", "pechone jao", "abaar koro"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that koro", "go back koro",
+        "revert koro"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "undo karo", "bhool thai gayi pagal jao",
+        "cancel karo wrong", "pachi jao"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that karo", "go back karo",
+        "revert karo"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "deshacer", "me equivoqué", "cancela lo último",
+        "quita eso", "vuelve atrás", "error mío"
+      ],
+      "CODE_MIXED": [
+        "undo please", "cancel that", "go back", "revert"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "تراجع", "غلطت", "الغِ الأخير",
+        "ارجع للوراء", "ارجع خطوة"
+      ],
+      "CODE_MIXED": [
+        "undo من فضلك", "cancel الأخير", "go back"
+      ]
+    }
+  },
+
+  "LEXOS_SPECIAL_REQUEST_PACKAGING": {
+    "kn-IN": {
+      "COLLOQUIAL": [
+        "parcel maadi", "packet maadi", "take away maadi",
+        "parcel kodi", "box maadi", "kattiko beku",
+        "nalige take away beku", "parcel aagatte?"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "take away please", "pack it maadi",
+        "parcel pack maadi", "box it maadi"
+      ]
+    },
+    "hi-IN": {
+      "COLLOQUIAL": [
+        "parcel karo", "pack karo", "packet mein do",
+        "take away chahiye", "baandh ke do", "le jaaunga",
+        "ghar ke liye pack karo"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "take away please", "pack it karo",
+        "pack kar do", "to go please"
+      ]
+    },
+    "ta-IN": {
+      "COLLOQUIAL": [
+        "parcel pannunga", "pack pannunga", "take away venum",
+        "kattu pannunga", "konjam pack pannunga",
+        "veetuku kondu poga venum"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "take away please", "pack it pannunga",
+        "to go venum"
+      ]
+    },
+    "te-IN": {
+      "COLLOQUIAL": [
+        "parcel cheyandi", "pack cheyandi", "take away kavali",
+        "kattu cheyandi", "intiki teguskovadam",
+        "parcel lo kavali"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "take away please", "pack it cheyandi",
+        "to go kavali"
+      ]
+    },
+    "mr-IN": {
+      "COLLOQUIAL": [
+        "parcel karaa", "pack karaa", "take away hava",
+        "baandh karaa", "gharyasaathi pack karaa"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "take away please", "pack it kara",
+        "to go please"
+      ]
+    },
+    "bn-IN": {
+      "COLLOQUIAL": [
+        "parcel koro", "pack kore dao", "take away chai",
+        "bandho kore dao", "barite niye jabo"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "take away please", "pack it koro",
+        "to go chai"
+      ]
+    },
+    "gu-IN": {
+      "COLLOQUIAL": [
+        "parcel karo", "pack karo", "take away joie che",
+        "baandhi ne apo", "ghar le jaava nu che"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "take away please", "pack it karo",
+        "to go joie che"
+      ]
+    },
+    "es-ES": {
+      "COLLOQUIAL": [
+        "para llevar", "envuélvelo por favor", "para llevar por favor",
+        "lo quiero para llevar", "me lo pones para llevar"
+      ],
+      "CODE_MIXED": [
+        "parcel please", "to go please", "para llevar"
+      ]
+    },
+    "ar-AE": {
+      "COLLOQUIAL": [
+        "للأخذ", "تغليف من فضلك", "معي أريد آخذه",
+        "علبة من فضلك", "خذها معي"
+      ],
+      "CODE_MIXED": [
+        "parcel من فضلك", "take away please", "to go"
+      ]
+    }
+  }
+}

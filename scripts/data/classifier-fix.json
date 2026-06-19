@@ -1,0 +1,15 @@
+{
+  "LEXOS_SPECIAL_REQUEST_PACKAGING": {
+    "hi-IN": { "COLLOQUIAL": ["ise pack karke do", "ye wala pack kar do", "isko packing karke do", "saara pack kar do", "dosa pack kar do", "ye dabba mein pack karo", "poora parcel bana do"], "CODE_MIXED": ["ye wala parcel karo", "isko parcel karke do", "saara parcel karo"] },
+    "kn-IN": { "COLLOQUIAL": ["adanna parcel maadi", "ee dose parcel maadi", "ella parcel maadi", "idanna pack maadi kodi", "dose parcel maadi anna", "box alli haaki parcel maadi"], "CODE_MIXED": ["ee dose parcel maadi", "ella parcel maadi", "dose pack maadi"] },
+    "mr-IN": { "COLLOQUIAL": ["ha pack karun dya", "sagla parcel kara", "vada pav parcel kara", "he pack karun ghya", "ha dabba pack kara", "sagla pack karun dya"], "CODE_MIXED": ["ha parcel kara", "sagla parcel kara", "vada pav pack kara"] },
+    "ta-IN": { "COLLOQUIAL": ["idha pack panni kudunga", "ellam parcel pannunga", "dosa parcel pannunga", "intha dosa pack pannunga", "ellam pack panni kudunga"], "CODE_MIXED": ["idha parcel panni kudunga", "ellam parcel pannunga", "dosa pack pannunga"] },
+    "te-IN": { "COLLOQUIAL": ["deenni parcel cheyandi", "anni parcel cheyandi", "dosa parcel cheyandi", "ee dosa pack cheyandi", "anni pack chesi pettandi"], "CODE_MIXED": ["deenni parcel cheyandi", "anni parcel cheyandi", "dosa pack cheyandi"] }
+  },
+  "LEXOS_ORDER_CHECKOUT": {
+    "te-IN": { "COLLOQUIAL": ["bill ivvandi", "bill iyyandi", "bill ready cheyandi", "bill cheppandi ippudu", "bill print cheyandi"], "CODE_MIXED": ["bill ivvandi", "bill iyyandi anna", "bill ready cheyandi"] }
+  },
+  "LEXOS_PRICE_INQUIRY_TOTAL": {
+    "ta-IN": { "COLLOQUIAL": ["ellaam serthu evvalavu", "motham evvalavu aachu", "ellam serthu motham evvalavu", "motham bill evvalavu aachu"], "CODE_MIXED": ["total ellaam serthu evvalavu", "motham evvalavu"] }
+  }
+}

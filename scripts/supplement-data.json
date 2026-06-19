@@ -1,0 +1,1874 @@
+[
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ek burger chahiye",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "yeh wala dena",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek pizza order karna hai",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "mujhe ek sandwich chahiye",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "do burger lao",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "teen wale chahiye",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 pizzas add karo",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "do sandwiches order karo",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ek coffee pilao",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "juice bhi de do",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek cold coffee add karo",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "milkshake bhi order karna hai",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "woh burger hata do",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "wo wala cancel kar do",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza remove karo order se",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich wala nahi chahiye",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "burger do kar do",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ek aur add kar lo",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quantity change karo teen karo",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 se 3 burgers kar do",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "burger milega kya",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "pizza hai kya yahan",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pasta available hai kya",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich hai menu mein",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "burger cancel karo",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "wo wala nahi chahiye ab",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza ka order cancel karo",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich hatao order se",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "hi-IN",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "burger kitne ka hai",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "is wale ka daam kya hai",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza ka price kya hai",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich kitne mein milega",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಒಂದು ಬರ್ಗರ್ ಕೊಡಿ",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಇದನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತೇನೆ",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek pizza order maadbekide",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ond sandwich add maadi",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಎರಡು ಬರ್ಗರ್ ಬೇಕು",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಮೂರು ತೆಗೆದುಕೊಳ್ಳಿ",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 pizzas add maadi",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "eradu sandwiches bekagide",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಒಂದು ಕಾಫಿ ಕೊಡಿ",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಜ್ಯೂಸ್ ಕೂಡ ತನ್ನಿ",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cold coffee add maadi",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ond milkshake beku",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಆ ಬರ್ಗರ್ ತೆಗೆಯಿರಿ",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಅದು ಬೇಡ",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza remove maadi order ninda",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich cancel maadi",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಬರ್ಗರ್ ಎರಡು ಮಾಡಿ",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಒಂದು ಹೆಚ್ಚು ಬೇಕು",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quantity change maadi 3 maadi",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 burgers inda 3 maadi",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಬರ್ಗರ್ ಸಿಗುತ್ತದೆಯೇ",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಪಿಜ್ಜಾ ಇದೆಯಾ",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pasta available ideyaa",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich menu alli ideyaa",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಬರ್ಗರ್ ಬೇಡ",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಅದನ್ನು cancel maadi",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza cancel maadi",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich order ninda tege",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "kn-IN",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಬರ್ಗರ್ ಬೆಲೆ ಎಷ್ಟು",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ಇದು ಎಷ್ಟು",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza price eshtu",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich eshtu aagutte",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "एक बर्गर द्या",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "हे हवं आहे",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek pizza order kara",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich add kara please",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "दोन बर्गर हवेत",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "तीन द्या",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 pizzas add kara",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "don sandwiches order kara",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "एक कॉफी द्या",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ज्यूस पण आणा",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cold coffee add kara",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "milkshake pan hava",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "तो बर्गर काढा",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ते नको आहे",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza remove kara order madhun",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich cancel kara",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "बर्गर दोन करा",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "एक जास्त हवं आहे",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quantity change kara teen kara",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 burgers che 3 kara",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "बर्गर मिळेल का",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "पिज्जा आहे का इथे",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pasta available ahe ka",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich menu madhe ahe ka",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "बर्गर नको",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ते cancel kara",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza cancel kara",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich order madhun kadha",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "mr-IN",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "बर्गरची किंमत किती",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "हे किती आहे",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza chi price kay ahe",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich kiti rupayala milel",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ஒரு பர்கர் கொடுங்க",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "இது வேணும்",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "oru pizza order pannunga",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich add pannunga",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ரெண்டு பர்கர் வேணும்",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "மூணு எடுங்க",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 pizzas add pannunga",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "rendu sandwiches order pannunga",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ஒரு காபி குடுங்க",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ஜூஸும் கொண்டாங்க",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cold coffee add pannunga",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "oru milkshake vendum",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "அந்த பர்கர் எடுங்க",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "அது வேண்டாம்",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza remove pannunga order la irundhu",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich cancel pannunga",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "பர்கர் ரெண்டு ஆக்குங்க",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ஒண்ணு கூட வேணும்",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quantity change pannunga 3 pannunga",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 burgers la irundhu 3 pannunga",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "பர்கர் கிடைக்குமா",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "பிட்ஸா இருக்கா இங்க",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pasta available aa",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich menu la irukka",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "பர்கர் வேண்டாம்",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "அதை cancel pannunga",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza cancel pannunga",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich order la irundhu edhunga",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "ta-IN",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "பர்கர் விலை என்ன",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "இது எவ்வளவு",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza price enna",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich evvalavu",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ఒక్క బర్గర్ ఇవ్వండి",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ఇది కావాలి",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "oka pizza order cheyandi",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich add cheyandi",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "రెండు బర్గర్లు కావాలి",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "మూడు తీసుకోండి",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 pizzas add cheyandi",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "rendu sandwiches order cheyandi",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ఒక కాఫీ ఇవ్వండి",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "జ్యూస్ కూడా తీసుకురండి",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cold coffee add cheyandi",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "oka milkshake kuda kavaali",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ఆ బర్గర్ తీయండి",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "అది వద్దు",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza remove cheyandi order nunchi",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich cancel cheyandi",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "బర్గర్ రెండు చేయండి",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ఒకటి మరింత కావాలి",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quantity change cheyandi 3 cheyandi",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 burgers nunchi 3 cheyandi",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "బర్గర్ దొరుకుతుందా",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "పిజ్జా ఉందా ఇక్కడ",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pasta available aa",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich menu lo undaa",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "బర్గర్ వద్దు",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "దాన్ని cancel cheyandi",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza cancel cheyandi",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich order nunchi teeyi",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "te-IN",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "బర్గర్ ధర ఎంత",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ఇది ఎంత",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza price enta",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich evvaraku",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "একটা বার্গার দাও",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "এটা চাই",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek pizza order koro",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich add koro",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "দুটো বার্গার চাই",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "তিনটা দাও",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2ta pizza add koro",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "duto sandwich order koro",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "একটা কফি দাও",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "জুসও নিয়ে এসো",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cold coffee add koro",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek milkshake chai",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ওই বার্গারটা সরাও",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ওটা চাই না",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza remove koro order theke",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich cancel koro",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "বার্গার দুটো করো",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "আরেকটা লাগবে",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quantity change koro 3ta koro",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2ta burger theke 3ta koro",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "বার্গার পাওয়া যাবে",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "এখানে পিৎজা আছে",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pasta available ache",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich menu te ache",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "বার্গার লাগবে না",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ওটা cancel koro",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza cancel koro",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich order theke sora",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "bn-IN",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "বার্গারের দাম কত",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "এটা কত",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza r price koto",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich koto taka",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "એક બર્ગર આપો",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "આ જોઈએ છે",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek pizza order karvo che",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich add karo",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "બે બર્ગર જોઈએ",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ત્રણ આપો",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 pizzas add karo",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "be sandwiches order karo",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "એક કોફી આપો",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "જ્યૂસ પણ લઈ આવો",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cold coffee add karo",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "ek milkshake pan joiye",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "એ બર્ગર કાઢો",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "એ નથી જોઈતું",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza remove karo order mathi",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich cancel karo",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "બર્ગર બે કરો",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "એક વધારે જોઈએ",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quantity change karo tran karo",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "2 burgers ne 3 karo",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "બર્ગર મળશે",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "પિઝ્ઝા છે અહીં",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pasta available che",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich menu ma che",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "બર્ગર નથી જોઈતું",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "એ cancel karo",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza cancel karo",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich order mathi kadho",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "gu-IN",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "બર્ગરની કિંમત શું",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "આ કેટલાનું",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "pizza ni price shu che",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "sandwich ketlama milse",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "quiero una hamburguesa",
+        "confidence": 0.92
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "dame esto",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quiero order una pizza",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "add un sandwich por favor",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "dos hamburguesas por favor",
+        "confidence": 0.92
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "dame tres de estos",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "add 2 pizzas",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quiero dos sandwiches",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "un café por favor",
+        "confidence": 0.92
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "también un jugo",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "add un café helado",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quiero un milkshake también",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "quita la hamburguesa",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ese no lo quiero",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "remove la pizza del order",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cancela el sandwich",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "pon dos hamburguesas",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "uno más por favor",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cambia la quantity a tres",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "de 2 a 3 hamburguesas",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "tienen hamburguesas",
+        "confidence": 0.92
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "hay pizza aquí",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "está disponible la pasta",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "el sandwich está en el menú",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "cancela la hamburguesa",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ese ya no lo quiero",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cancela la pizza",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "quita el sandwich del order",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "es-ES",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "cuánto cuesta la hamburguesa",
+        "confidence": 0.92
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "cuánto es esto",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cuál es el precio de la pizza",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cuánto vale el sandwich",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_CART_ADD_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "أبغى برجر واحد",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "هذا أبغاه",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "واحد pizza أضيفوا",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "أضيفوا sandwich من فضلكم",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_CART_ADD_ITEM_WITH_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "أبغى برجرين",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "ثلاثة منهم",
+        "confidence": 0.86
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "أضيفوا 2 pizzas",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "أبغى اثنين sandwich",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_CART_ADD_DRINK",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "قهوة واحدة من فضلك",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "عصير كمان",
+        "confidence": 0.87
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "أضيفوا cold coffee",
+        "confidence": 0.91
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "أبغى milkshake كمان",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_CART_REMOVE_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "شيل البرجر",
+        "confidence": 0.9
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "هذا ما أبغاه",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "remove البيتزا من الorder",
+        "confidence": 0.89
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cancel الـsandwich",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_CART_UPDATE_QUANTITY",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "خليها برجرين",
+        "confidence": 0.89
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "أبغى واحد زيادة",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "غير الـquantity إلى ثلاثة",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "من 2 إلى 3 برجر",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_MENU_SEARCH_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "عندكم برجر",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "في بيتزا هنا",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "هل الـpasta متوفرة",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "الـsandwich موجود في الـmenu",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_ORDER_CANCEL_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "ما أبغى البرجر",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "هذا الغيه",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "cancel البيتزا",
+        "confidence": 0.92
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "شيل الـsandwich من الـorder",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "lang": "ar-AE",
+    "intent_id": "LEXOS_PRICE_INQUIRY_ITEM",
+    "variants": [
+      {
+        "type": "COLLOQUIAL",
+        "value": "بكم البرجر",
+        "confidence": 0.91
+      },
+      {
+        "type": "COLLOQUIAL",
+        "value": "بكم هذا",
+        "confidence": 0.88
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "كم سعر الـpizza",
+        "confidence": 0.9
+      },
+      {
+        "type": "CODE_MIXED",
+        "value": "الـsandwich بكم",
+        "confidence": 0.88
+      }
+    ]
+  }
+]

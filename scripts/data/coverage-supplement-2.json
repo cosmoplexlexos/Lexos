@@ -1,0 +1,25 @@
+{
+  "LEXOS_CART_REMOVE_ITEM": {
+    "hi-IN": { "COLLOQUIAL": ["chai cancel kar do", "samosa cancel kar do", "biryani cancel kar do", "coffee cancel kar do", "lassi cancel kar do"], "CODE_MIXED": ["chai cancel kar do", "samosa cancel karo", "biryani cancel karo", "is item ko cancel karo"] },
+    "mr-IN": { "COLLOQUIAL": ["chaha cancel kara", "ha vada pav nako", "samosa rahu dya", "vada pav rahu dya", "ha samosa nako", "misal nako", "poha nako"], "CODE_MIXED": ["chaha cancel kara", "vada pav cancel kara", "misal cancel kara"] },
+    "ta-IN": { "COLLOQUIAL": ["kaapi venda", "coffee venda", "idli venda", "dosa venda", "vadai venda"], "CODE_MIXED": ["kaapi cancel pannunga", "coffee cancel pannunga"] }
+  },
+  "LEXOS_CART_ADD_ITEM": {
+    "ta-IN": { "COLLOQUIAL": ["enakku rendu idli venum", "enakku oru dosa venum", "enakku rendu vadai venum", "enakku oru coffee venum", "enakku oru idli venum"], "CODE_MIXED": [] },
+    "mr-IN": { "COLLOQUIAL": ["ek cutting chaha dya", "ek cutting chaha", "cutting chaha dya", "ek kadak chaha dya"], "CODE_MIXED": [] }
+  },
+  "LEXOS_CART_UPDATE_QUANTITY": {
+    "te-IN": { "COLLOQUIAL": ["idli quantity penchandi", "vada quantity penchandi", "dosa quantity penchandi", "idli quantity thagginchandi"], "CODE_MIXED": [] }
+  },
+  "LEXOS_FAREWELL": {
+    "hi-IN": { "COLLOQUIAL": ["ab nahi chahiye kuch", "aur kuch nahi chahiye", "bas ab kuch nahi chahiye", "ab kuch aur nahi"], "CODE_MIXED": [] },
+    "kn-IN": { "COLLOQUIAL": ["sari bye", "sari aaytu bye", "sari hogtini"], "CODE_MIXED": [] },
+    "ta-IN": { "COLLOQUIAL": ["sari bye", "sari polaam bye", "sari aachu"], "CODE_MIXED": [] },
+    "te-IN": { "COLLOQUIAL": ["sare bye", "sare veltunna bye", "sare aipoindi"], "CODE_MIXED": [] }
+  },
+  "LEXOS_GREETING": {
+    "hi-IN": { "COLLOQUIAL": ["hello suniye", "suniye bhaiya", "suno bhaiya", "suniye ji"], "CODE_MIXED": [] },
+    "mr-IN": { "COLLOQUIAL": ["ho ka aika", "aika dada", "aika na", "ho ka"], "CODE_MIXED": [] },
+    "ta-IN": { "COLLOQUIAL": ["epdi irukeenga", "epdi irukeenga anna", "eppadi irukeenga anna"], "CODE_MIXED": [] }
+  }
+}

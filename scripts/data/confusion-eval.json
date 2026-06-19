@@ -1,0 +1,79 @@
+{
+  "LEXOS_CART_ADD_ITEM": {
+    "hi-IN": ["bhaiya ek samosa dena", "mujhe ek chai bhi de do", "do biryani laga do"],
+    "kn-IN": ["naange ondu vada", "ondu dose kodi anna", "eradu idli beku"],
+    "mr-IN": ["ek vada pav dya dada", "mala don chai", "ek misal pav dya"],
+    "ta-IN": ["oru vadai kudunga", "rendu idli venum anna", "oru dosa kudunga"],
+    "te-IN": ["oka vada ivvandi", "rendu idli kavali anna", "oka dosa ivvandi"]
+  },
+  "LEXOS_CART_REMOVE_ITEM": {
+    "hi-IN": ["ye samosa nahi chahiye", "chai hata do bhaiya", "biryani cancel kar do", "paneer wala nikaal do"],
+    "kn-IN": ["ee vada beda", "idli beda anna", "dose tegidu haaki", "coffee beda bidi"],
+    "mr-IN": ["ha vada pav nako", "chai nako dada", "misal cancel kara", "poha kadha"],
+    "ta-IN": ["intha vadai venda", "idli venda anna", "dosa eduthu podunga", "kaapi venda"],
+    "te-IN": ["ee vada vaddu", "idli vaddu anna", "dosa teesi veyandi", "coffee vaddu"]
+  },
+  "LEXOS_CART_UPDATE_QUANTITY": {
+    "hi-IN": ["samosa do kar do", "chai ki quantity badha do", "biryani ek hi rakho", "paneer kam kar do"],
+    "kn-IN": ["vada eradu maadi", "idli jaasti maadi", "dose ondu saaku", "coffee kammi maadi"],
+    "mr-IN": ["vada pav don kara", "chai wadhva", "misal ek puresa", "poha kami kara"],
+    "ta-IN": ["vadai rendu pannunga", "idli koodu pannunga", "dosa onnu pothum", "kaapi korai pannunga"],
+    "te-IN": ["vada rendu cheyandi", "idli penchandi", "dosa okati chalu", "coffee thagginchandi"]
+  },
+  "LEXOS_PRICE_INQUIRY_ITEM": {
+    "hi-IN": ["samosa kitne ka", "chai ka rate kya hai", "biryani kitne ki hai"],
+    "kn-IN": ["vada eshtu anna", "dose rate eshtu", "coffee eshtu"],
+    "mr-IN": ["vada pav kiti la", "chai cha rate kay", "misal kiti la"],
+    "ta-IN": ["vadai evvalavu anna", "dosa rate enna", "kaapi evvalavu"],
+    "te-IN": ["vada enta anna", "dosa rate enta", "coffee enta"]
+  },
+  "LEXOS_PRICE_INQUIRY_TOTAL": {
+    "hi-IN": ["total kitna hua bhaiya", "sab milake kitna"],
+    "kn-IN": ["ella seri eshtu aaytu", "total eshtu anna"],
+    "mr-IN": ["sagla milun kiti", "total kiti zaala"],
+    "ta-IN": ["ellaam serthu evvalavu", "motham evvalavu anna"],
+    "te-IN": ["anni kalipi enta", "motham enta anna"]
+  },
+  "LEXOS_ORDER_CHECKOUT": {
+    "hi-IN": ["bill laga do bhaiya", "payment karna hai"],
+    "kn-IN": ["bill maadi anna", "pay maadbeku"],
+    "mr-IN": ["bill lava dada", "payment karaycha aahe"],
+    "ta-IN": ["bill podunga anna", "pay panna venum"],
+    "te-IN": ["bill veyandi anna", "pay cheyali"]
+  },
+  "LEXOS_ORDER_CANCEL": {
+    "hi-IN": ["pura order cancel kar do", "saara order radd karo"],
+    "kn-IN": ["poora order cancel maadi anna", "ella order cancel maadi"],
+    "mr-IN": ["pura order cancel kara", "sagla order radd kara"],
+    "ta-IN": ["full order cancel pannunga", "ellaam order cancel pannunga"],
+    "te-IN": ["full order cancel cheyandi", "naa order anni raddu cheyandi"]
+  },
+  "LEXOS_SPECIAL_REQUEST_PACKAGING": {
+    "hi-IN": ["samosa parcel kar do", "ye pack kar dena", "biryani pack karo"],
+    "kn-IN": ["vada parcel maadi", "ee dose pack maadi", "coffee parcel maadi"],
+    "mr-IN": ["vada pav parcel kara", "he pack karun dya", "misal pack kara"],
+    "ta-IN": ["vadai parcel pannunga", "intha dosa pack pannunga", "kaapi parcel pannunga"],
+    "te-IN": ["vada parcel cheyandi", "ee dosa pack cheyandi", "coffee parcel cheyandi"]
+  },
+  "LEXOS_HELP_UNDO_ACTION": {
+    "hi-IN": ["abhi wala wapas karo", "undo kar do bhaiya"],
+    "kn-IN": ["eega maadiddu wapas maadi", "undo maadi anna"],
+    "mr-IN": ["ata kela te mage ghya", "undo kara dada"],
+    "ta-IN": ["ippo panninatha wapas pannunga", "undo pannunga anna"],
+    "te-IN": ["ippudu chesindi wapas cheyandi", "undo cheyandi anna"]
+  },
+  "LEXOS_GREETING": {
+    "hi-IN": ["namaste bhaiya", "kya haal hai"],
+    "kn-IN": ["namaskara anna", "hegidira"],
+    "mr-IN": ["namaskar dada", "kasa kaay"],
+    "ta-IN": ["vanakkam anna", "eppadi irukeenga"],
+    "te-IN": ["namaskaram anna", "ela unnaru"]
+  },
+  "LEXOS_FAREWELL": {
+    "hi-IN": ["bas ho gaya shukriya", "theek hai chalta hoon"],
+    "kn-IN": ["saaku dhanyavaada", "aaytu hogtini anna"],
+    "mr-IN": ["bara dhanyavaad", "jhala nighto"],
+    "ta-IN": ["nandri anna polaam", "aachu polaam"],
+    "te-IN": ["dhanyavaadalu anna", "aipoindi veltunna"]
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "LEXOS_CART_ADD_ITEM": {
+    "hi-IN": {
+      "FORMAL":     ["एक menu-item लाइए", "मुझे menu-item चाहिए", "कृपया दो menu-item दें"],
+      "COLLOQUIAL": ["ek menu-item dena", "do menu-item de do", "menu-item chahiye yaar",
+                     "ek chai dena", "do samosa chahiye", "ek biryani dena", "ek water bottle dena", "ek lassi chahiye"],
+      "CODE_MIXED": ["ek menu-item order karna hai", "mujhe menu-item chahiye bhai", "2 menu-item please",
+                     "ek chai order karo", "ek water bottle add karo", "do samosa please"],
+      "PHONETIC":   ["ek menu-item dena", "do menu-item chahiye", "mujhe menu-item chahiye"]
+    },
+    "kn-IN": {
+      "FORMAL":     ["ಒಂದು menu-item ತನ್ನಿ", "ನನಗೆ menu-item ಬೇಕು", "ಎರಡು menu-item ಕೊಡಿ"],
+      "COLLOQUIAL": ["ondu menu-item kodi", "naige menu-item beku", "eradu menu-item haki",
+                     "ondu filter kaapi kodi", "naige idli beku", "anna eradu dosa haki",
+                     "ondu water bottle kodi", "naige parcel beku", "ondu menu-item beku"],
+      "CODE_MIXED": ["ek menu-item add maadi", "menu-item order maadbekide", "ond menu-item please",
+                     "anna ondu menu-item haki", "akka ondu menu-item haki",
+                     "ek filter kaapi add maadi", "ondu water bottle add maadi"],
+      "PHONETIC":   ["ondu menu-item kodi", "menu-item beku", "eradu menu-item order maadi"]
+    },
+    "mr-IN": {
+      "FORMAL":     ["एक menu-item द्या", "मला menu-item हवे आहे", "दोन menu-item द्या"],
+      "COLLOQUIAL": ["ek menu-item de", "do menu-item pahije", "menu-item hava bhai",
+                     "ek chai de", "ek vada pav pahije", "ek water bottle de", "do misal pahije"],
+      "CODE_MIXED": ["ek menu-item order kara", "menu-item add kara", "mala menu-item pahije",
+                     "ek chai order kara", "ek water bottle add kara"],
+      "PHONETIC":   ["ek menu-item de", "do menu-item pahije", "menu-item hava"]
+    },
+    "ta-IN": {
+      "FORMAL":     ["ஒரு menu-item தாருங்கள்", "எனக்கு menu-item வேண்டும்", "இரண்டு menu-item கொடுங்கள்"],
+      "COLLOQUIAL": ["oru menu-item kudunga", "rendu menu-item venum", "menu-item vennum",
+                     "oru filter kaapi kudunga", "rendu idli venum", "anna oru dosa maaro",
+                     "oru water bottle kudunga", "oru parcel venum"],
+      "CODE_MIXED": ["oru menu-item add pannunga", "menu-item order pannanum", "ek menu-item please",
+                     "anna oru menu-item maaro", "oru filter kaapi add pannunga", "oru water bottle please"],
+      "PHONETIC":   ["oru menu-item kudunga", "menu-item venum", "rendu menu-item please"]
+    },
+    "te-IN": {
+      "FORMAL":     ["ఒక menu-item తీసుకురండి", "నాకు menu-item కావాలి", "రెండు menu-item ఇవ్వండి"],
+      "COLLOQUIAL": ["okati menu-item ivvandi", "rendu menu-item kavali", "menu-item kavali",
+                     "oka filter kaapi ivvandi", "rendu idli kavali", "anna oka dosa ivvu",
+                     "oka water bottle kavali", "oka parcel kavali"],
+      "CODE_MIXED": ["oka menu-item add cheyandi", "menu-item order cheyali", "oka menu-item please",
+                     "anna oka menu-item ivvu", "oka filter kaapi add cheyandi", "oka water bottle please"],
+      "PHONETIC":   ["oka menu-item ivvandi", "menu-item kavali", "rendu menu-item please"]
+    },
+    "bn-IN": {
+      "FORMAL":     ["একটি menu-item দিন", "আমাকে menu-item চাই", "দুটো menu-item দিন"],
+      "COLLOQUIAL": ["ekta menu-item dao", "duto menu-item chai", "menu-item chai",
+                     "ekta chai dao", "ekta biryani dao", "ekta water bottle dao", "duto mishti dao"],
+      "CODE_MIXED": ["ekta menu-item order korbo", "menu-item add koro", "ek menu-item please",
+                     "ekta chai order koro", "ekta water bottle add koro"],
+      "PHONETIC":   ["ekta menu-item dao", "menu-item chai", "duto menu-item please"]
+    },
+    "gu-IN": {
+      "FORMAL":     ["એક menu-item આપો", "મને menu-item જોઈએ", "બે menu-item આપો"],
+      "COLLOQUIAL": ["ek menu-item aap", "be menu-item joiye", "menu-item joiye",
+                     "ek chai aap", "ek dhokla joiye", "ek water bottle aap", "be thepla joiye"],
+      "CODE_MIXED": ["ek menu-item order karo", "menu-item add karo", "mane menu-item joiye",
+                     "ek chai order karo", "ek water bottle add karo"],
+      "PHONETIC":   ["ek menu-item aap", "menu-item joiye", "be menu-item please"]
+    },
+    "es-ES": {
+      "FORMAL":     ["Quisiera un menu-item por favor", "Me gustaría pedir un menu-item", "Deme dos menu-item"],
+      "COLLOQUIAL": ["ponme un menu-item", "quiero un menu-item", "dame un menu-item",
+                     "ponme un café", "quiero una agua", "dame un bocadillo", "ponme dos tapas"],
+      "CODE_MIXED": ["ponme un menu-item please", "quiero un menu-item va", "añade un menu-item",
+                     "ponme un café please", "una agua mineral please"],
+      "PHONETIC":   ["ponme un menu-item", "quiero un menu-item", "dame un menu-item please"]
+    },
+    "ar-AE": {
+      "FORMAL":     ["أريد menu-item من فضلك", "أعطني menu-item واحد", "أريد اثنين من menu-item"],
+      "COLLOQUIAL": ["زيدني menu-item", "أبي menu-item", "واحد menu-item بليز",
+                     "زيدني قهوة", "أبي شاورما", "واحد ماء بليز", "زيدني فلافل"],
+      "CODE_MIXED": ["أضف menu-item please", "زيدني menu-item واحد", "ابي menu-item بليز",
+                     "زيدني قهوة please", "واحد ماء please"],
+      "PHONETIC":   ["zidni menu-item", "abi menu-item", "wahid menu-item please"]
+    }
+  },
+
+  "LEXOS_CART_REMOVE_ITEM": {
+    "hi-IN": {
+      "FORMAL":     ["menu-item हटा दीजिए", "मेरे ऑर्डर से menu-item निकाल दें"],
+      "COLLOQUIAL": ["menu-item hatao", "wo menu-item cancel karo", "menu-item nahi chahiye",
+                     "chai nahi chahiye", "wo samosa hatao", "water bottle nahi chahiye"],
+      "CODE_MIXED": ["menu-item remove karo", "menu-item cancel kar do", "menu-item order se hata do",
+                     "chai remove karo", "water bottle cancel kar do"],
+      "PHONETIC":   ["menu-item hatao", "menu-item remove karo", "wo menu-item nahi chahiye"]
+    },
+    "kn-IN": {
+      "FORMAL":     ["menu-item ತೆಗೆದು ಹಾಕಿ", "ನನ್ನ ಆರ್ಡರ್‌ನಿಂದ menu-item ತೆಗೆಯಿರಿ"],
+      "COLLOQUIAL": ["menu-item beda", "menu-item tege", "order ninda menu-item hata maadi",
+                     "filter kaapi beda", "wo dosa beda", "water bottle beda"],
+      "CODE_MIXED": ["menu-item cancel maadi", "menu-item remove maadi", "menu-item ninda hata maadi",
+                     "filter kaapi cancel maadi", "water bottle remove maadi"],
+      "PHONETIC":   ["menu-item beda", "menu-item remove maadi", "menu-item cancel maadi"]
+    },
+    "mr-IN": {
+      "FORMAL":     ["menu-item काढून टाका", "माझ्या ऑर्डरमधून menu-item काढा"],
+      "COLLOQUIAL": ["menu-item nako", "menu-item hata", "to menu-item cancel kar",
+                     "chai nako", "vada pav nako", "water bottle nako"],
+      "CODE_MIXED": ["menu-item remove kara", "menu-item cancel kara", "menu-item nako order madhe",
+                     "chai remove kara", "water bottle cancel kara"],
+      "PHONETIC":   ["menu-item nako", "menu-item hata", "menu-item cancel kara"]
+    },
+    "ta-IN": {
+      "FORMAL":     ["menu-item எடுத்துவிடுங்கள்", "என் ஆர்டரில் இருந்து menu-item நீக்குங்கள்"],
+      "COLLOQUIAL": ["menu-item venda", "menu-item thola", "menu-item cancel pannunga",
+                     "filter kaapi venda", "idli venda", "water bottle venda"],
+      "CODE_MIXED": ["menu-item remove pannunga", "menu-item cancel maari", "menu-item venda da",
+                     "filter kaapi remove pannunga", "water bottle cancel pannunga"],
+      "PHONETIC":   ["menu-item venda", "menu-item remove pannunga", "menu-item cancel pannunga"]
+    },
+    "te-IN": {
+      "FORMAL":     ["menu-item తీసివేయండి", "నా ఆర్డర్ నుండి menu-item తొలగించండి"],
+      "COLLOQUIAL": ["menu-item vaddhu", "menu-item cancel cheyandi", "menu-item theesi veyandi",
+                     "filter kaapi vaddhu", "idli vaddhu", "water bottle vaddhu"],
+      "CODE_MIXED": ["menu-item remove cheyandi", "menu-item cancel maari", "menu-item order lo vaddhu",
+                     "filter kaapi cancel cheyandi", "water bottle remove cheyandi"],
+      "PHONETIC":   ["menu-item vaddhu", "menu-item remove cheyandi", "menu-item cancel cheyandi"]
+    },
+    "bn-IN": {
+      "FORMAL":     ["menu-item সরিয়ে দিন", "আমার অর্ডার থেকে menu-item বাদ দিন"],
+      "COLLOQUIAL": ["menu-item lagbe na", "menu-item cancel koro", "menu-item bad diye dao",
+                     "chai lagbe na", "biryani cancel koro", "water bottle lagbe na"],
+      "CODE_MIXED": ["menu-item remove koro", "menu-item cancel kore dao", "menu-item order theke bado",
+                     "chai remove koro", "water bottle cancel koro"],
+      "PHONETIC":   ["menu-item lagbe na", "menu-item remove koro", "menu-item cancel koro"]
+    },
+    "gu-IN": {
+      "FORMAL":     ["menu-item કાઢી નાખો", "મારા ઓર્ડરમાંથી menu-item હટાવો"],
+      "COLLOQUIAL": ["menu-item nai joiye", "menu-item hata", "menu-item cancel karo",
+                     "chai nai joiye", "dhokla nai joiye", "water bottle nai joiye"],
+      "CODE_MIXED": ["menu-item remove karo", "menu-item cancel kari do", "menu-item order mathi kadho",
+                     "chai remove karo", "water bottle cancel karo"],
+      "PHONETIC":   ["menu-item nai joiye", "menu-item remove karo", "menu-item cancel karo"]
+    },
+    "es-ES": {
+      "FORMAL":     ["Retire el menu-item por favor", "Quite el menu-item de mi pedido"],
+      "COLLOQUIAL": ["quita el menu-item", "no quiero el menu-item", "cancela el menu-item",
+                     "quita el café", "no quiero el agua", "cancela la tapa"],
+      "CODE_MIXED": ["quita el menu-item please", "remove el menu-item", "cancel el menu-item",
+                     "quita el café please", "remove el agua"],
+      "PHONETIC":   ["quita el menu-item", "cancel el menu-item", "no quiero el menu-item"]
+    },
+    "ar-AE": {
+      "FORMAL":     ["أزل menu-item من الطلب", "احذف menu-item من فضلك"],
+      "COLLOQUIAL": ["ما أبي menu-item", "شيل menu-item", "ألغِ menu-item",
+                     "ما أبي القهوة", "شيل الشاورما", "ما أبي الماء"],
+      "CODE_MIXED": ["remove menu-item please", "cancel menu-item", "شيل ال menu-item",
+                     "remove القهوة please", "cancel الماء"],
+      "PHONETIC":   ["ma abi menu-item", "shil menu-item", "cancel menu-item"]
+    }
+  },
+
+  "LEXOS_CART_UPDATE_QUANTITY": {
+    "hi-IN": {
+      "FORMAL":     ["menu-item की संख्या तीन कर दीजिए", "menu-item दो से बढ़ाकर तीन करें"],
+      "COLLOQUIAL": ["menu-item teen kar do", "ek aur menu-item chahiye", "menu-item do kar do",
+                     "ek aur chai chahiye", "biryani teen kar do", "do water bottle kar do"],
+      "CODE_MIXED": ["menu-item ka quantity 3 kar do", "ek aur menu-item add karo", "menu-item 2 se 3 kar do",
+                     "ek aur chai add karo", "water bottle 2 kar do"],
+      "PHONETIC":   ["menu-item teen kar do", "ek aur menu-item chahiye", "menu-item ki quantity badha do"]
+    },
+    "kn-IN": {
+      "FORMAL":     ["menu-item ಮೂರು ಮಾಡಿ", "menu-item ಸಂಖ್ಯೆ ಬದಲಾಯಿಸಿ"],
+      "COLLOQUIAL": ["menu-item 3 maadi", "menu-item eradu maadi", "menu-item naalku maadi",
+                     "filter kaapi eradu maadi", "dosa mooru maadi", "water bottle 2 maadi"],
+      "CODE_MIXED": ["menu-item quantity change maadi", "ek menu-item add maadi", "2 menu-item inda 3 maadi",
+                     "ek aur filter kaapi add maadi", "water bottle 2 maadi"],
+      "PHONETIC":   ["menu-item 3 maadi", "innu ondu menu-item beku", "menu-item eradu kodi"]
+    },
+    "mr-IN": {
+      "FORMAL":     ["menu-item तीन करा", "menu-item ची संख्या बदला"],
+      "COLLOQUIAL": ["menu-item teen kar", "ek menu-item aur pahije", "menu-item do kar",
+                     "ek aur chai pahije", "vada pav teen kar", "water bottle do kar"],
+      "CODE_MIXED": ["menu-item quantity change kara", "ek aur menu-item ghya", "menu-item 2 cha 3 kara",
+                     "ek aur chai add kara", "water bottle 2 kara"],
+      "PHONETIC":   ["menu-item teen kar", "ek aur menu-item pahije", "menu-item chi sankhya wadha"]
+    },
+    "ta-IN": {
+      "FORMAL":     ["menu-item மூன்றாக மாற்றுங்கள்", "menu-item எண்ணிக்கை மாற்றுங்கள்"],
+      "COLLOQUIAL": ["menu-item moonu pannunga", "oru menu-item konjam kudunga", "menu-item rendu pannunga",
+                     "inoru filter kaapi venum", "dosa moonu pannunga", "water bottle rendu pannunga"],
+      "CODE_MIXED": ["menu-item quantity change pannunga", "oru menu-item add pannunga", "menu-item 3 aakuunga",
+                     "oru filter kaapi add pannunga", "water bottle 2 pannunga"],
+      "PHONETIC":   ["menu-item moonu pannunga", "inoru menu-item venum", "menu-item quantity badlu"]
+    },
+    "te-IN": {
+      "FORMAL":     ["menu-item మూడు చేయండి", "menu-item సంఖ్య మార్చండి"],
+      "COLLOQUIAL": ["menu-item moodu cheyandi", "inkoka menu-item kavali", "menu-item rendu cheyandi",
+                     "inka oka filter kaapi kavali", "idli moodu cheyandi", "water bottle rendu cheyandi"],
+      "CODE_MIXED": ["menu-item quantity change cheyandi", "oka menu-item add cheyandi", "menu-item 3 cheyandi",
+                     "oka filter kaapi add cheyandi", "water bottle 2 cheyandi"],
+      "PHONETIC":   ["menu-item moodu cheyandi", "inka oka menu-item kavali", "menu-item quantity badlu"]
+    },
+    "bn-IN": {
+      "FORMAL":     ["menu-item তিনটি করুন", "menu-item সংখ্যা পরিবর্তন করুন"],
+      "COLLOQUIAL": ["menu-item tin koro", "aro ekta menu-item dao", "menu-item duto koro",
+                     "aro ekta chai dao", "biryani tin koro", "water bottle duto koro"],
+      "CODE_MIXED": ["menu-item quantity change koro", "aro ek menu-item add koro", "menu-item 3 kore dao",
+                     "aro ekta chai add koro", "water bottle 2 koro"],
+      "PHONETIC":   ["menu-item tin koro", "aaro ekta menu-item lagbe", "menu-item quantity baro"]
+    },
+    "gu-IN": {
+      "FORMAL":     ["menu-item ત્રણ કરો", "menu-item ની સંખ્યા બદલો"],
+      "COLLOQUIAL": ["menu-item tran kar", "vaku ek menu-item joiye", "menu-item be kar",
+                     "vaku ek chai joiye", "dhokla tran kar", "water bottle be kar"],
+      "CODE_MIXED": ["menu-item quantity change karo", "ek vahu menu-item add karo", "menu-item 3 kar do",
+                     "ek vahu chai add karo", "water bottle 2 karo"],
+      "PHONETIC":   ["menu-item tran kar", "vaku ek menu-item joiye", "menu-item nu quantity vadhar"]
+    },
+    "es-ES": {
+      "FORMAL":     ["Cambie la cantidad de menu-item a tres", "Modifique la cantidad de menu-item"],
+      "COLLOQUIAL": ["ponme tres menu-item", "uno más de menu-item", "cambia a dos menu-item",
+                     "uno más de café", "tres aguas por favor", "cambia a dos tapas"],
+      "CODE_MIXED": ["pon tres menu-item please", "uno más de menu-item va", "cambia menu-item a tres",
+                     "uno más de café please", "dos aguas please"],
+      "PHONETIC":   ["ponme tres menu-item", "uno mas de menu-item", "cambia a dos menu-item"]
+    },
+    "ar-AE": {
+      "FORMAL":     ["غيّر كمية menu-item إلى ثلاثة", "بدّل عدد menu-item"],
+      "COLLOQUIAL": ["زيدني menu-item واحد زيادة", "menu-item ثلاثة", "غيّر كمية menu-item",
+                     "زيدني قهوة واحدة زيادة", "شاورما ثلاثة", "ماء اثنين"],
+      "CODE_MIXED": ["زيدني menu-item أكثر", "menu-item quantity 3", "change menu-item to 3",
+                     "زيدني قهوة أكثر", "ماء 2 please"],
+      "PHONETIC":   ["zidni menu-item wahid ziyada", "menu-item thalatha", "change menu-item quantity"]
+    }
+  },
+
+  "LEXOS_MENU_SEARCH_ITEM": {
+    "hi-IN": {
+      "FORMAL":     ["क्या menu-item उपलब्ध है?", "क्या आपके पास menu-item है?"],
+      "COLLOQUIAL": ["menu-item milega?", "kya menu-item hai?", "menu-item available hai?",
+                     "chai milegi?", "biryani hai kya?", "water bottle milega?", "kya vada pav hai?"],
+      "CODE_MIXED": ["kya menu-item available hai?", "menu mein menu-item hai?", "menu-item milta hai?",
+                     "kya chai available hai?", "water bottle hai menu mein?"],
+      "PHONETIC":   ["menu-item hai kya?", "kya menu-item available hai?", "menu-item milega?"]
+    },
+    "kn-IN": {
+      "FORMAL":     ["menu-item ಲಭ್ಯವಿದೆಯೇ?", "ನಿಮ್ಮಲ್ಲಿ menu-item ಇದೆಯೇ?"],
+      "COLLOQUIAL": ["menu-item ideyaa?", "menu-item sikkutte?", "nimma hatra menu-item irutta?",
+                     "filter kaapi ideyaa?", "idli sikkutte?", "water bottle ideyaa?", "dosa iruttaa?"],
+      "CODE_MIXED": ["menu-item available ideyaa?", "menu alli menu-item ideyaa?", "menu-item sigtaa?",
+                     "filter kaapi available aa?", "water bottle menu alli ideyaa?"],
+      "PHONETIC":   ["menu-item ideyaa?", "menu-item available aa?", "nimma hatra menu-item irutta?"]
+    },
+    "mr-IN": {
+      "FORMAL":     ["menu-item उपलब्ध आहे का?", "तुमच्याकडे menu-item आहे का?"],
+      "COLLOQUIAL": ["menu-item milel ka?", "menu-item aahe ka?", "tumchyakade menu-item aahe?",
+                     "chai milel ka?", "vada pav aahe ka?", "water bottle aahe?"],
+      "CODE_MIXED": ["menu-item available aahe ka?", "menu madhe menu-item aahe?", "menu-item milel?",
+                     "chai available aahe?", "water bottle aahe menu madhe?"],
+      "PHONETIC":   ["menu-item aahe ka?", "menu-item available aahe?", "menu-item milel ka?"]
+    },
+    "ta-IN": {
+      "FORMAL":     ["menu-item கிடைக்குமா?", "உங்களிடம் menu-item இருக்கிறதா?"],
+      "COLLOQUIAL": ["menu-item irukka?", "menu-item kidaikuma?", "ungakidam menu-item irukka?",
+                     "filter kaapi irukka?", "idli kidaikuma?", "water bottle irukka?", "dosa irukka?"],
+      "CODE_MIXED": ["menu-item available aa?", "menu la menu-item irukka?", "menu-item kidaikuma?",
+                     "filter kaapi available aa?", "water bottle irukka menu la?"],
+      "PHONETIC":   ["menu-item irukka?", "menu-item kidaikuma?", "menu-item available aa?"]
+    },
+    "te-IN": {
+      "FORMAL":     ["menu-item అందుబాటులో ఉందా?", "మీ దగ్గర menu-item ఉందా?"],
+      "COLLOQUIAL": ["menu-item undaa?", "menu-item dorukutundaa?", "mee daggaraa menu-item unda?",
+                     "filter kaapi undaa?", "idli dorukutundaa?", "water bottle undaa?"],
+      "CODE_MIXED": ["menu-item available undaa?", "menu lo menu-item undaa?", "menu-item dorukutundaa?",
+                     "filter kaapi available aa?", "water bottle menu lo undaa?"],
+      "PHONETIC":   ["menu-item undaa?", "menu-item available aa?", "menu-item dorukutundaa?"]
+    },
+    "bn-IN": {
+      "FORMAL":     ["menu-item পাওয়া যাবে?", "আপনাদের কাছে menu-item আছে?"],
+      "COLLOQUIAL": ["menu-item ache?", "menu-item pabo?", "tumader kache menu-item ache?",
+                     "chai ache?", "biryani pabo?", "water bottle ache?"],
+      "CODE_MIXED": ["menu-item available ache?", "menu te menu-item ache?", "menu-item pabo?",
+                     "chai available ache?", "water bottle ache menu te?"],
+      "PHONETIC":   ["menu-item ache?", "menu-item available?", "menu-item pabo ki?"]
+    },
+    "gu-IN": {
+      "FORMAL":     ["menu-item મળશે?", "તમારી પાસે menu-item છે?"],
+      "COLLOQUIAL": ["menu-item malse?", "menu-item che?", "tamari paase menu-item che?",
+                     "chai malse?", "dhokla che?", "water bottle malse?"],
+      "CODE_MIXED": ["menu-item available che?", "menu ma menu-item che?", "menu-item malse?",
+                     "chai available che?", "water bottle menu ma che?"],
+      "PHONETIC":   ["menu-item malse?", "menu-item available che?", "menu-item che ke?"]
+    },
+    "es-ES": {
+      "FORMAL":     ["¿Tienen menu-item?", "¿Está disponible el menu-item?"],
+      "COLLOQUIAL": ["¿hay menu-item?", "¿tienen menu-item?", "¿se puede pedir menu-item?",
+                     "¿hay café?", "¿tienen agua mineral?", "¿hay bocadillos?"],
+      "CODE_MIXED": ["¿hay menu-item available?", "¿tienen menu-item hoy?", "¿menu-item está en el menú?",
+                     "¿hay café available?", "¿agua mineral available?"],
+      "PHONETIC":   ["hay menu-item?", "tienen menu-item?", "menu-item disponible?"]
+    },
+    "ar-AE": {
+      "FORMAL":     ["هل يوجد menu-item?", "هل menu-item متوفر؟"],
+      "COLLOQUIAL": ["في menu-item؟", "عندكم menu-item؟", "لو سمحت في menu-item؟",
+                     "في قهوة؟", "عندكم شاورما؟", "في ماء؟"],
+      "CODE_MIXED": ["في menu-item available؟", "عندكم menu-item اليوم؟", "menu-item في القائمة؟",
+                     "في قهوة available؟", "ماء في القائمة؟"],
+      "PHONETIC":   ["fi menu-item?", "indkum menu-item?", "menu-item mawjud?"]
+    }
+  },
+
+  "LEXOS_ALLERGEN_INQUIRY": {
+    "hi-IN": {
+      "FORMAL":     ["क्या menu-item में मूंगफली है?", "menu-item में कौन से एलर्जेन हैं?"],
+      "COLLOQUIAL": ["menu-item mein nuts hai kya?", "is menu-item mein dairy hai?", "menu-item gluten free hai?",
+                     "is chai mein dairy hai?", "biryani mein nuts hai?", "water bottle safe hai?"],
+      "CODE_MIXED": ["menu-item mein koi allergen hai?", "is menu-item mein peanuts toh nahi?", "menu-item safe hai?",
+                     "chai mein koi allergen hai?", "biryani mein peanuts toh nahi?"],
+      "PHONETIC":   ["menu-item mein nuts hai kya?", "is menu-item mein kya kya hai?", "menu-item safe hai?"]
+    },
+    "kn-IN": {
+      "FORMAL":     ["menu-item ನಲ್ಲಿ ನೆಲಗಡಲೆ ಇದೆಯೇ?", "menu-item ಗ್ಲೂಟೆನ್ ಮುಕ್ತವೇ?"],
+      "COLLOQUIAL": ["menu-item alli nuts ideyaa?", "is menu-item veg aa?", "menu-item alli dairy ideyaa?",
+                     "filter kaapi alli dairy ideyaa?", "idli veg aa?", "is dosa safe aa?"],
+      "CODE_MIXED": ["menu-item mein koi allergen aa?", "menu-item safe aa?", "menu-item alli peanuts illa tane?",
+                     "filter kaapi alli allergen ideyaa?", "idli safe aa?"],
+      "PHONETIC":   ["menu-item alli nuts ideyaa?", "menu-item veg aa?", "menu-item safe aa?"]
+    },
+    "mr-IN": {
+      "FORMAL":     ["menu-item मध्ये शेंगदाणे आहेत का?", "menu-item ग्लूटेन मुक्त आहे का?"],
+      "COLLOQUIAL": ["menu-item madhe nuts aahet ka?", "menu-item veg aahe ka?", "menu-item madhe dairy aahe?",
+                     "chai madhe dairy aahe?", "vada pav veg aahe?", "is menu-item safe aahe?"],
+      "CODE_MIXED": ["menu-item mein allergen aahe ka?", "menu-item safe aahe?", "menu-item madhe peanuts nahi na?",
+                     "chai madhe allergen aahe?", "vada pav safe aahe?"],
+      "PHONETIC":   ["menu-item madhe nuts aahet ka?", "menu-item veg aahe?", "menu-item safe aahe ka?"]
+    },
+    "ta-IN": {
+      "FORMAL":     ["menu-item இல் நிலக்கடலை உள்ளதா?", "menu-item க்ளூட்டன் இல்லாததா?"],
+      "COLLOQUIAL": ["menu-item la nuts irukka?", "menu-item veg thaana?", "menu-item la dairy irukka?",
+                     "filter kaapi la dairy irukka?", "idli veg aa?", "dosa safe aa?"],
+      "CODE_MIXED": ["menu-item la allergen irukka?", "menu-item safe aa?", "menu-item la peanuts illai taaney?",
+                     "filter kaapi la allergen irukka?", "idli safe aa?"],
+      "PHONETIC":   ["menu-item la nuts irukka?", "menu-item veg aa?", "menu-item safe aa?"]
+    },
+    "te-IN": {
+      "FORMAL":     ["menu-item లో వేరుశెనగలు ఉన్నాయా?", "menu-item గ్లూటెన్ లేనిదా?"],
+      "COLLOQUIAL": ["menu-item lo nuts unnaya?", "menu-item veg aa?", "menu-item lo dairy unda?",
+                     "filter kaapi lo dairy unda?", "idli veg aa?", "dosa safe aa?"],
+      "CODE_MIXED": ["menu-item lo allergen unda?", "menu-item safe aa?", "menu-item lo peanuts levu kadhaa?",
+                     "filter kaapi lo allergen unda?", "idli safe aa?"],
+      "PHONETIC":   ["menu-item lo nuts unnaya?", "menu-item veg aa?", "menu-item safe undaa?"]
+    },
+    "bn-IN": {
+      "FORMAL":     ["menu-item এ বাদাম আছে?", "menu-item কি গ্লুটেন মুক্ত?"],
+      "COLLOQUIAL": ["menu-item e nuts ache?", "menu-item veg?", "menu-item e dairy ache?",
+                     "chai e dairy ache?", "biryani veg?", "water bottle safe?"],
+      "CODE_MIXED": ["menu-item e allergen ache?", "menu-item safe?", "menu-item e peanuts nei toh?",
+                     "chai e allergen ache?", "biryani safe?"],
+      "PHONETIC":   ["menu-item e nuts ache?", "menu-item veg kina?", "menu-item safe ache?"]
+    },
+    "gu-IN": {
+      "FORMAL":     ["menu-item માં મગફળી છે?", "menu-item ગ્લૂટેન મુક્ત છે?"],
+      "COLLOQUIAL": ["menu-item ma nuts che?", "menu-item veg che?", "menu-item ma dairy che?",
+                     "chai ma dairy che?", "dhokla veg che?", "water bottle safe che?"],
+      "CODE_MIXED": ["menu-item ma allergen che?", "menu-item safe che?", "menu-item ma peanuts nai ne?",
+                     "chai ma allergen che?", "dhokla safe che?"],
+      "PHONETIC":   ["menu-item ma nuts che?", "menu-item veg che?", "menu-item safe che ke?"]
+    },
+    "es-ES": {
+      "FORMAL":     ["¿Contiene el menu-item frutos secos?", "¿Es el menu-item libre de gluten?"],
+      "COLLOQUIAL": ["¿el menu-item tiene nueces?", "¿es vegano el menu-item?", "¿el menu-item tiene lácteos?",
+                     "¿el café tiene lácteos?", "¿es vegana la tapa?", "¿el agua es pura?"],
+      "CODE_MIXED": ["¿el menu-item tiene allergens?", "¿es safe el menu-item?", "¿el menu-item lleva maní?",
+                     "¿el café tiene allergens?", "¿la tapa es safe?"],
+      "PHONETIC":   ["el menu-item tiene nueces?", "es vegano el menu-item?", "el menu-item tiene lacteos?"]
+    },
+    "ar-AE": {
+      "FORMAL":     ["هل يحتوي menu-item على مكسرات؟", "هل menu-item خالٍ من الغلوتين؟"],
+      "COLLOQUIAL": ["في menu-item مكسرات؟", "هل menu-item نباتي؟", "في menu-item حليب؟",
+                     "في القهوة حليب؟", "هل الشاورما نباتي؟", "في الماء مكسرات؟"],
+      "CODE_MIXED": ["في menu-item allergens؟", "هل menu-item safe؟", "في menu-item فستق؟",
+                     "في القهوة allergens؟", "الشاورما safe؟"],
+      "PHONETIC":   ["fi menu-item mukassarat?", "hal menu-item nabati?", "menu-item safe?"]
+    }
+  },
+
+  "LEXOS_PRICE_INQUIRY_ITEM": {
+    "hi-IN": {
+      "FORMAL":     ["menu-item का मूल्य क्या है?", "menu-item कितने रुपये का है?"],
+      "COLLOQUIAL": ["menu-item kitne ka hai?", "menu-item ki price kya hai?", "menu-item ka rate?",
+                     "chai kitne ki hai?", "biryani kitne ka hai?", "water bottle ka rate kya hai?"],
+      "CODE_MIXED": ["menu-item kitne ka hai?", "menu-item ka price batao", "how much is menu-item?",
+                     "chai ka price batao", "water bottle kitne ka hai?"],
+      "PHONETIC":   ["menu-item kitne ka hai?", "menu-item ki price kya hai?", "menu-item ka rate kya hai?"]
+    },
+    "kn-IN": {
+      "FORMAL":     ["menu-item ಬೆಲೆ ಎಷ್ಟು?", "menu-item ಎಷ್ಟು ರೂಪಾಯಿ?"],
+      "COLLOQUIAL": ["menu-item eshtu?", "menu-item price eshtu?", "menu-item rate eshtu?",
+                     "filter kaapi eshtu?", "idli price eshtu?", "water bottle eshtu?", "dosa rate eshtu?"],
+      "CODE_MIXED": ["menu-item price eshtu aagutte?", "how much is menu-item?", "menu-item kitna hai?",
+                     "filter kaapi price eshtu?", "water bottle eshtu aagutte?"],
+      "PHONETIC":   ["menu-item eshtu?", "menu-item price eshtu?", "menu-item rate eshtu aagutte?"]
+    },
+    "mr-IN": {
+      "FORMAL":     ["menu-item किती रुपये आहे?", "menu-item ची किंमत किती?"],
+      "COLLOQUIAL": ["menu-item kiti?", "menu-item price kiti?", "menu-item kitne ka?",
+                     "chai kiti?", "vada pav price kiti?", "water bottle kiti?"],
+      "CODE_MIXED": ["menu-item price kiti aahe?", "how much is menu-item?", "menu-item kitne ka hai?",
+                     "chai price kiti aahe?", "water bottle kiti?"],
+      "PHONETIC":   ["menu-item kiti?", "menu-item cha bhav kiti?", "menu-item price kiti aahe?"]
+    },
+    "ta-IN": {
+      "FORMAL":     ["menu-item விலை என்ன?", "menu-item எவ்வளவு ரூபாய்?"],
+      "COLLOQUIAL": ["menu-item evvalavu?", "menu-item price enna?", "menu-item rate enna?",
+                     "filter kaapi evvalavu?", "idli price enna?", "water bottle evvalavu?"],
+      "CODE_MIXED": ["menu-item price evvalavu?", "how much is menu-item?", "menu-item yevlo?",
+                     "filter kaapi price evvalavu?", "water bottle yevlo?"],
+      "PHONETIC":   ["menu-item evvalavu?", "menu-item price enna?", "menu-item rate sollunga"]
+    },
+    "te-IN": {
+      "FORMAL":     ["menu-item ధర ఎంత?", "menu-item ఎంత రూపాయలు?"],
+      "COLLOQUIAL": ["menu-item enta?", "menu-item price enta?", "menu-item rate enta?",
+                     "filter kaapi enta?", "idli price enta?", "water bottle enta?"],
+      "CODE_MIXED": ["menu-item price evvallu?", "how much is menu-item?", "menu-item enta avutundi?",
+                     "filter kaapi price enta?", "water bottle enta?"],
+      "PHONETIC":   ["menu-item enta?", "menu-item price enta?", "menu-item rate cheppandi"]
+    },
+    "bn-IN": {
+      "FORMAL":     ["menu-item এর দাম কত?", "menu-item কত টাকা?"],
+      "COLLOQUIAL": ["menu-item koto?", "menu-item dam koto?", "menu-item rate koto?",
+                     "chai koto?", "biryani dam koto?", "water bottle koto?"],
+      "CODE_MIXED": ["menu-item price koto?", "how much is menu-item?", "menu-item er dam koto?",
+                     "chai price koto?", "water bottle koto?"],
+      "PHONETIC":   ["menu-item koto?", "menu-item price koto?", "menu-item er dam koto?"]
+    },
+    "gu-IN": {
+      "FORMAL":     ["menu-item ની કિંમત શું છે?", "menu-item કેટલા રૂપિયા?"],
+      "COLLOQUIAL": ["menu-item ketla?", "menu-item kimat ketli?", "menu-item rate kem?",
+                     "chai ketla?", "dhokla price ketli?", "water bottle ketla?"],
+      "CODE_MIXED": ["menu-item price ketlu?", "how much is menu-item?", "menu-item nu rate kya che?",
+                     "chai price ketlu?", "water bottle ketla?"],
+      "PHONETIC":   ["menu-item ketla?", "menu-item price ketlu?", "menu-item kimat batao"]
+    },
+    "es-ES": {
+      "FORMAL":     ["¿Cuánto cuesta el menu-item?", "¿Cuál es el precio del menu-item?"],
+      "COLLOQUIAL": ["¿cuánto está el menu-item?", "¿a cuánto el menu-item?", "¿qué vale el menu-item?",
+                     "¿cuánto está el café?", "¿a cuánto el agua?", "¿qué vale el bocadillo?"],
+      "CODE_MIXED": ["¿cuánto cuesta menu-item?", "how much is menu-item?", "¿menu-item a cuánto?",
+                     "how much is café?", "¿agua a cuánto?"],
+      "PHONETIC":   ["cuanto esta el menu-item?", "a cuanto el menu-item?", "precio del menu-item?"]
+    },
+    "ar-AE": {
+      "FORMAL":     ["كم سعر menu-item؟", "ما ثمن menu-item؟"],
+      "COLLOQUIAL": ["بكم menu-item؟", "قديش menu-item؟", "menu-item بكم؟",
+                     "بكم القهوة؟", "قديش الشاورما؟", "الماء بكم؟"],
+      "CODE_MIXED": ["قديش menu-item؟", "how much is menu-item?", "menu-item بكم today؟",
+                     "how much is القهوة?", "الشاورما بكم؟"],
+      "PHONETIC":   ["bikam menu-item?", "gadhesh menu-item?", "menu-item bikam?"]
+    }
+  }
+}
