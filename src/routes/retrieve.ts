@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { config } from '../config';
 import { getPhoneticVariants, getLlmContextEntries } from '../db/queries/retrieve';
+import { getDistinctMenuNames } from '../db/queries/menu';
 import { formatWhisperPayload,  WhisperPayload }  from '../adapters/asr/whisper';
 import { formatDeepgramPayload, DeepgramPayload } from '../adapters/asr/deepgram';
 import { formatSarvamPayload,   SarvamPayload }   from '../adapters/asr/sarvam';
@@ -42,14 +43,20 @@ router.get('/asr-bias', async (req: Request, res: Response): Promise<void> => {
   }
 
   const resolvedDomain = domain?.trim() || DEFAULT_DOMAIN;
+  const resolvedTenant = (tenant_id?.trim() || (req.headers['x-tenant-id'] as string | undefined)) ?? undefined;
 
   try {
-    const variants = await getPhoneticVariants(
-      lang.trim(),
-      resolvedDomain,
-      tenant_id?.trim() || undefined,
-      workflow?.trim()  || undefined,
-    );
+    const [rawVariants, menuNames] = await Promise.all([
+      getPhoneticVariants(lang.trim(), resolvedDomain, resolvedTenant, workflow?.trim() || undefined),
+      resolvedTenant ? getDistinctMenuNames(resolvedTenant).catch(() => []) : Promise.resolve([]),
+    ]);
+
+    // Strip placeholder phrases; prepend real item names as direct keyterms.
+    const menuVariants = menuNames.map(name => ({ value: name, confidence: 1.0, intent_name: 'MENU_ITEM', tenant_id: resolvedTenant ?? null }));
+    const variants = [
+      ...menuVariants,
+      ...rawVariants.filter(v => !v.value.includes('menu-item')),
+    ];
 
     let payload: WhisperPayload | DeepgramPayload | SarvamPayload;
 

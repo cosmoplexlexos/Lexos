@@ -91,6 +91,17 @@ export async function getTenantMenuForms(tenantId: string): Promise<MenuForm[]> 
   return raw.map(r => ({ name: r.n, tokens: r.t }));
 }
 
+/** Returns distinct canonical item names for a tenant (for ASR bias injection). */
+export async function getDistinctMenuNames(tenantId: string): Promise<string[]> {
+  const db = getDb();
+  const { data, error } = await db
+    .from('menu_items')
+    .select('name')
+    .eq('tenant_id', tenantId);
+  if (error) throw new Error(`getDistinctMenuNames: ${error.message}`);
+  return [...new Set((data ?? []).map((r: any) => r.name as string))];
+}
+
 export async function getTenantMenuCount(tenantId: string): Promise<number> {
   const db = getDb();
   const { count, error } = await db
