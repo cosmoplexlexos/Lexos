@@ -40,7 +40,7 @@ export const config = {
   anthropic: {
     // Optional at server startup — only required when generation pipeline runs.
     apiKey: optional('ANTHROPIC_API_KEY', ''),
-    model:  'claude-sonnet-4-6', // locked in decisions.md — do not move to env
+    model:  'claude-haiku-4-5-20251001',
   },
   cloudflare: {
     // Optional until Step 4 (semantic search). Validated lazily when first used.
