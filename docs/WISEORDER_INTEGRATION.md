@@ -9,10 +9,8 @@ your LLM response accurate.
 ## Base URL
 
 ```
-https://<lexos-production-url>
+https://lexos-production-a96c.up.railway.app
 ```
-
-> URL will be provided once deployed. All examples below use this placeholder.
 
 ---
 
